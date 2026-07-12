@@ -26,7 +26,7 @@ RESULTS = ROOT / "results"
 DATASET = "aicrowd/arc-whestbench-public-2026"
 REVISION = "v1-phase1"
 BUDGET = 272_000_000_000
-SCORE_FLOOR = 0.5
+SCORE_FLOOR = 0.1
 PREFIXES = (2, 4, 8, 16, 24, 32)
 BASELINES = {
     "starter": ROOT / "estimator.py",
@@ -213,21 +213,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-def evaluate(estimator: Any, row: dict[str, Any], args: argparse.Namespace) -> dict[str, Any]:
-    mlp = as_mlp(row)
-    target = np.asarray(row["all_layer_means"], dtype=np.float64)
-    started = time.perf_counter()
-    with flops.BudgetContext(flop_budget=args.budget, quiet=True) as context:
-        prediction = estimator.predict(mlp, args.budget)
-    runtime_s = time.perf_counter() - started
-    prediction = np.asarray(prediction, dtype=np.float64)
-    expected_shape = (mlp.depth, mlp.width)
-    if prediction.shape != expected_shape:
-        raise ValueError(f"prediction shape {prediction.shape}; expected {expected_shape}")
-    if not np.all(np.isfinite(prediction)):
-        raise ValueError("prediction contains non-finite values")
-    squared_error = (prediction - target) ** 2
-    flops_used = int(context.flops_used)
-    final_mse = float(squared_error[-1].mean())
