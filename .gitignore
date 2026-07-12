@@ -5,6 +5,9 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .venv/
+.tools/
+.uv-cache/
+.uv-python/
 
 # uv
 # (uv.lock IS committed)
@@ -15,6 +18,9 @@ __pycache__/
 build/
 dist/
 *.egg-info/
+
+# Reproducible local experiment outputs (keep shared tables separately if needed).
+results/
 
 # OS
 .DS_Store

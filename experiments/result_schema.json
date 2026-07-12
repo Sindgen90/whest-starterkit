@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "WhestBench Phase 1 experiment result",
+  "type": "object",
+  "required": ["schema_version", "run_id", "created_at_utc", "status", "configuration", "source", "summary", "per_mlp", "failures"],
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "run_id": {"type": "string"},
+    "created_at_utc": {"type": "string", "format": "date-time"},
+    "status": {"enum": ["completed", "completed_with_failures", "failed"]},
+    "configuration": {
+      "type": "object",
+      "required": ["phase", "dataset", "dataset_revision", "dataset_split", "baseline", "flop_budget", "score_floor", "depth_prefixes"],
+      "properties": {
+        "phase": {"const": "phase1"},
+        "dataset": {"const": "aicrowd/arc-whestbench-public-2026"},
+        "dataset_revision": {"const": "v1-phase1"},
+        "dataset_split": {"enum": ["mini", "full"]},
+        "baseline": {"enum": ["starter", "mean", "covariance"]},
+        "flop_budget": {"type": "integer", "minimum": 1},
+        "score_floor": {"type": "number", "minimum": 0, "maximum": 1},
+        "depth_prefixes": {"type": "array", "items": {"type": "integer"}}
+      }
+    },
+    "source": {"type": "object", "required": ["estimator_path", "estimator_sha256", "git_commit"]},
+    "summary": {"type": "object", "required": ["n_requested", "n_completed", "n_failed", "final_mse", "all_layer_mse", "adjusted_final_score", "flops", "runtime_s"]},
+    "per_mlp": {"type": "array"},
+    "failures": {"type": "array"}
+  }
+}
