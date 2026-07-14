@@ -32,15 +32,19 @@ ROOT = Path(__file__).resolve().parents[1]
 CORRECTED_K2 = ROOT / "submissions" / "corrected_k2" / "estimator.py"
 RQMC = ROOT / "submissions" / "rqmc_lattice_002" / "estimator.py"
 DEFAULT_N_SAMPLES = 1293
+DEFAULT_RQMC_SEED_OFFSET = 1_000_003
+DEFAULT_RQMC_MULTIPLIER = 17_797
 
 
-def load_rqmc_estimator(n_samples: int) -> Any:
+def load_rqmc_estimator(n_samples: int, seed_offset: int, multiplier: int) -> Any:
     spec = importlib.util.spec_from_file_location(f"rqmc_lattice_{n_samples}", RQMC)
     if spec is None or spec.loader is None:
         raise RuntimeError(f"Cannot import estimator from {RQMC}")
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     module.N_SAMPLES = n_samples
+    module.RQMC_SEED_OFFSET = seed_offset
+    module.RQMC_MULTIPLIER = multiplier
     return module.Estimator()
 
 
@@ -188,7 +192,7 @@ def run(args: argparse.Namespace) -> Path:
     calibration_rows = [row for row in rows if int(row["mlp_id"]) % 2 == args.calibration_parity]
     evaluation_rows = [row for row in rows if int(row["mlp_id"]) % 2 != args.calibration_parity]
     k2 = load_estimator(CORRECTED_K2)()
-    rqmc = load_rqmc_estimator(args.n_samples)
+    rqmc = load_rqmc_estimator(args.n_samples, args.rqmc_seed_offset, args.rqmc_multiplier)
     calibration = fit_lambda(calibration_rows, k2, rqmc, args)
     records: list[dict[str, Any]] = []
     failures: list[dict[str, Any]] = []
@@ -227,6 +231,8 @@ def run(args: argparse.Namespace) -> Path:
             "calibration_parity": args.calibration_parity,
             "limit_mlps": args.limit_mlps,
             "rqmc_n_samples": args.n_samples,
+            "rqmc_seed_offset": args.rqmc_seed_offset,
+            "rqmc_multiplier": args.rqmc_multiplier,
         },
         "calibration": calibration,
         "source": {
@@ -244,6 +250,11 @@ def run(args: argparse.Namespace) -> Path:
     RESULTS.mkdir(exist_ok=True)
     suffix = "mini" if args.limit_mlps is None else f"mini_limit{args.limit_mlps}"
     suffix = f"{suffix}_rqmc{args.n_samples}"
+    if (
+        args.rqmc_seed_offset != DEFAULT_RQMC_SEED_OFFSET
+        or args.rqmc_multiplier != DEFAULT_RQMC_MULTIPLIER
+    ):
+        suffix = f"{suffix}_offset{args.rqmc_seed_offset}_mult{args.rqmc_multiplier}"
     output = RESULTS / f"convex_combo_{suffix}.json"
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return output
@@ -256,6 +267,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--calibration-parity", type=int, choices=(0, 1), default=0)
     parser.add_argument("--limit-mlps", type=int, default=None)
     parser.add_argument("--n-samples", type=int, default=DEFAULT_N_SAMPLES)
+    parser.add_argument("--rqmc-seed-offset", type=int, default=DEFAULT_RQMC_SEED_OFFSET)
+    parser.add_argument("--rqmc-multiplier", type=int, default=DEFAULT_RQMC_MULTIPLIER)
     return parser.parse_args()
 
 
@@ -265,6 +278,10 @@ def main() -> None:
         raise SystemExit("--limit-mlps must be greater than 1")
     if args.n_samples <= 0:
         raise SystemExit("--n-samples must be positive")
+    if args.rqmc_multiplier <= 0:
+        raise SystemExit("--rqmc-multiplier must be positive")
+    if args.rqmc_multiplier % 2 == 0:
+        raise SystemExit("--rqmc-multiplier must be odd for power-of-two sample counts")
     output = run(args)
     print(f"wrote {output.relative_to(ROOT)}")
 

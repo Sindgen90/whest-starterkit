@@ -8,6 +8,7 @@ from whestbench.domain import MLP
 
 N_SAMPLES = 1293
 RQMC_SEED_OFFSET = 1_000_003
+RQMC_MULTIPLIER = 17_797
 
 
 def normal_lattice_samples(n_samples: int, width: int, seed: int) -> fnp.ndarray:
@@ -18,7 +19,7 @@ def normal_lattice_samples(n_samples: int, width: int, seed: int) -> fnp.ndarray
     modulus = max(2, n_samples)
     for _ in range(width):
         powers.append(float(value))
-        value = (value * 17797) % modulus
+        value = (value * RQMC_MULTIPLIER) % modulus
         if value == 0:
             value = 1
     generator = fnp.array(powers, dtype=fnp.float64)
