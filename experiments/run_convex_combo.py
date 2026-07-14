@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import hashlib
+import importlib.util
 import json
 import time
 import traceback
@@ -30,6 +31,17 @@ from run_baselines import (
 ROOT = Path(__file__).resolve().parents[1]
 CORRECTED_K2 = ROOT / "submissions" / "corrected_k2" / "estimator.py"
 RQMC = ROOT / "submissions" / "rqmc_lattice_002" / "estimator.py"
+DEFAULT_N_SAMPLES = 1293
+
+
+def load_rqmc_estimator(n_samples: int) -> Any:
+    spec = importlib.util.spec_from_file_location(f"rqmc_lattice_{n_samples}", RQMC)
+    if spec is None or spec.loader is None:
+        raise RuntimeError(f"Cannot import estimator from {RQMC}")
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    module.N_SAMPLES = n_samples
+    return module.Estimator()
 
 
 def predict(estimator: Any, row: dict[str, Any], budget: int) -> tuple[np.ndarray, int, float]:
@@ -176,7 +188,7 @@ def run(args: argparse.Namespace) -> Path:
     calibration_rows = [row for row in rows if int(row["mlp_id"]) % 2 == args.calibration_parity]
     evaluation_rows = [row for row in rows if int(row["mlp_id"]) % 2 != args.calibration_parity]
     k2 = load_estimator(CORRECTED_K2)()
-    rqmc = load_estimator(RQMC)()
+    rqmc = load_rqmc_estimator(args.n_samples)
     calibration = fit_lambda(calibration_rows, k2, rqmc, args)
     records: list[dict[str, Any]] = []
     failures: list[dict[str, Any]] = []
@@ -214,6 +226,7 @@ def run(args: argparse.Namespace) -> Path:
             "depth_prefixes": args.prefixes,
             "calibration_parity": args.calibration_parity,
             "limit_mlps": args.limit_mlps,
+            "rqmc_n_samples": args.n_samples,
         },
         "calibration": calibration,
         "source": {
@@ -230,6 +243,7 @@ def run(args: argparse.Namespace) -> Path:
     }
     RESULTS.mkdir(exist_ok=True)
     suffix = "mini" if args.limit_mlps is None else f"mini_limit{args.limit_mlps}"
+    suffix = f"{suffix}_rqmc{args.n_samples}"
     output = RESULTS / f"convex_combo_{suffix}.json"
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return output
@@ -241,6 +255,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--prefixes", type=int, nargs="+", default=list(PREFIXES))
     parser.add_argument("--calibration-parity", type=int, choices=(0, 1), default=0)
     parser.add_argument("--limit-mlps", type=int, default=None)
+    parser.add_argument("--n-samples", type=int, default=DEFAULT_N_SAMPLES)
     return parser.parse_args()
 
 
@@ -248,6 +263,8 @@ def main() -> None:
     args = parse_args()
     if args.limit_mlps is not None and args.limit_mlps <= 1:
         raise SystemExit("--limit-mlps must be greater than 1")
+    if args.n_samples <= 0:
+        raise SystemExit("--n-samples must be positive")
     output = run(args)
     print(f"wrote {output.relative_to(ROOT)}")
 
