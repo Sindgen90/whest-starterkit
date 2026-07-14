@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import flopscope as flops
 import flopscope.numpy as fnp
-import numpy as np
 from whestbench import BaseEstimator, SetupContext
 from whestbench.domain import MLP
 
@@ -59,15 +58,15 @@ def corrected_k2_prediction(mlp: MLP) -> fnp.ndarray:
 
 def normal_lattice_samples(n_samples: int, width: int, seed: int) -> fnp.ndarray:
     rng = fnp.random.default_rng(seed + RQMC_SEED_OFFSET)
-    powers = np.empty(width, dtype=np.float64)
+    powers = []
     value = 1
     modulus = max(2, n_samples)
-    for index in range(width):
-        powers[index] = value
+    for _ in range(width):
+        powers.append(float(value))
         value = (value * 17797) % modulus
         if value == 0:
             value = 1
-    generator = fnp.array(powers)
+    generator = fnp.array(powers, dtype=fnp.float64)
     indices = fnp.arange(n_samples, dtype=fnp.float64) + 0.5
     shift = rng.uniform(0.0, 1.0, size=(width,))
     u = fnp.mod(fnp.outer(indices, generator) / n_samples + shift, 1.0)
