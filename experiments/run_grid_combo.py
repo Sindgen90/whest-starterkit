@@ -58,6 +58,34 @@ def lattice_samples(n_samples: int, width: int, seed: int, seed_offset: int, mul
     return flops.stats.norm.ppf(u).astype(fnp.float32)
 
 
+def multi_lattice_samples(
+    n_samples: int,
+    width: int,
+    seed: int,
+    seed_offset: int,
+    multiplier: int,
+    n_shifts: int,
+) -> fnp.ndarray:
+    if n_shifts <= 0:
+        raise ValueError("--n-shifts must be positive")
+    if n_samples % n_shifts:
+        raise ValueError("--n-samples must be divisible by --n-shifts")
+    per_shift = n_samples // n_shifts
+    return fnp.concatenate([
+        lattice_samples(per_shift, width, seed, seed_offset + 1_000_003 * shift_index, multiplier)
+        for shift_index in range(n_shifts)
+    ], axis=0)
+
+
+def lhs_samples(n_samples: int, width: int, seed: int, seed_offset: int) -> fnp.ndarray:
+    rng = np.random.default_rng(seed + seed_offset)
+    u = np.empty((n_samples, width), dtype=np.float64)
+    for dim in range(width):
+        u[:, dim] = (rng.permutation(n_samples) + rng.random(n_samples)) / n_samples
+    u = np.clip(u, 1e-7, 1.0 - 1e-7)
+    return flops.stats.norm.ppf(fnp.array(u, dtype=fnp.float64)).astype(fnp.float32)
+
+
 def load_sobol_direction_rows(path: Path, width: int) -> dict[int, tuple[int, int, list[int]]]:
     rows: dict[int, tuple[int, int, list[int]]] = {}
     with path.open("r", encoding="utf-8") as handle:
@@ -152,6 +180,17 @@ class GridEstimator:
             x = lattice_samples(
                 self.args.n_samples, mlp.width, mlp.seed, self.args.seed_offset, self.args.multiplier
             )
+        elif self.args.grid == "multi_lattice":
+            x = multi_lattice_samples(
+                self.args.n_samples,
+                mlp.width,
+                mlp.seed,
+                self.args.seed_offset,
+                self.args.multiplier,
+                self.args.n_shifts,
+            )
+        elif self.args.grid == "lhs":
+            x = lhs_samples(self.args.n_samples, mlp.width, mlp.seed, self.args.seed_offset)
         elif self.args.grid == "sobol":
             x = sobol_samples(
                 self.args.n_samples, mlp.width, mlp.seed, self.args.seed_offset, self.args.sobol_direction_file
@@ -350,6 +389,7 @@ def run(args: argparse.Namespace) -> Path:
             "n_samples": args.n_samples,
             "seed_offset": args.seed_offset,
             "multiplier": args.multiplier,
+            "n_shifts": args.n_shifts if args.grid == "multi_lattice" else None,
             "sobol_direction_file": str(args.sobol_direction_file) if args.grid == "sobol" else None,
             "sobol_direction_sha256": (
                 hashlib.sha256(args.sobol_direction_file.read_bytes()).hexdigest()
@@ -371,8 +411,10 @@ def run(args: argparse.Namespace) -> Path:
     RESULTS.mkdir(exist_ok=True)
     suffix = "mini" if args.limit_mlps is None else f"mini_limit{args.limit_mlps}"
     suffix = f"{suffix}_grid_{args.grid}_n{args.n_samples}_seed{args.seed_offset}"
-    if args.grid == "lattice":
+    if args.grid in {"lattice", "multi_lattice"}:
         suffix = f"{suffix}_mult{args.multiplier}"
+    if args.grid == "multi_lattice":
+        suffix = f"{suffix}_shifts{args.n_shifts}"
     output = RESULTS / f"{suffix}.json"
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return output
@@ -380,7 +422,7 @@ def run(args: argparse.Namespace) -> Path:
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--grid", choices=("lattice", "sobol", "orthogonal"), required=True)
+    parser.add_argument("--grid", choices=("lattice", "multi_lattice", "lhs", "sobol", "orthogonal"), required=True)
     parser.add_argument("--budget", type=int, default=BUDGET)
     parser.add_argument("--prefixes", type=int, nargs="+", default=list(PREFIXES))
     parser.add_argument("--calibration-parity", type=int, choices=(0, 1), default=0)
@@ -388,6 +430,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--n-samples", type=int, default=DEFAULT_N_SAMPLES)
     parser.add_argument("--seed-offset", type=int, default=DEFAULT_RQMC_SEED_OFFSET)
     parser.add_argument("--multiplier", type=int, default=DEFAULT_RQMC_MULTIPLIER)
+    parser.add_argument("--n-shifts", type=int, default=4)
     parser.add_argument("--sobol-direction-file", type=Path, default=DEFAULT_SOBOL_DIRECTION_FILE)
     return parser.parse_args()
 
@@ -400,8 +443,10 @@ def main() -> None:
         raise SystemExit("--n-samples must be positive")
     if args.grid == "sobol" and not args.sobol_direction_file.exists():
         raise SystemExit(f"Sobol direction file not found: {args.sobol_direction_file}")
-    if args.grid == "lattice" and (args.multiplier <= 0 or args.multiplier % 2 == 0):
+    if args.grid in {"lattice", "multi_lattice"} and (args.multiplier <= 0 or args.multiplier % 2 == 0):
         raise SystemExit("--multiplier must be positive and odd")
+    if args.grid == "multi_lattice" and (args.n_shifts <= 0 or args.n_samples % args.n_shifts):
+        raise SystemExit("--n-shifts must be positive and divide --n-samples")
     output = run(args)
     print(f"wrote {output.relative_to(ROOT)}")
 
