@@ -21,6 +21,9 @@ dist/
 
 # Reproducible local experiment outputs (keep shared tables separately if needed).
 results/
+!research/results/
+!research/results/*.csv
+!research/results/*.jsonl
 
 # OS
 .DS_Store
