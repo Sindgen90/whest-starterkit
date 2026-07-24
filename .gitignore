@@ -24,6 +24,9 @@ results/
 !research/results/
 !research/results/*.csv
 !research/results/*.jsonl
+research/results/*stdout.txt
+research/results/*stderr.txt
+research/results/*pid.txt
 
 # OS
 .DS_Store
