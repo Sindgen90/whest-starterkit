@@ -7,6 +7,7 @@ This is research code, not a submission estimator. It compares:
 3. K2 + raw checkpoint mean replacement;
 4. K2 + checkpoint scale/offset correction;
 5. K2 + checkpoint scale/offset plus fixed rank-4 directional correction.
+6. K2 + checkpoint scale/offset plus downstream-sensitive rank-4 correction.
 
 Holdout is intentionally gated out of this first runner.
 """
@@ -55,6 +56,7 @@ METHODS = (
     "hybrid_raw_replace",
     "hybrid_scale_offset",
     "hybrid_rank4_projected",
+    "hybrid_downstream_rank4_projected",
 )
 RANDOM_HADAMARD_COLUMNS = (11, 23, 37, 58, 91, 117, 149, 203, 221, 7, 171, 45, 199, 83, 139, 245)
 _COV_RESCALE_THRESHOLD = 1e100
@@ -136,6 +138,49 @@ def fixed_hadamard_basis(width: int, rank: int) -> fnp.ndarray:
             values.append(-scale if parity else scale)
         rows.append(values)
     return fnp.array(rows, dtype=fnp.float32)
+
+
+def modified_gram_schmidt(q: fnp.ndarray) -> fnp.ndarray:
+    columns = []
+    rank = int(q.shape[1])
+    for j in range(rank):
+        v = q[:, j]
+        for previous in columns:
+            coefficient = fnp.sum(previous * v)
+            v = v - coefficient * previous
+        norm = fnp.sqrt(fnp.sum(v * v))
+        v = v / fnp.maximum(norm, 1e-30)
+        columns.append(v)
+    return fnp.stack(columns, axis=1)
+
+
+def downstream_sensitive_basis(
+    weights: list[fnp.ndarray],
+    checkpoint_layer: int,
+    width: int,
+    rank: int,
+    block_size: int = BLOCK_SIZE,
+    iterations: int = 3,
+) -> fnp.ndarray:
+    """Leading input-side sensitivity directions for the next block.
+
+    With row-vector propagation, a correction d at checkpoint layer l flows
+    through the next block as d @ M. The high-gain directions are eigenvectors
+    of M @ M.T. We approximate the leading subspace by block power iteration,
+    initialized from the same fixed Hadamard basis used by the control method.
+    """
+    block = weights[checkpoint_layer : min(len(weights), checkpoint_layer + block_size)]
+    if not block:
+        return fixed_hadamard_basis(width, rank)
+    q = fixed_hadamard_basis(width, rank)
+    for _ in range(iterations):
+        y = q
+        for w in block:
+            y = fnp.matmul(fnp.swapaxes(w, 0, 1), y)
+        for w in reversed(block):
+            y = fnp.matmul(w, y)
+        q = modified_gram_schmidt(y)
+    return q
 
 
 def initial_k2_state(width: int) -> K2State:
@@ -266,7 +311,7 @@ def checkpoint_correction(
         stats["shrinkage"] = SHRINKAGE
         stats["correction_type"] = "scale_offset"
         return coarse_mean + correction, stats
-    elif method == "hybrid_rank4_projected":
+    elif method in {"hybrid_rank4_projected", "hybrid_downstream_rank4_projected"}:
         scale_offset, so_stats = fit_scale_offset(innovation, coarse_mean)
         residual = innovation - scale_offset
         coeffs = fnp.matmul(residual, basis)
@@ -284,7 +329,7 @@ def checkpoint_correction(
         )
         stats["unshrunk_combined_energy_ratio"] = safe_float(norm2(correction_unshrunk) / fnp.maximum(norm2(innovation), 1e-30))
         stats["shrinkage"] = SHRINKAGE
-        stats["correction_type"] = "scale_offset_rank4"
+        stats["correction_type"] = method.removeprefix("hybrid_")
         return coarse_mean + correction, stats
     else:
         raise ValueError(f"unsupported checkpoint correction method: {method}")
@@ -293,7 +338,7 @@ def checkpoint_correction(
 
 
 def run_k2_only(mlp: SimpleNamespace, budget: int) -> tuple[fnp.ndarray, dict[str, int], list[dict[str, Any]]]:
-    components = {"analytic_propagation_flops": 0, "particle_forward_flops": 0, "correction_flops": 0}
+    components = {"analytic_propagation_flops": 0, "particle_forward_flops": 0, "basis_estimation_flops": 0, "correction_flops": 0}
     rows = []
     checkpoints = []
     state = initial_k2_state(mlp.width)
@@ -315,7 +360,7 @@ def run_k2_only(mlp: SimpleNamespace, budget: int) -> tuple[fnp.ndarray, dict[st
 
 
 def run_direct_rqmc(mlp: SimpleNamespace, budget: int, seed_offset: int = RQMC_SEED_OFFSET) -> tuple[fnp.ndarray, dict[str, int], list[dict[str, Any]]]:
-    components = {"analytic_propagation_flops": 0, "particle_forward_flops": 0, "correction_flops": 0}
+    components = {"analytic_propagation_flops": 0, "particle_forward_flops": 0, "basis_estimation_flops": 0, "correction_flops": 0}
     checkpoints = []
     with flops.BudgetContext(flop_budget=budget, quiet=True, namespace="hybrid.particle_sampling") as context:
         x = normal_lattice_samples(PARTICLES, mlp.width, mlp.seed, seed_offset)
@@ -339,9 +384,13 @@ def run_direct_rqmc(mlp: SimpleNamespace, budget: int, seed_offset: int = RQMC_S
 
 
 def run_hybrid(mlp: SimpleNamespace, budget: int, method: str) -> tuple[fnp.ndarray, dict[str, int], list[dict[str, Any]]]:
-    components = {"analytic_propagation_flops": 0, "particle_forward_flops": 0, "correction_flops": 0}
+    components = {"analytic_propagation_flops": 0, "particle_forward_flops": 0, "basis_estimation_flops": 0, "correction_flops": 0}
     checkpoints = []
-    basis = fixed_hadamard_basis(mlp.width, RANK)
+    fixed_basis = None
+    if method != "hybrid_downstream_rank4_projected":
+        with flops.BudgetContext(flop_budget=budget, quiet=True, namespace="hybrid.basis") as context:
+            fixed_basis = fixed_hadamard_basis(mlp.width, RANK)
+        components["basis_estimation_flops"] += int(context.flops_used)
     state = initial_k2_state(mlp.width)
     with flops.BudgetContext(flop_budget=budget, quiet=True, namespace="hybrid.particle_sampling") as context:
         particles = normal_lattice_samples(PARTICLES, mlp.width, mlp.seed, RQMC_SEED_OFFSET)
@@ -357,6 +406,13 @@ def run_hybrid(mlp: SimpleNamespace, budget: int, method: str) -> tuple[fnp.ndar
         components["particle_forward_flops"] += int(context.flops_used)
         output_mean = coarse_mean
         if layer_index in CHECKPOINTS:
+            basis = fixed_basis
+            if method == "hybrid_downstream_rank4_projected":
+                with flops.BudgetContext(flop_budget=budget, quiet=True, namespace="hybrid.downstream_basis") as context:
+                    basis = downstream_sensitive_basis(mlp.weights, layer_index, mlp.width, RANK)
+                components["basis_estimation_flops"] += int(context.flops_used)
+            if basis is None:
+                raise RuntimeError("checkpoint basis was not initialized")
             with flops.BudgetContext(flop_budget=budget, quiet=True, namespace="hybrid.correction") as context:
                 corrected_mean, correction_stats = checkpoint_correction(
                     method,
@@ -376,6 +432,7 @@ def run_hybrid(mlp: SimpleNamespace, budget: int, method: str) -> tuple[fnp.ndar
                 "particle_var_mean": safe_float(fnp.mean(particle_variance)),
                 **diagnostics,
                 **correction_stats,
+                "basis": "downstream_sensitivity" if method == "hybrid_downstream_rank4_projected" else "fixed_hadamard",
             }
             checkpoints.append(checkpoint)
         rows.append(output_mean)
@@ -470,6 +527,7 @@ def write_summary(run_id: str, partition: str, records: list[dict[str, Any]], ch
         "mean_particle_forward_flops",
         "mean_analytic_propagation_flops",
         "mean_correction_flops",
+        "mean_basis_estimation_flops",
         "mean_paired_diff_vs_direct32",
         "median_paired_diff_vs_direct32",
         "win_fraction_vs_direct32",
@@ -526,6 +584,7 @@ def write_summary(run_id: str, partition: str, records: list[dict[str, Any]], ch
                     "mean_particle_forward_flops": component_mean("particle_forward_flops"),
                     "mean_analytic_propagation_flops": component_mean("analytic_propagation_flops"),
                     "mean_correction_flops": component_mean("correction_flops"),
+                    "mean_basis_estimation_flops": component_mean("basis_estimation_flops"),
                     "mean_paired_diff_vs_direct32": paired_mean,
                     "median_paired_diff_vs_direct32": paired_median,
                     "win_fraction_vs_direct32": win_fraction,
@@ -616,8 +675,8 @@ def write_report(
         "- inspected/reused the full-covariance K2 propagator from `examples/03_covariance_propagation.py`;\n"
         "- inspected/reused the shifted lattice RQMC generator and batched particle propagation pattern from `submission_variants/rqmc_baseline/estimator.py`;\n"
         "- implemented checkpoint logging at layers 4, 8, 12, 16, 20, 24, 28, 32;\n"
-        "- implemented raw mean replacement, scale/offset correction, and fixed rank-4 Hadamard directional correction;\n"
-        "- counted analytic propagation, particle forward, and correction FLOPs with separate flopscope budget contexts.\n\n"
+        "- implemented raw mean replacement, scale/offset correction, fixed rank-4 Hadamard directional correction, and downstream-sensitive rank-4 correction;\n"
+        "- counted analytic propagation, particle forward, basis estimation, and correction FLOPs with separate flopscope budget contexts.\n\n"
         "## Development results\n\n"
         "| Method | Mean final MSE | Mean all-layer MSE | Mean adjusted score | Mean FLOPs | Direct-32 info gain |\n"
         "| --- | ---: | ---: | ---: | ---: | ---: |\n"
@@ -629,15 +688,21 @@ def write_report(
         f"- Scale/offset energy ratio, scale/offset method: {float(by_method['hybrid_scale_offset']['mean_scale_offset_energy_ratio']):.4g}.\n"
         f"- Rank-4 directional energy ratio after scale/offset: {float(by_method['hybrid_rank4_projected']['mean_directional_energy_ratio']):.4g}.\n"
         f"- Combined unshrunk scale/offset+rank4 energy ratio: {float(by_method['hybrid_rank4_projected']['mean_unshrunk_combined_energy_ratio']):.4g}.\n\n"
+        "## Downstream-sensitive basis follow-up\n\n"
+        f"The downstream-sensitive rank-4 basis used block power iteration on the next four linear layers. "
+        f"It had mean final MSE {float(by_method['hybrid_downstream_rank4_projected']['mean_final_mse']):.6g}, "
+        f"versus {float(by_method['hybrid_rank4_projected']['mean_final_mse']):.6g} for the fixed rank-4 Hadamard basis. "
+        f"It also increased mean basis-estimation FLOPs from {float(by_method['hybrid_rank4_projected']['mean_basis_estimation_flops']):.6g} "
+        f"to {float(by_method['hybrid_downstream_rank4_projected']['mean_basis_estimation_flops']):.6g} per MLP.\n\n"
         "## Answers to the first-report questions\n\n"
         "1. Are checkpoint RQMC innovations stable across randomizations? Partly, but not enough for an aggressive correction; the diagnostic above shows material randomization noise.\n"
         "2. Are they mostly scale, offset, or directional? The scale/offset component captures only a small slice of innovation energy; most innovation is directional/noisy.\n"
         "3. Does rank-4 projection capture most of the innovation energy? No. The fixed rank-4 directions capture only a small additional part.\n"
         "4. Does checkpoint correction outperform direct averaging of the same particles? See the info-gain column. Values above one favor the hybrid over direct 32-particle averaging.\n"
         "5. Does the correction remain useful after four or more downstream layers? The final-layer result is the relevant rollout test; if final info gain is below or near one, downstream propagation did not preserve a useful correction.\n"
-        "6. Is block size four reasonable? It is a reasonable starting point mechanically, but this first fixed-basis correction is too weak/noisy to justify learned closure yet.\n\n"
+        "6. Is block size four reasonable? It is a reasonable starting point mechanically, but both the fixed-basis and downstream-sensitive corrections are too weak/noisy to justify learned closure yet.\n\n"
         "## Recommendation\n\n"
-        "Do not train a learned blockwise closure yet. The deterministic checkpoint method should first beat direct 32-particle RQMC consistently; this run is the gate for that decision.\n",
+        "Do not train a learned blockwise closure. The deterministic checkpoint method uses the same 32 particles more effectively than direct 32-particle averaging, but it fails against K2 and stronger RQMC baselines, and the downstream-sensitive basis made the rank-4 correction worse.\n",
         encoding="utf-8",
     )
     return report_path
@@ -726,4 +791,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -2,6 +2,7 @@ from __future__ import annotations
 
 import math
 import importlib.util
+import sys
 from pathlib import Path
 
 import flopscope as flops
@@ -22,6 +23,7 @@ def load_submission_module(relative_path: str):
     spec = importlib.util.spec_from_file_location(path.parent.name, path)
     assert spec is not None and spec.loader is not None
     module = importlib.util.module_from_spec(spec)
+    sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
 
@@ -60,6 +62,20 @@ def test_active_power_basis_is_deterministic_and_orthonormal() -> None:
         q1 = module.active_basis_from_gradients(gradients, width=16, rank=4)
     with flops.BudgetContext(flop_budget=10_000_000, quiet=True):
         q2 = module.active_basis_from_gradients(gradients, width=16, rank=4)
+    q1_np = np.asarray(q1, dtype=np.float64)
+    q2_np = np.asarray(q2, dtype=np.float64)
+    np.testing.assert_allclose(q1_np, q2_np, atol=1e-12)
+    np.testing.assert_allclose(q1_np.T @ q1_np, np.eye(4), atol=2e-6)
+
+
+def test_downstream_sensitive_basis_is_deterministic_and_orthonormal() -> None:
+    module = load_submission_module("research/scripts/run_hybrid_checkpoint_correction.py")
+    rng = np.random.default_rng(424242)
+    weights = [fnp.array(rng.normal(scale=0.2, size=(8, 8)), dtype=fnp.float32) for _ in range(4)]
+    with flops.BudgetContext(flop_budget=10_000_000, quiet=True):
+        q1 = module.downstream_sensitive_basis(weights, checkpoint_layer=1, width=8, rank=4, block_size=2, iterations=2)
+    with flops.BudgetContext(flop_budget=10_000_000, quiet=True):
+        q2 = module.downstream_sensitive_basis(weights, checkpoint_layer=1, width=8, rank=4, block_size=2, iterations=2)
     q1_np = np.asarray(q1, dtype=np.float64)
     q2_np = np.asarray(q2, dtype=np.float64)
     np.testing.assert_allclose(q1_np, q2_np, atol=1e-12)
