@@ -29,10 +29,12 @@ REVISION = "v1-phase1"
 BUDGET = 272_000_000_000
 SCORE_FLOOR = 0.1
 PREFIXES = (2, 4, 8, 16, 24, 32)
+ACTIVE_FEATURE_COUNT = 4 + 4 * (4 + 1) // 2
 METHODS = {
     "rqmc_baseline": ROOT / "submission_variants" / "rqmc_baseline" / "estimator.py",
     "rqmc_radial": ROOT / "submission_variants" / "rqmc_radial" / "estimator.py",
     "rqmc_hermite_random": ROOT / "submission_variants" / "rqmc_hermite_random" / "estimator.py",
+    "rqmc_hermite_active": ROOT / "submission_variants" / "rqmc_hermite_active" / "estimator.py",
 }
 
 
@@ -66,6 +68,12 @@ def estimator_config(path: Path) -> dict[str, Any]:
         "RQMC_SEED_OFFSET_A",
         "RQMC_SEED_OFFSET_B",
         "RQMC_MULTIPLIER",
+        "ACTIVE_RANK",
+        "PILOT_SAMPLES",
+        "OUTPUT_PROBES_PER_SAMPLE",
+        "POWER_ITERATIONS",
+        "PILOT_SEED_OFFSET",
+        "PROBE_SEED_OFFSET",
     ]
     return {key.lower(): getattr(module, key) for key in keys if hasattr(module, key)}
 
@@ -142,6 +150,10 @@ def evaluate_one(method: str, estimator: Any, row: dict[str, Any], args: argpars
             record["method_config"].get("rank", 8)
             + record["method_config"].get("rank", 8) * (record["method_config"].get("rank", 8) + 1) // 2
         )
+    if method == "rqmc_hermite_active":
+        record["method_config"]["feature_count"] = int(ACTIVE_FEATURE_COUNT)
+        if args.profile_active_components and hasattr(estimator, "profile_components"):
+            record["component_flops"] = estimator.profile_components(mlp, args.budget)
     return record
 
 
@@ -192,6 +204,15 @@ def write_summary(records: list[dict[str, Any]], args: argparse.Namespace) -> Pa
         "paired_diff_ci95_high",
         "raw_mse_gain_vs_rqmc",
         "adjusted_score_gain_vs_rqmc",
+        "mean_pilot_sampling_flops",
+        "mean_pilot_forward_flops",
+        "mean_pilot_reverse_flops",
+        "mean_basis_estimation_flops",
+        "mean_fold_sampling_flops",
+        "mean_feature_flops",
+        "mean_evaluation_forward_flops",
+        "mean_regression_flops",
+        "mean_profiled_total_flops",
     ]
     with summary_path.open("w", newline="", encoding="utf-8") as handle:
         writer = csv.DictWriter(handle, fieldnames=fieldnames)
@@ -219,6 +240,12 @@ def write_summary(records: list[dict[str, Any]], args: argparse.Namespace) -> Pa
                 adjusted_gain = float(base_score.mean() / cand_score.mean())
             else:
                 ci_low = ci_high = mean_diff = median_diff = win_fraction = raw_gain = adjusted_gain = float("nan")
+            component_rows = [r.get("component_flops", {}) for r in rows]
+
+            def component_mean(name: str) -> float:
+                values = [float(component[name]) for component in component_rows if name in component]
+                return float(np.mean(values)) if values else float("nan")
+
             writer.writerow(
                 {
                     "run_id": args.run_id,
@@ -241,6 +268,15 @@ def write_summary(records: list[dict[str, Any]], args: argparse.Namespace) -> Pa
                     "paired_diff_ci95_high": ci_high,
                     "raw_mse_gain_vs_rqmc": raw_gain,
                     "adjusted_score_gain_vs_rqmc": adjusted_gain,
+                    "mean_pilot_sampling_flops": component_mean("pilot_sampling_flops"),
+                    "mean_pilot_forward_flops": component_mean("pilot_forward_flops"),
+                    "mean_pilot_reverse_flops": component_mean("pilot_reverse_flops"),
+                    "mean_basis_estimation_flops": component_mean("basis_estimation_flops"),
+                    "mean_fold_sampling_flops": component_mean("fold_sampling_flops"),
+                    "mean_feature_flops": component_mean("feature_flops"),
+                    "mean_evaluation_forward_flops": component_mean("evaluation_forward_flops"),
+                    "mean_regression_flops": component_mean("regression_flops"),
+                    "mean_profiled_total_flops": component_mean("profiled_total_flops"),
                 }
             )
     return summary_path
@@ -256,6 +292,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--score-floor", type=float, default=SCORE_FLOOR)
     parser.add_argument("--hermite-rank", type=int, choices=[4, 8, 16], default=None)
     parser.add_argument("--hermite-shrinkage", type=float, choices=[0.25, 0.5, 0.75, 1.0], default=None)
+    parser.add_argument("--profile-active-components", action="store_true")
     return parser.parse_args()
 
 

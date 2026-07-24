@@ -38,13 +38,25 @@ def normal_lattice_samples(n_samples: int, width: int, seed: int, seed_offset: i
 def fixed_hadamard_basis(width: int, rank: int) -> fnp.ndarray:
     if width <= 0 or width & (width - 1):
         raise ValueError("fixed Hermite basis requires power-of-two input width")
-    if rank > len(RANDOM_HADAMARD_COLUMNS):
-        raise ValueError("rank exceeds packaged Hadamard columns")
+    if rank > width:
+        raise ValueError("rank exceeds input width")
+    columns = []
+    for col in RANDOM_HADAMARD_COLUMNS:
+        candidate = col % width
+        if candidate not in columns:
+            columns.append(candidate)
+        if len(columns) == rank:
+            break
+    fill = 1
+    while len(columns) < rank:
+        if fill not in columns:
+            columns.append(fill)
+        fill += 1
     scale = 1.0 / math.sqrt(width)
     rows = []
     for row in range(width):
         values = []
-        for col in RANDOM_HADAMARD_COLUMNS[:rank]:
+        for col in columns:
             parity = (row & col).bit_count() & 1
             values.append(-scale if parity else scale)
         rows.append(values)

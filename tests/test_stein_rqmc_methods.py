@@ -1,7 +1,11 @@
 from __future__ import annotations
 
 import math
+import importlib.util
+from pathlib import Path
 
+import flopscope as flops
+import flopscope.numpy as fnp
 import numpy as np
 
 from research.src.active_subspaces.gradients import input_jacobian_transpose_probe, relu_mlp_forward
@@ -11,6 +15,15 @@ from research.src.control_variates.hermite import (
     hermite_degree2_features_numpy,
 )
 from research.src.rqmc.points import LatticeConfig, numpy_lattice_gaussians, radial_expected_norm
+
+
+def load_submission_module(relative_path: str):
+    path = Path(relative_path)
+    spec = importlib.util.spec_from_file_location(path.parent.name, path)
+    assert spec is not None and spec.loader is not None
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
 
 
 def test_rqmc_randomizations_are_reproducible_and_independent() -> None:
@@ -26,6 +39,31 @@ def test_rqmc_randomizations_are_reproducible_and_independent() -> None:
 def test_fixed_hadamard_basis_is_orthonormal() -> None:
     q = hadamard_random_basis_numpy(width=256, rank=8)
     np.testing.assert_allclose(q.T @ q, np.eye(8), atol=1e-12)
+
+
+def test_submission_hadamard_bases_handle_validator_and_challenge_widths() -> None:
+    for relative_path in [
+        "submission_variants/rqmc_hermite_random/estimator.py",
+        "submission_variants/rqmc_hermite_active/estimator.py",
+    ]:
+        module = load_submission_module(relative_path)
+        for width in [4, 256]:
+            q = np.asarray(module.fixed_hadamard_basis(width, rank=4), dtype=np.float64)
+            np.testing.assert_allclose(q.T @ q, np.eye(4), atol=1e-12)
+
+
+def test_active_power_basis_is_deterministic_and_orthonormal() -> None:
+    module = load_submission_module("submission_variants/rqmc_hermite_active/estimator.py")
+    rng = np.random.default_rng(12345)
+    gradients = fnp.array(rng.normal(size=(16, 8)), dtype=fnp.float32)
+    with flops.BudgetContext(flop_budget=10_000_000, quiet=True):
+        q1 = module.active_basis_from_gradients(gradients, width=16, rank=4)
+    with flops.BudgetContext(flop_budget=10_000_000, quiet=True):
+        q2 = module.active_basis_from_gradients(gradients, width=16, rank=4)
+    q1_np = np.asarray(q1, dtype=np.float64)
+    q2_np = np.asarray(q2, dtype=np.float64)
+    np.testing.assert_allclose(q1_np, q2_np, atol=1e-12)
+    np.testing.assert_allclose(q1_np.T @ q1_np, np.eye(4), atol=2e-6)
 
 
 def test_hermite_degree2_features_have_zero_mean_and_identity_covariance() -> None:
@@ -93,4 +131,3 @@ def test_manual_input_jacobian_transpose_probe_matches_finite_difference() -> No
         minus = probe @ relu_mlp_forward(weights, x - perturb)
         finite_difference[index] = (plus - minus) / (2.0 * eps)
     np.testing.assert_allclose(manual, finite_difference, rtol=2e-5, atol=2e-6)
-
