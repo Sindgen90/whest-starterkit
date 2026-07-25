@@ -3,7 +3,13 @@ from __future__ import annotations
 
 import numpy as np
 
-from experiments.factorized_k3 import dense_from_factors_np
+from experiments.factorized_k3 import (
+    FactorMeta,
+    Factors,
+    dense_from_factors_np,
+    filter_factors_by_horizon,
+    genericize_factors,
+)
 
 
 def repeated_from_factors_np(a: np.ndarray, b: np.ndarray, c: np.ndarray) -> np.ndarray:
@@ -88,3 +94,46 @@ def test_linear_factor_propagation_matches_dense_tensor() -> None:
     propagated_dense = np.einsum("ijk,ia,jb,kc->abc", dense, w, w, w)
     propagated_factors = dense_from_factors_np(w.T @ a, w.T @ b, w.T @ c)
     np.testing.assert_allclose(propagated_factors, propagated_dense, rtol=1e-12, atol=1e-12)
+
+
+def test_genericize_marks_propagated_factors_unprotected() -> None:
+    factors = Factors(
+        np.ones((3, 2)),
+        np.ones((3, 2)),
+        np.ones((3, 2)),
+        [
+            FactorMeta(creation_layer=4, source_type="diagonal_correction", protected=True),
+            FactorMeta(creation_layer=4, source_type="repeated_correction", protected=True),
+        ],
+    )
+
+    generic = genericize_factors(factors)
+
+    assert [meta.protected for meta in generic.meta] == [False, False]
+    assert [meta.creation_layer for meta in generic.meta] == [4, 4]
+    assert [meta.source_type for meta in generic.meta] == ["diagonal_correction", "repeated_correction"]
+
+
+def test_horizon_filter_drops_only_stale_generic_factors() -> None:
+    a = np.arange(15, dtype=float).reshape(3, 5)
+    factors = Factors(
+        a,
+        a + 100.0,
+        a + 200.0,
+        [
+            FactorMeta(creation_layer=0, source_type="old_generic", protected=False),
+            FactorMeta(creation_layer=2, source_type="kept_generic", protected=False),
+            FactorMeta(creation_layer=0, source_type="protected_old", protected=True),
+            FactorMeta(creation_layer=3, source_type="fresh_generic", protected=False),
+            FactorMeta(creation_layer=1, source_type="dropped_generic", protected=False),
+        ],
+    )
+
+    filtered = filter_factors_by_horizon(factors, layer_index=4, generic_horizon=2)
+
+    assert [meta.source_type for meta in filtered.meta] == [
+        "kept_generic",
+        "protected_old",
+        "fresh_generic",
+    ]
+    np.testing.assert_array_equal(filtered.a, a[:, [1, 2, 3]])

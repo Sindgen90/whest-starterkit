@@ -97,7 +97,11 @@ def run(args: argparse.Namespace) -> Path:
                 continue
             prefix_mlp = truncate_mlp(base_mlp, prefix)
             target = full_target[:prefix]
-            k3 = K3Estimator(third_scale=args.third_scale)
+            k3 = K3Estimator(
+                third_scale=args.third_scale,
+                generic_horizon=args.generic_horizon,
+                max_k3_layer=args.max_k3_layer,
+            )
             try:
                 k2_result = evaluate(k2, prefix_mlp, target, args)
                 k3_result = evaluate(k3, prefix_mlp, target, args)
@@ -142,6 +146,8 @@ def run(args: argparse.Namespace) -> Path:
             "prefixes": prefixes,
             "limit_mlps": args.limit_mlps,
             "third_scale": args.third_scale,
+            "generic_horizon": args.generic_horizon,
+            "max_k3_layer": args.max_k3_layer,
         },
         "source": {
             "git_commit": git_value("rev-parse", "HEAD"),
@@ -153,8 +159,10 @@ def run(args: argparse.Namespace) -> Path:
     }
     RESULTS.mkdir(exist_ok=True)
     scale_tag = f"scale{args.third_scale:g}".replace(".", "p")
+    horizon_tag = "full" if args.generic_horizon is None else f"H{args.generic_horizon}"
+    cutoff_tag = "all" if args.max_k3_layer is None else f"L{args.max_k3_layer}"
     suffix = "mini" if args.limit_mlps is None else f"mini_limit{args.limit_mlps}"
-    suffix = f"{suffix}_{scale_tag}"
+    suffix = f"{suffix}_{scale_tag}_{horizon_tag}_{cutoff_tag}"
     output = RESULTS / f"factorized_k3_prefixes_{suffix}.json"
     output.write_text(json.dumps(result, indent=2, sort_keys=True) + "\n", encoding="utf-8")
     return output
@@ -166,6 +174,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--prefixes", type=int, nargs="+", default=[2, 4, 8])
     parser.add_argument("--limit-mlps", type=int, default=5)
     parser.add_argument("--third-scale", type=float, default=1.0)
+    parser.add_argument("--generic-horizon", type=int, default=None)
+    parser.add_argument("--max-k3-layer", type=int, default=None)
     return parser.parse_args()
 
 

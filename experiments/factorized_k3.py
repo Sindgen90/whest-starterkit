@@ -56,6 +56,60 @@ def append_factors(base: Factors, a: Any, b: Any, c: Any, meta: list[FactorMeta]
     )
 
 
+def genericize_factors(factors: Factors) -> Factors:
+    """Mark propagated correction factors as generic.
+
+    Diagonal/repeated corrections are protected at the layer where they are
+    created, because they enforce the current marginal third-cumulant and
+    repeated-index slices. Once those factors are linearly propagated into the
+    next preactivation basis, they become ordinary off-basis K3 factors. This
+    is the population finite-memory pruning should control.
+    """
+    if factors.count == 0:
+        return factors
+    return Factors(
+        factors.a,
+        factors.b,
+        factors.c,
+        [
+            FactorMeta(
+                creation_layer=meta.creation_layer,
+                source_type=meta.source_type,
+                protected=False,
+            )
+            for meta in factors.meta
+        ],
+    )
+
+
+def filter_factors_by_horizon(factors: Factors, layer_index: int, generic_horizon: int | None) -> Factors:
+    """Drop generic factors older than ``generic_horizon`` layers.
+
+    Protected factors are never dropped. With the current propagation order, a
+    factor created at layer ``k`` has age ``layer_index - k`` while computing
+    layer ``layer_index``.
+    """
+    if generic_horizon is None or factors.count == 0:
+        return factors
+    keep_indices: list[int] = []
+    keep_meta: list[FactorMeta] = []
+    for idx, meta in enumerate(factors.meta):
+        age = layer_index - meta.creation_layer
+        if meta.protected or age <= generic_horizon:
+            keep_indices.append(idx)
+            keep_meta.append(meta)
+    if len(keep_indices) == factors.count:
+        return factors
+    if not keep_indices:
+        return empty_factors(factors.a.shape[0])
+    return Factors(
+        factors.a[:, keep_indices],
+        factors.b[:, keep_indices],
+        factors.c[:, keep_indices],
+        keep_meta,
+    )
+
+
 def factor_diag(factors: Factors) -> Any:
     if factors.count == 0:
         return fnp.zeros(factors.a.shape[0])
@@ -107,8 +161,19 @@ def relu_square_hermite(mu: Any, var: Any, mean: Any, Phi: Any) -> tuple[Any, An
 
 
 class Estimator(BaseEstimator):
-    def __init__(self, third_scale: float = 1.0) -> None:
+    def __init__(
+        self,
+        third_scale: float = 1.0,
+        generic_horizon: int | None = None,
+        max_k3_layer: int | None = None,
+    ) -> None:
+        if generic_horizon is not None and generic_horizon < 0:
+            raise ValueError("generic_horizon must be non-negative or None")
+        if max_k3_layer is not None and max_k3_layer < 0:
+            raise ValueError("max_k3_layer must be non-negative or None")
         self.third_scale = third_scale
+        self.generic_horizon = generic_horizon
+        self.max_k3_layer = max_k3_layer
         self._setup_rng = None
         self.factor_history: list[dict[str, Any]] = []
 
@@ -128,21 +193,25 @@ class Estimator(BaseEstimator):
         self.factor_history = []
 
         for layer_index, w in enumerate(mlp.weights):
+            use_k3 = self.max_k3_layer is None or layer_index < self.max_k3_layer
             cov_diag = fnp.diag(cov)
             max_var_np = float(fnp.max(cov_diag))
             if max_var_np > _COV_RESCALE_THRESHOLD:
                 scale = float(fnp.sqrt(max_var_np))
                 mu = mu / scale
                 cov = cov / (scale * scale)
-                factors = Factors(factors.a / (scale ** 3), factors.b, factors.c, factors.meta)
+                if factors.count:
+                    factors = Factors(factors.a / (scale ** 3), factors.b, factors.c, factors.meta)
                 log_scale += float(fnp.log(scale))
 
             mu_pre = w.T @ mu
             cov_pre = fnp.einsum("ij,ia,jb->ab", cov, w, w)
-            if factors.count:
-                pre_factors = Factors(w.T @ factors.a, w.T @ factors.b, w.T @ factors.c, factors.meta)
+            if factors.count and use_k3:
+                propagated_meta = genericize_factors(factors).meta
+                pre_factors = Factors(w.T @ factors.a, w.T @ factors.b, w.T @ factors.c, propagated_meta)
+                pre_factors = filter_factors_by_horizon(pre_factors, layer_index, self.generic_horizon)
             else:
-                pre_factors = factors
+                pre_factors = empty_factors(width)
 
             var_pre = fnp.maximum(fnp.diag(cov_pre), 1e-12)
             mean_gauss, second, var_post, exact_diag_k3, phi, Phi = relu_gaussian_moments(
@@ -151,11 +220,11 @@ class Estimator(BaseEstimator):
             alpha = mu_pre / fnp.sqrt(var_pre)
             pre_diag_k3 = factor_diag(pre_factors)
             f3 = -alpha * phi / var_pre
-            mean_correction = self.third_scale * pre_diag_k3 * f3 / 6.0
+            mean_correction = self.third_scale * pre_diag_k3 * f3 / 6.0 if use_k3 else 0.0
             mu = mean_gauss + mean_correction
 
             gain = fnp.array(fnp.asarray(Phi, dtype=fnp.float64).astype(fnp.float32))
-            if pre_factors.count:
+            if pre_factors.count and use_k3:
                 factors = Factors(
                     gain[:, None] * pre_factors.a,
                     gain[:, None] * pre_factors.b,
@@ -163,15 +232,16 @@ class Estimator(BaseEstimator):
                     pre_factors.meta,
                 )
             else:
-                factors = pre_factors
+                factors = empty_factors(width)
 
             cov = fnp.multiply(fnp.outer(gain, gain), cov_pre)
             fnp.fill_diagonal(cov, var_post)
 
-            factors = self._append_repeated_correction(
-                layer_index, factors, cov_pre, mu_pre, var_pre, mean_gauss, second, Phi
-            )
-            factors = self._append_diagonal_correction(layer_index, factors, exact_diag_k3)
+            if use_k3:
+                factors = self._append_repeated_correction(
+                    layer_index, factors, cov_pre, mu_pre, var_pre, mean_gauss, second, Phi
+                )
+                factors = self._append_diagonal_correction(layer_index, factors, exact_diag_k3)
 
             scale_factor = float(fnp.exp(log_scale))
             rows.append(mu * scale_factor * K2_COEFFICIENT)
