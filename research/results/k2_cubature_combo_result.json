@@ -1,0 +1,1699 @@
+{
+  "calibration": {
+    "lambda": 0.8798916787983015,
+    "n_calibration_mlps": 30,
+    "objective": "final-layer least squares on development calibration rows",
+    "raw_lambda": 0.8798916787983015
+  },
+  "created_at_utc": "2026-07-25T15:21:34.592299+00:00",
+  "per_mlp": [
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 3.452072237947686e-07,
+          "all_layer_mse": 6.2536392160323165e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 3.4157088437110187e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 4.977286029505087e-07,
+          "all_layer_mse": 8.467774338430797e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 4.977286029505087e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.9473526498063477e-06,
+          "all_layer_mse": 3.0463422318919157e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.9473526498063474e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 1,
+      "mlp_name": "dustin-robinson",
+      "mlp_seed": 7821433227254944525,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 9.043694484967464e-08,
+          "all_layer_mse": 3.966632992832235e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 8.94843013206726e-07,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 9.184862207054749e-08,
+          "all_layer_mse": 4.946359074881785e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 9.184862207054749e-07,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 9.500938337792128e-07,
+          "all_layer_mse": 1.4542311067384942e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 9.500938337792128e-06,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 3,
+      "mlp_name": "donna-clarke",
+      "mlp_seed": 9015536479305889134,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 3.635795188375561e-07,
+          "all_layer_mse": 6.5005938257894415e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 3.597496495681552e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 4.6396608721513465e-07,
+          "all_layer_mse": 8.650729790407076e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 4.639660872151346e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.0504305492177748e-06,
+          "all_layer_mse": 1.406982570271068e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.0504305492177748e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 5,
+      "mlp_name": "monique-stevens",
+      "mlp_seed": 3345425850797984287,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.669916358870946e-07,
+          "all_layer_mse": 4.992923987830786e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.6523258153613508e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.4543637078621934e-07,
+          "all_layer_mse": 6.2085707305009646e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.4543637078621933e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 3.5415757703023875e-06,
+          "all_layer_mse": 1.9088559912479e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 3.541575770302387e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 7,
+      "mlp_name": "robert-huff",
+      "mlp_seed": 8211910431106971413,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 4.036483999811673e-07,
+          "all_layer_mse": 5.469415472998026e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 3.9939645364581435e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 4.1751357495609615e-07,
+          "all_layer_mse": 6.7803543637228605e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 4.175135749560961e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.3481525675557485e-06,
+          "all_layer_mse": 1.4685557522944087e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.3481525675557485e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 9,
+      "mlp_name": "annette-hansen",
+      "mlp_seed": 8072121738312699829,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 5.739580360909175e-07,
+          "all_layer_mse": 6.258176725836223e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 5.679120842964424e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.6782902865084434e-07,
+          "all_layer_mse": 7.354683500390483e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.678290286508443e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 5.743911790100048e-06,
+          "all_layer_mse": 3.1986994928065046e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 5.7439117901000476e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 11,
+      "mlp_name": "alan-campbell",
+      "mlp_seed": 5817970742836144002,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.6020785281436936e-07,
+          "all_layer_mse": 6.202236384624178e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.5746687867386557e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.3985244921462577e-07,
+          "all_layer_mse": 7.902653409885367e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.3985244921462577e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.6579879669120925e-06,
+          "all_layer_mse": 2.990612521832203e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.6579879669120923e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 13,
+      "mlp_name": "hannah-best",
+      "mlp_seed": 8665082977215717179,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 9.489346900278166e-08,
+          "all_layer_mse": 3.812434500081796e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 9.389388139685004e-07,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.5995405106017913e-07,
+          "all_layer_mse": 5.072766760175118e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.5995405106017912e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.927923780028831e-06,
+          "all_layer_mse": 1.492806769554379e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.927923780028831e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 15,
+      "mlp_name": "kenneth-frost",
+      "mlp_seed": 5525262935211922031,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.0023704737211063e-07,
+          "all_layer_mse": 4.7890950479280135e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.9812779293231734e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.1579454584925215e-07,
+          "all_layer_mse": 5.927697152203292e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.1579454584925213e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.2331394573016756e-06,
+          "all_layer_mse": 2.0079756577503557e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.2331394573016757e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 17,
+      "mlp_name": "natasha-richardson",
+      "mlp_seed": 2439796266791926107,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 3.56848058490603e-07,
+          "all_layer_mse": 6.26446737842165e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 3.5308909699181415e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.962099353385229e-07,
+          "all_layer_mse": 8.079501907304948e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.962099353385229e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 3.0931378812719537e-06,
+          "all_layer_mse": 4.10887233892607e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 3.0931378812719534e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 19,
+      "mlp_name": "jessica-benson",
+      "mlp_seed": 3254440928728510558,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.4752254464745054e-07,
+          "all_layer_mse": 4.970995018206575e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.449151948433139e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.3679048598389875e-07,
+          "all_layer_mse": 6.836110285486576e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.3679048598389873e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 8.948730385468893e-07,
+          "all_layer_mse": 1.935300697358257e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 8.948730385468892e-06,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 21,
+      "mlp_name": "olivia-hodge",
+      "mlp_seed": 1742952743072792380,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.1207338651009075e-07,
+          "all_layer_mse": 6.067130714814269e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.0983945059299176e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.223053869163443e-07,
+          "all_layer_mse": 8.037859292249988e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.2230538691634426e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.8937429711877286e-06,
+          "all_layer_mse": 1.9937931885298168e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.8937429711877286e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 23,
+      "mlp_name": "emily-ho",
+      "mlp_seed": 5830289433361027858,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.116233569178929e-07,
+          "all_layer_mse": 4.0452538023715095e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.093941615167366e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.0862386961992624e-07,
+          "all_layer_mse": 4.878517724594137e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.086238696199262e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.2845200584873771e-06,
+          "all_layer_mse": 1.433150354538496e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.284520058487377e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 25,
+      "mlp_name": "courtney-roth",
+      "mlp_seed": 4151348593281209047,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.6777181485093977e-07,
+          "all_layer_mse": 7.686530840350532e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.6495116354421e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.01836509717854e-07,
+          "all_layer_mse": 1.02831025448361e-05,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.01836509717854e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.397198692044365e-06,
+          "all_layer_mse": 1.995760842771822e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.3971986920443649e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 27,
+      "mlp_name": "robert-williams",
+      "mlp_seed": 29094295104912005,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.423168241163008e-07,
+          "all_layer_mse": 4.955855645217996e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.3976431026428565e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.5430430554857966e-07,
+          "all_layer_mse": 6.0716052479724545e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.5430430554857967e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.5495685654833438e-06,
+          "all_layer_mse": 1.5773627783732933e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.5495685654833437e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 29,
+      "mlp_name": "elizabeth-jackson",
+      "mlp_seed": 4864330985261417965,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 9.099165107036265e-08,
+          "all_layer_mse": 4.753048678619919e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 9.003316438409214e-07,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.617937302838756e-07,
+          "all_layer_mse": 6.763294367520829e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.617937302838756e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.7364578445622007e-06,
+          "all_layer_mse": 2.9152147007820828e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.7364578445622006e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 31,
+      "mlp_name": "martin-hill",
+      "mlp_seed": 7426826668401224606,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.6879483546371966e-07,
+          "all_layer_mse": 5.799943906494092e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.670167865922019e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.852071577694489e-07,
+          "all_layer_mse": 7.4920924341275844e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.852071577694489e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.79971746579048e-06,
+          "all_layer_mse": 2.3505040487032522e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.79971746579048e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 33,
+      "mlp_name": "michele-wright",
+      "mlp_seed": 1996119545263823069,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 5.353694491104325e-07,
+          "all_layer_mse": 6.829182521106636e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 5.297299812782518e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 6.595846517128097e-07,
+          "all_layer_mse": 9.697904459531171e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 6.5958465171280965e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.7585392347660625e-06,
+          "all_layer_mse": 2.3883890785862738e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.7585392347660625e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 35,
+      "mlp_name": "bobby-vasquez",
+      "mlp_seed": 5113263437328086251,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 7.248600572383502e-07,
+          "all_layer_mse": 7.3998757193137865e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 7.172245356701683e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 9.761783902354527e-07,
+          "all_layer_mse": 9.28678223097693e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 9.761783902354528e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.846753713067556e-06,
+          "all_layer_mse": 2.13972131858796e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.846753713067556e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 37,
+      "mlp_name": "kyle-braun",
+      "mlp_seed": 6520148214937703718,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 7.937617405904089e-08,
+          "all_layer_mse": 4.321819427319915e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 7.854004233544079e-07,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.050052201048381e-07,
+          "all_layer_mse": 5.498028296362064e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.0500522010483809e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 9.168706570013173e-07,
+          "all_layer_mse": 1.3578451156184075e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 9.168706570013172e-06,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 39,
+      "mlp_name": "kara-garrett",
+      "mlp_seed": 3951964080977065832,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.0493882346781368e-07,
+          "all_layer_mse": 4.2536911356812925e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.027800415193254e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.0923224904658896e-07,
+          "all_layer_mse": 5.669775561483876e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.0923224904658894e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.8389857420639233e-06,
+          "all_layer_mse": 1.953420683602188e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.8389857420639232e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 41,
+      "mlp_name": "tammy-hopkins",
+      "mlp_seed": 1840051304918019304,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 6.339083521772134e-07,
+          "all_layer_mse": 6.863821637143007e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 6.272308965125426e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 5.577797661286142e-07,
+          "all_layer_mse": 8.063891487584312e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 5.577797661286141e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 3.7421649159614174e-06,
+          "all_layer_mse": 2.9679511188954747e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 3.742164915961417e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 43,
+      "mlp_name": "christy-johnson",
+      "mlp_seed": 5578376257470080402,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.3175701040243532e-07,
+          "all_layer_mse": 4.916880456047174e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.3036911009720972e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.2514548601837364e-07,
+          "all_layer_mse": 6.95456145690483e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.2514548601837364e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.0175350672503342e-06,
+          "all_layer_mse": 2.4985711575046338e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.017535067250334e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 45,
+      "mlp_name": "ryan-harvey",
+      "mlp_seed": 8821631650940657391,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 4.011259928121357e-07,
+          "all_layer_mse": 5.221763731310581e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 3.969006169770477e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.205808062767157e-07,
+          "all_layer_mse": 6.292661963048644e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.2058080627671566e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 3.5539373499285673e-06,
+          "all_layer_mse": 1.9927841263939188e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 3.553937349928567e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 47,
+      "mlp_name": "debbie-anderson",
+      "mlp_seed": 2334896088817720716,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.8522080736380946e-07,
+          "all_layer_mse": 5.645502688287855e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.8221635208368563e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.892263550990166e-07,
+          "all_layer_mse": 7.419042228351573e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.8922635509901655e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.4250501530796538e-06,
+          "all_layer_mse": 1.726119411584132e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.4250501530796537e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 49,
+      "mlp_name": "mark-cole",
+      "mlp_seed": 2487389659154495347,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.3735595593183015e-07,
+          "all_layer_mse": 5.973414620878404e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.348556988094295e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.1270856042272685e-07,
+          "all_layer_mse": 7.256493237908071e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.1270856042272685e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.9798264115689388e-06,
+          "all_layer_mse": 2.2814394029003546e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.9798264115689388e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 51,
+      "mlp_name": "brittney-massey",
+      "mlp_seed": 67195899697432634,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 7.427344521735303e-07,
+          "all_layer_mse": 7.783186472140771e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 7.3491064553337774e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 8.546158711804289e-07,
+          "all_layer_mse": 1.0014457881889545e-05,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 8.54615871180429e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.3640528460477945e-06,
+          "all_layer_mse": 1.7330180027701736e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.3640528460477944e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 53,
+      "mlp_name": "alexandra-reid",
+      "mlp_seed": 174431595830747969,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 4.917621676865686e-07,
+          "all_layer_mse": 6.3871035187895165e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 4.865820496758006e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 7.29083925680487e-07,
+          "all_layer_mse": 9.058966337765387e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 7.290839256804869e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.852157840364483e-06,
+          "all_layer_mse": 1.926198525810484e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.852157840364483e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 55,
+      "mlp_name": "tyler-garcia",
+      "mlp_seed": 7588235383793263531,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.29415511632799e-07,
+          "all_layer_mse": 3.890386158237509e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.280522761772625e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.4334159197013782e-07,
+          "all_layer_mse": 5.218123733157539e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.433415919701378e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.3716495131045493e-06,
+          "all_layer_mse": 1.234747023816923e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.3716495131045493e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 57,
+      "mlp_name": "ashley-smith",
+      "mlp_seed": 1951067028246804444,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 3.6572849211274825e-07,
+          "all_layer_mse": 5.111155800355126e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 3.618759860162407e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 4.5283590748738943e-07,
+          "all_layer_mse": 6.530023349776419e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 4.528359074873894e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.2405725036602585e-06,
+          "all_layer_mse": 1.5815517527300708e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.2405725036602585e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 59,
+      "mlp_name": "shane-long",
+      "mlp_seed": 3893556319933503807,
+      "split": "development_selection"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 5.310941456028227e-07,
+          "all_layer_mse": 5.874778273548929e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 5.254997129078617e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 4.601665671650674e-07,
+          "all_layer_mse": 7.692660424958714e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 4.601665671650674e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 4.420854109856821e-06,
+          "all_layer_mse": 2.2889058482556787e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 4.420854109856821e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 60,
+      "mlp_name": "david-tyler",
+      "mlp_seed": 3941966022256604699,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.8244505163062264e-07,
+          "all_layer_mse": 7.520471631515452e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.8052321428723097e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.0175814603065076e-07,
+          "all_layer_mse": 9.495000065333404e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.0175814603065074e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.4010831263405073e-06,
+          "all_layer_mse": 1.634810306225738e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.401083126340507e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 61,
+      "mlp_name": "nathan-martinez",
+      "mlp_seed": 5126150748178284430,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.473462541608133e-07,
+          "all_layer_mse": 6.273568059594796e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.4579414007975593e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.1974556196462117e-07,
+          "all_layer_mse": 7.64551620870517e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.1974556196462116e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.7954922506373273e-06,
+          "all_layer_mse": 2.7172730039568924e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.795492250637327e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 62,
+      "mlp_name": "anthony-park",
+      "mlp_seed": 5494814548792769932,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.8472482164787765e-07,
+          "all_layer_mse": 4.475971435150305e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.8277896969233648e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.6434325436860902e-07,
+          "all_layer_mse": 5.6059884924280815e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.6434325436860901e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.0885588575034225e-06,
+          "all_layer_mse": 2.32264898626459e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.0885588575034225e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 63,
+      "mlp_name": "frederick-vargas",
+      "mlp_seed": 1944531588924198400,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 5.182525236435817e-07,
+          "all_layer_mse": 6.5161771535557095e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 5.127933618612074e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 5.462958041005708e-07,
+          "all_layer_mse": 8.544085335391802e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 5.462958041005707e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 3.3159162639300656e-06,
+          "all_layer_mse": 2.6758295950949955e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 3.315916263930065e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 64,
+      "mlp_name": "kenneth-curry",
+      "mlp_seed": 3477402779569387684,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.4614687474869444e-07,
+          "all_layer_mse": 5.345155004255379e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.4355401595848215e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.7674280692901445e-07,
+          "all_layer_mse": 6.590886475990861e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.7674280692901444e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.992608545231024e-06,
+          "all_layer_mse": 2.427420827430996e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.9926085452310242e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 65,
+      "mlp_name": "daniel-petersen",
+      "mlp_seed": 4979521079041886647,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 4.5577419507172154e-07,
+          "all_layer_mse": 5.7956727052241205e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 4.509731667050191e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 5.544030085625926e-07,
+          "all_layer_mse": 7.706612276969807e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 5.5440300856259255e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.5277155511215196e-06,
+          "all_layer_mse": 2.069834949642389e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.5277155511215196e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 66,
+      "mlp_name": "david-wilson",
+      "mlp_seed": 2069243912648558113,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 5.239354636099719e-07,
+          "all_layer_mse": 6.754966018498091e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 5.184164389475137e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 4.597226186438089e-07,
+          "all_layer_mse": 8.893001685156703e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 4.5972261864380885e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 5.312948057893288e-06,
+          "all_layer_mse": 2.601616535180924e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 5.312948057893288e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 67,
+      "mlp_name": "kimberly-mayo",
+      "mlp_seed": 4398870745399116725,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.794692415208202e-07,
+          "all_layer_mse": 4.816652416377459e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.765253720111584e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.5120705342353615e-07,
+          "all_layer_mse": 6.342045369834025e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.5120705342353615e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.6472826418502805e-06,
+          "all_layer_mse": 3.0326020738827614e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.6472826418502804e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 68,
+      "mlp_name": "mary-nichols",
+      "mlp_seed": 2767557961603321037,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.9424996613247208e-07,
+          "all_layer_mse": 5.657977462072828e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.922037783322035e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.309819176089022e-07,
+          "all_layer_mse": 7.250964442651968e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.309819176089022e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 3.541655744358534e-06,
+          "all_layer_mse": 1.9954272822457882e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 3.541655744358534e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 69,
+      "mlp_name": "theodore-anderson",
+      "mlp_seed": 3690016801269695908,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 4.5093769734110874e-07,
+          "all_layer_mse": 6.752559060977469e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 4.461876156121301e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 6.838451937410205e-07,
+          "all_layer_mse": 9.626229961510513e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 6.838451937410204e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.272300234056796e-06,
+          "all_layer_mse": 1.5237377883430286e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.2723002340567959e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 70,
+      "mlp_name": "michael-cooper",
+      "mlp_seed": 5555237845188639863,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 4.553088997780729e-07,
+          "all_layer_mse": 7.03479142580329e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 4.505127727329632e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 5.404761186342949e-07,
+          "all_layer_mse": 8.644272803034137e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 5.404761186342949e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 3.923131392561123e-06,
+          "all_layer_mse": 3.08333365684542e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 3.923131392561123e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 71,
+      "mlp_name": "savannah-hayes",
+      "mlp_seed": 654821935782003145,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.330534064943376e-07,
+          "all_layer_mse": 4.366882999745656e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.305984715119833e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.852423088859884e-07,
+          "all_layer_mse": 5.911570743208367e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.852423088859884e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.1860888679440047e-06,
+          "all_layer_mse": 1.8522275990081852e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.1860888679440045e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 72,
+      "mlp_name": "terri-butler",
+      "mlp_seed": 6461773105632158079,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.793783126665007e-07,
+          "all_layer_mse": 5.7751055714773556e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.764354009820376e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.080699830318459e-07,
+          "all_layer_mse": 7.006389663084131e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.080699830318459e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.590572526693087e-06,
+          "all_layer_mse": 1.9914328475660713e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.590572526693087e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 73,
+      "mlp_name": "david-anderson",
+      "mlp_seed": 8040002486422725535,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.0074176091999113e-06,
+          "all_layer_mse": 7.954593815724821e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 9.968056865171819e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.2138800355356721e-06,
+          "all_layer_mse": 1.0191651189617807e-05,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.2138800355356721e-05,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 1.5442663456053028e-06,
+          "all_layer_mse": 1.9226275319484172e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 1.5442663456053028e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 74,
+      "mlp_name": "heidi-willis",
+      "mlp_seed": 7041497453121750145,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.1058798398820996e-06,
+          "all_layer_mse": 9.677509504620313e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.094230737017461e-05,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.194150518147645e-06,
+          "all_layer_mse": 1.1820077667335869e-05,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.194150518147645e-05,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.3542544491689135e-06,
+          "all_layer_mse": 2.1097055552228383e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.354254449168913e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 75,
+      "mlp_name": "charles-johnson",
+      "mlp_seed": 2182232567014280554,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 1.710605100766458e-07,
+          "all_layer_mse": 5.150459970073597e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 1.6925859507096776e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.5678055333383877e-07,
+          "all_layer_mse": 6.200530838091608e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.5678055333383877e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.4601997345363365e-06,
+          "all_layer_mse": 2.9947045229600548e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.4601997345363364e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 76,
+      "mlp_name": "jerry-thomas",
+      "mlp_seed": 4319107550651361902,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.8102039395904904e-07,
+          "all_layer_mse": 4.6657101430815414e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.7806018493974075e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 3.031646014712718e-07,
+          "all_layer_mse": 5.975702518910589e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 3.031646014712718e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 8.014480530160361e-07,
+          "all_layer_mse": 1.268837582987204e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 8.01448053016036e-06,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 77,
+      "mlp_name": "ricky-vincent",
+      "mlp_seed": 7148157823917380068,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": true,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.2041752809354414e-07,
+          "all_layer_mse": 4.879691571414281e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.1809569676492095e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 2.2389035209544265e-07,
+          "all_layer_mse": 6.398685868421721e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 2.2389035209544265e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 5.272741804136834e-06,
+          "all_layer_mse": 2.1998287737318982e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 5.272741804136833e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 78,
+      "mlp_name": "dan-weeks",
+      "mlp_seed": 8230340203792362246,
+      "split": "validation_frozen_lambda"
+    },
+    {
+      "combo_win_vs_cubature": false,
+      "combo_win_vs_k2": true,
+      "lambda": 0.8798916787983015,
+      "metrics": {
+        "combo": {
+          "adjusted_score": 2.080734551985057e-07,
+          "all_layer_mse": 5.424235240490357e-06,
+          "budget_fraction": 0.1010645929117647,
+          "final_mse": 2.058816537065221e-06,
+          "flops": 27489569272.0
+        },
+        "cubature": {
+          "adjusted_score": 1.7552644370388274e-07,
+          "all_layer_mse": 6.413338284610293e-06,
+          "budget_fraction": 0.09512091867647059,
+          "final_mse": 1.7552644370388272e-06,
+          "flops": 25872889880.0
+        },
+        "k2": {
+          "adjusted_score": 2.152336300981606e-06,
+          "all_layer_mse": 2.1016564756144133e-05,
+          "budget_fraction": 0.005943523647058823,
+          "final_mse": 2.1523363009816058e-05,
+          "flops": 1616638432.0
+        }
+      },
+      "mlp_id": 79,
+      "mlp_name": "allen-davis",
+      "mlp_seed": 7609145052174464335,
+      "split": "validation_frozen_lambda"
+    }
+  ],
+  "run_id": "b7669073-c722-4e89-83f8-6679a33a6aef",
+  "schema_version": "1.0",
+  "summary": [
+    {
+      "lambda": NaN,
+      "max_final_mse": 5.7439117901000476e-05,
+      "mean_adjusted_score": 2.0985960276747776e-06,
+      "mean_final_mse": 2.098596027674777e-05,
+      "mean_flops": 1616638432.0,
+      "median_final_mse": 1.8729504057761055e-05,
+      "method": "k2",
+      "n_completed": 30,
+      "se_final_mse": 1.9261954402655235e-06,
+      "split": "development_selection",
+      "win_fraction_vs_cubature": NaN,
+      "worst_decile_final_mse": 4.346671351996678e-05
+    },
+    {
+      "lambda": NaN,
+      "max_final_mse": 9.761783902354528e-06,
+      "mean_adjusted_score": 3.634104498431812e-07,
+      "mean_final_mse": 3.634104498431812e-06,
+      "mean_flops": 25872889880.0,
+      "median_final_mse": 3.2144309659652996e-06,
+      "method": "cubature",
+      "n_completed": 30,
+      "se_final_mse": 3.942750202401202e-07,
+      "split": "development_selection",
+      "win_fraction_vs_cubature": NaN,
+      "worst_decile_final_mse": 8.532927290321229e-06
+    },
+    {
+      "lambda": 0.8798916787983015,
+      "max_final_mse": 7.3491064553337774e-06,
+      "mean_adjusted_score": 3.086885282288836e-07,
+      "mean_final_mse": 3.0543686897189274e-06,
+      "mean_flops": 27489569272.0,
+      "median_final_mse": 2.5119103675858974e-06,
+      "method": "combo",
+      "n_completed": 30,
+      "se_final_mse": 3.364008173387199e-07,
+      "split": "development_selection",
+      "win_fraction_vs_cubature": 0.8,
+      "worst_decile_final_mse": 6.93122025905363e-06
+    },
+    {
+      "lambda": NaN,
+      "max_final_mse": 5.312948057893288e-05,
+      "mean_adjusted_score": 2.6800727428711416e-06,
+      "mean_final_mse": 2.6800727428711414e-05,
+      "mean_flops": 1616638432.0,
+      "median_final_mse": 2.407227091852625e-05,
+      "method": "k2",
+      "n_completed": 20,
+      "se_final_mse": 2.840630227750968e-06,
+      "split": "validation_frozen_lambda",
+      "win_fraction_vs_cubature": NaN,
+      "worst_decile_final_mse": 5.292844931015061e-05
+    },
+    {
+      "lambda": NaN,
+      "max_final_mse": 1.2138800355356721e-05,
+      "mean_adjusted_score": 4.125196423689138e-07,
+      "mean_final_mse": 4.125196423689138e-06,
+      "mean_flops": 25872889880.0,
+      "median_final_mse": 2.942034551786301e-06,
+      "method": "cubature",
+      "n_completed": 20,
+      "se_final_mse": 7.082102460192621e-07,
+      "split": "validation_frozen_lambda",
+      "win_fraction_vs_cubature": NaN,
+      "worst_decile_final_mse": 1.2040152768416586e-05
+    },
+    {
+      "lambda": 0.8798916787983015,
+      "max_final_mse": 1.094230737017461e-05,
+      "mean_adjusted_score": 3.837993095229587e-07,
+      "mean_final_mse": 3.7975644928193386e-06,
+      "mean_flops": 27489569272.0,
+      "median_final_mse": 2.76480386496598e-06,
+      "method": "combo",
+      "n_completed": 20,
+      "se_final_mse": 5.861198805014673e-07,
+      "split": "validation_frozen_lambda",
+      "win_fraction_vs_cubature": 0.6,
+      "worst_decile_final_mse": 1.0455182117673214e-05
+    }
+  ]
+}
