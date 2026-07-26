@@ -1,0 +1,5 @@
+split,method,n,mean_final_mse,mean_adjusted_score,mean_flops,win_fraction_vs_stack
+development_selection,cubature,30,3.6341044984318128e-06,3.634104498431811e-07,25872889880,
+development_selection,current_k2_combo,30,3.0543686897189355e-06,3.086890801712736e-07,27489618424,
+development_selection,diag_k3_residual_stack,30,2.94143832408275e-06,3.1478333301860962e-07,29108571096,
+development_selection,final_only_energy_chain,30,0.6722815517729832,0.06722815517729829,6292224,0.0
