@@ -8,6 +8,8 @@ from research.src.rqmc.partition_diagnostics import (
     partition_means,
     partition_mse,
     random_disjoint_partitions,
+    structured_six_way_partitions,
+    validate_disjoint_partition,
 )
 
 
@@ -48,3 +50,52 @@ def test_partition_validation() -> None:
         random_disjoint_partitions(25, 6, 2, seed=0)
     with pytest.raises(ValueError, match="shape"):
         partition_means(np.ones(24), np.arange(24).reshape(1, 6, 4))
+
+
+def test_structured_partition_families_are_disjoint_covers() -> None:
+    partitions = structured_six_way_partitions(
+        n_points=24,
+        n_groups=6,
+        affine_multiplier=5,
+        affine_offset=7,
+    )
+    assert set(partitions) == {
+        "true_residue_cosets",
+        "contiguous_blocks",
+        "antithetic_pair_blocks",
+        "affine_index_blocks",
+        "bit_reversed_blocks",
+    }
+    for partition in partitions.values():
+        assert partition.shape == (6, 4)
+        validate_disjoint_partition(partition, 24)
+
+
+def test_true_cosets_and_antithetic_blocks_preserve_antipodal_pairs() -> None:
+    partitions = structured_six_way_partitions(
+        n_points=48,
+        n_groups=6,
+        affine_multiplier=5,
+        affine_offset=7,
+    )
+    for family in ("true_residue_cosets", "antithetic_pair_blocks"):
+        for group in partitions[family]:
+            members = set(int(value) for value in group)
+            for index in group:
+                partner = (int(index) + 24) % 48
+                assert partner in members
+
+
+def test_structured_partitions_reconstruct_the_full_average() -> None:
+    rng = np.random.default_rng(81)
+    values = rng.normal(size=(48, 5))
+    partitions = structured_six_way_partitions(
+        n_points=48,
+        n_groups=6,
+        affine_multiplier=5,
+        affine_offset=7,
+    )
+    stacked = np.stack(list(partitions.values()), axis=0)
+    means = partition_means(values, stacked)
+    expected = np.repeat(values.mean(axis=0)[None, :], len(stacked), axis=0)
+    np.testing.assert_allclose(means.mean(axis=1), expected, atol=1e-15)
