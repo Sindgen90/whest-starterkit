@@ -1,0 +1,560 @@
+{
+  "protocol": "PROTOCOL.md: independent projection and assessment streams; n=16,d=8, individual discarded distinct CP columns at post-layer index 2. No rule fitted from references.",
+  "source_sha256": {
+    "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\three_approaches_20261005\\repair_diagnostic\\estimator.py": "465040624bef6042a26562cd92eb9b11fb06d618f7d8af86718ec12c63fceb99",
+    "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\three_approaches_20261005\\allocation\\estimator.py": "a0ccebe7e9716c1822c8364a4cd6255d7bccc5a86081ee5fc97f7a0a3f8a01a1"
+  },
+  "records": [
+    {
+      "weight_seed": 20261061,
+      "weights_sha256": "d88fded0df83e15c78bb20a3fcb908893c2ebf44e04af9f5d61e50edbd3f3779",
+      "baseline_counts": {
+        "flops": 1079638,
+        "wall_s": 0.255484700013767,
+        "residual_s": 0.02957390008668881,
+        "multiplier": 0.1
+      },
+      "rank_correlation_with_benefit": {
+        "norm": -0.15294117647058825,
+        "sensitivity": 0.09999999999999999,
+        "offline_error_weighted": 0.19117647058823528
+      },
+      "weighted_correlation_with_effect_magnitude": 0.6558823529411765,
+      "informative": true,
+      "repairs": [
+        {
+          "column": 0,
+          "coefficient": -0.5274715181826979,
+          "norm_bound": 0.9884855151176453,
+          "unit_sensitivity": 0.0001707394258119166,
+          "sensitivity_rank_score": 0.000168773447512649,
+          "offline_error_weighted_score": 8.902318950276822e-05,
+          "benefit": 1.8981470549791545e-05,
+          "delta_raw_mse": -1.8981470549791545e-05,
+          "delta_95_sampling": [
+            -2.5995048138924932e-05,
+            -1.1967892960658157e-05
+          ],
+          "mean_change_norm": 0.006332222336478679,
+          "finite": true
+        },
+        {
+          "column": 1,
+          "coefficient": 1.8424740798413128,
+          "norm_bound": 1.1025816202163696,
+          "unit_sensitivity": 0.0005413339240476489,
+          "sensitivity_rank_score": 0.0005968648474663496,
+          "offline_error_weighted_score": 0.0010997080244123936,
+          "benefit": -0.00015933475926178248,
+          "delta_raw_mse": 0.00015933475926178248,
+          "delta_95_sampling": [
+            0.00014697879815889412,
+            0.00017169072036467083
+          ],
+          "mean_change_norm": 0.017568174796060765,
+          "finite": true
+        },
+        {
+          "column": 2,
+          "coefficient": -1.7033110677822416,
+          "norm_bound": 0.15697665512561798,
+          "unit_sensitivity": 0.0005717037711292505,
+          "sensitivity_rank_score": 8.974414959084243e-05,
+          "offline_error_weighted_score": 0.00015286220877896994,
+          "benefit": 3.953380527749701e-06,
+          "delta_raw_mse": -3.953380527749701e-06,
+          "delta_95_sampling": [
+            -5.114194975029801e-06,
+            -2.7925660804696e-06
+          ],
+          "mean_change_norm": 0.0031845779797090978,
+          "finite": true
+        },
+        {
+          "column": 3,
+          "coefficient": 0.5044945455615867,
+          "norm_bound": 1.0167021751403809,
+          "unit_sensitivity": 0.0011266516521573067,
+          "sensitivity_rank_score": 0.0011454691411927342,
+          "offline_error_weighted_score": 0.0005778829217888415,
+          "benefit": 2.251552416183068e-05,
+          "delta_raw_mse": -2.251552416183068e-05,
+          "delta_95_sampling": [
+            -3.5614846431374475e-05,
+            -9.416201892286886e-06
+          ],
+          "mean_change_norm": 0.009765304486980497,
+          "finite": true
+        },
+        {
+          "column": 4,
+          "coefficient": 0.23328472870260777,
+          "norm_bound": 2.6726107597351074,
+          "unit_sensitivity": 0.0007873802096582949,
+          "sensitivity_rank_score": 0.002104360843077302,
+          "offline_error_weighted_score": 0.0004909152630716562,
+          "benefit": -7.063830608289797e-05,
+          "delta_raw_mse": 7.063830608289797e-05,
+          "delta_95_sampling": [
+            6.354942043795101e-05,
+            7.772719172784493e-05
+          ],
+          "mean_change_norm": 0.01145409007881759,
+          "finite": true
+        },
+        {
+          "column": 5,
+          "coefficient": 1.3401639352642556,
+          "norm_bound": 0.3174179792404175,
+          "unit_sensitivity": 0.00045589933870360255,
+          "sensitivity_rank_score": 0.00014471064787358046,
+          "offline_error_weighted_score": 0.00019393599359318614,
+          "benefit": -9.685425426808242e-05,
+          "delta_raw_mse": 9.685425426808242e-05,
+          "delta_95_sampling": [
+            9.310104175929925e-05,
+            0.0001006074667768656
+          ],
+          "mean_change_norm": 0.008063406294348372,
+          "finite": true
+        },
+        {
+          "column": 6,
+          "coefficient": 1.6157682520334047,
+          "norm_bound": 2.212615966796875,
+          "unit_sensitivity": 0.0017463655676692724,
+          "sensitivity_rank_score": 0.0038640364073216915,
+          "offline_error_weighted_score": 0.0062433872371912,
+          "benefit": 3.878282492377455e-05,
+          "delta_raw_mse": -3.878282492377455e-05,
+          "delta_95_sampling": [
+            -0.0001374499482758057,
+            5.988429842825658e-05
+          ],
+          "mean_change_norm": 0.06517085179267965,
+          "finite": true
+        },
+        {
+          "column": 7,
+          "coefficient": 9.01922035988233,
+          "norm_bound": 0.03835742920637131,
+          "unit_sensitivity": 0.0007960519287735224,
+          "sensitivity_rank_score": 3.05345056403894e-05,
+          "offline_error_weighted_score": 0.00027539744041860104,
+          "benefit": 0.00011291049791820619,
+          "delta_raw_mse": -0.00011291049791820619,
+          "delta_95_sampling": [
+            -0.00011598210157481486,
+            -0.00010983889426159753
+          ],
+          "mean_change_norm": 0.006245650222467704,
+          "finite": true
+        },
+        {
+          "column": 8,
+          "coefficient": -1.448827452296146,
+          "norm_bound": 0.6439714431762695,
+          "unit_sensitivity": 0.0014179382706061006,
+          "sensitivity_rank_score": 0.0009131117258220911,
+          "offline_error_weighted_score": 0.0013229413889348507,
+          "benefit": 0.00011243535748493539,
+          "delta_raw_mse": -0.00011243535748493539,
+          "delta_95_sampling": [
+            -0.00011983211589180508,
+            -0.0001050385990780657
+          ],
+          "mean_change_norm": 0.008639180796218485,
+          "finite": true
+        },
+        {
+          "column": 9,
+          "coefficient": 0.6815902034890594,
+          "norm_bound": 0.6943963766098022,
+          "unit_sensitivity": 0.002526553813368082,
+          "sensitivity_rank_score": 0.001754429773427546,
+          "offline_error_weighted_score": 0.0011958021204918623,
+          "benefit": -2.6853367430803846e-06,
+          "delta_raw_mse": 2.6853367430803846e-06,
+          "delta_95_sampling": [
+            9.195355055168296e-07,
+            4.45113798064394e-06
+          ],
+          "mean_change_norm": 0.004479984287130906,
+          "finite": true
+        },
+        {
+          "column": 10,
+          "coefficient": 1.7079490495760166,
+          "norm_bound": 1.0007591247558594,
+          "unit_sensitivity": 0.00033606967190280557,
+          "sensitivity_rank_score": 0.0003363247960805893,
+          "offline_error_weighted_score": 0.0005744256195612252,
+          "benefit": -0.0005446774337351855,
+          "delta_raw_mse": 0.0005446774337351855,
+          "delta_95_sampling": [
+            0.0005349922369611702,
+            0.0005543626305092008
+          ],
+          "mean_change_norm": 0.028706258064563984,
+          "finite": true
+        },
+        {
+          "column": 11,
+          "coefficient": 3.8520124282739894,
+          "norm_bound": 0.8433478474617004,
+          "unit_sensitivity": 0.0025700617115944624,
+          "sensitivity_rank_score": 0.0021674560848623514,
+          "offline_error_weighted_score": 0.008349067531526089,
+          "benefit": 0.0005396939612139822,
+          "delta_raw_mse": -0.0005396939612139822,
+          "delta_95_sampling": [
+            -0.0006324665717849949,
+            -0.00044692135064296944
+          ],
+          "mean_change_norm": 0.06967369027141287,
+          "finite": true
+        },
+        {
+          "column": 12,
+          "coefficient": -1.7394071775019084,
+          "norm_bound": 0.37518203258514404,
+          "unit_sensitivity": 0.0002507407043594867,
+          "sensitivity_rank_score": 9.407340257894248e-05,
+          "offline_error_weighted_score": 0.0001636319502722472,
+          "benefit": 3.9174693639031536e-05,
+          "delta_raw_mse": -3.9174693639031536e-05,
+          "delta_95_sampling": [
+            -5.0500244383831206e-05,
+            -2.7849142894231865e-05
+          ],
+          "mean_change_norm": 0.007031313849325395,
+          "finite": true
+        },
+        {
+          "column": 13,
+          "coefficient": 1.9044330470358204,
+          "norm_bound": 0.4560098648071289,
+          "unit_sensitivity": 0.00039763186941854656,
+          "sensitivity_rank_score": 0.0001813240523915738,
+          "offline_error_weighted_score": 0.0003453195095062256,
+          "benefit": -0.00017713482169224787,
+          "delta_raw_mse": 0.00017713482169224787,
+          "delta_95_sampling": [
+            0.0001641259772756277,
+            0.00019014366610886803
+          ],
+          "mean_change_norm": 0.021591394119635236,
+          "finite": true
+        },
+        {
+          "column": 14,
+          "coefficient": -7.15945709468022,
+          "norm_bound": 0.10275918245315552,
+          "unit_sensitivity": 0.0010497524635866284,
+          "sensitivity_rank_score": 0.00010787170322146267,
+          "offline_error_weighted_score": 0.0007723028538748622,
+          "benefit": -9.2037752378481e-05,
+          "delta_raw_mse": 9.2037752378481e-05,
+          "delta_95_sampling": [
+            6.074537784931929e-05,
+            0.0001233301269076427
+          ],
+          "mean_change_norm": 0.018200757089613644,
+          "finite": true
+        },
+        {
+          "column": 15,
+          "coefficient": 0.12316731360159919,
+          "norm_bound": 0.9643062949180603,
+          "unit_sensitivity": 0.0009696971392259002,
+          "sensitivity_rank_score": 0.0009350850596092641,
+          "offline_error_weighted_score": 0.00011517191160237417,
+          "benefit": -8.077533380381521e-06,
+          "delta_raw_mse": 8.077533380381521e-06,
+          "delta_95_sampling": [
+            3.940788496509836e-06,
+            1.2214278264253206e-05
+          ],
+          "mean_change_norm": 0.0023525056775980315,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "weight_seed": 20261062,
+      "weights_sha256": "6a469f6bcccc20b5e16f84fbb286c99d5b20ef03d2459162d144754479acf0be",
+      "baseline_counts": {
+        "flops": 1079638,
+        "wall_s": 0.21005799999693409,
+        "residual_s": 0.026740399989648722,
+        "multiplier": 0.1
+      },
+      "rank_correlation_with_benefit": {
+        "norm": 0.09705882352941177,
+        "sensitivity": 0.3382352941176471,
+        "offline_error_weighted": 0.37941176470588234
+      },
+      "weighted_correlation_with_effect_magnitude": 0.8117647058823528,
+      "informative": true,
+      "repairs": [
+        {
+          "column": 0,
+          "coefficient": -1.0135474423861548,
+          "norm_bound": 0.2549683749675751,
+          "unit_sensitivity": 0.0020634138491004705,
+          "sensitivity_rank_score": 0.0005261052865535021,
+          "offline_error_weighted_score": 0.0005332326400093734,
+          "benefit": -0.00012721115714804491,
+          "delta_raw_mse": 0.00012721115714804491,
+          "delta_95_sampling": [
+            0.00011825630919875742,
+            0.00013616600509733242
+          ],
+          "mean_change_norm": 0.03054377301157523,
+          "finite": true
+        },
+        {
+          "column": 1,
+          "coefficient": 4.344577712377343,
+          "norm_bound": 0.9500799775123596,
+          "unit_sensitivity": 0.001833036309108138,
+          "sensitivity_rank_score": 0.0017415310721844435,
+          "offline_error_weighted_score": 0.007566217333078384,
+          "benefit": -0.0023585628881587326,
+          "delta_raw_mse": 0.0023585628881587326,
+          "delta_95_sampling": [
+            0.0022886538181405625,
+            0.0024284719581769026
+          ],
+          "mean_change_norm": 0.1571519160943789,
+          "finite": true
+        },
+        {
+          "column": 2,
+          "coefficient": -10.732223692488828,
+          "norm_bound": 0.07472400367259979,
+          "unit_sensitivity": 0.001462200889363885,
+          "sensitivity_rank_score": 0.00010926150571322069,
+          "offline_error_weighted_score": 0.0011726189404726028,
+          "benefit": 0.0004136054186047552,
+          "delta_raw_mse": -0.0004136054186047552,
+          "delta_95_sampling": [
+            -0.0004520653443982138,
+            -0.00037514549281129656
+          ],
+          "mean_change_norm": 0.06413495609614199,
+          "finite": true
+        },
+        {
+          "column": 3,
+          "coefficient": 0.6929378639767919,
+          "norm_bound": 2.5517797470092773,
+          "unit_sensitivity": 0.001914403517730534,
+          "sensitivity_rank_score": 0.004885136149823666,
+          "offline_error_weighted_score": 0.0033850958570837975,
+          "benefit": -1.8052581006000807e-05,
+          "delta_raw_mse": 1.8052581006000807e-05,
+          "delta_95_sampling": [
+            -6.786129553051764e-06,
+            4.289129156505338e-05
+          ],
+          "mean_change_norm": 0.05182104293154291,
+          "finite": true
+        },
+        {
+          "column": 4,
+          "coefficient": -0.0618195979498599,
+          "norm_bound": 0.25388601422309875,
+          "unit_sensitivity": 0.0022278251126408577,
+          "sensitivity_rank_score": 0.0005656136199831963,
+          "offline_error_weighted_score": 3.496600766084157e-05,
+          "benefit": 1.055274901047774e-05,
+          "delta_raw_mse": -1.055274901047774e-05,
+          "delta_95_sampling": [
+            -1.1653213537572268e-05,
+            -9.452284483383213e-06
+          ],
+          "mean_change_norm": 0.002928844930894391,
+          "finite": true
+        },
+        {
+          "column": 5,
+          "coefficient": -1.0070645725124319,
+          "norm_bound": 1.3926949501037598,
+          "unit_sensitivity": 0.0020982399582862854,
+          "sensitivity_rank_score": 0.0029222082812339067,
+          "offline_error_weighted_score": 0.0029428524430841208,
+          "benefit": 1.7889100491749207e-05,
+          "delta_raw_mse": -1.7889100491749207e-05,
+          "delta_95_sampling": [
+            -4.0825807385653454e-05,
+            5.04760640215504e-06
+          ],
+          "mean_change_norm": 0.05456023688022976,
+          "finite": true
+        },
+        {
+          "column": 6,
+          "coefficient": 1.4193980046057972,
+          "norm_bound": 0.7161778211593628,
+          "unit_sensitivity": 0.0013077346375212073,
+          "sensitivity_rank_score": 0.0009365705773234367,
+          "offline_error_weighted_score": 0.0013293663505464792,
+          "benefit": 0.00035565235859247643,
+          "delta_raw_mse": -0.00035565235859247643,
+          "delta_95_sampling": [
+            -0.00038371829902961467,
+            -0.0003275864181553382
+          ],
+          "mean_change_norm": 0.06671826434864285,
+          "finite": true
+        },
+        {
+          "column": 7,
+          "coefficient": 2.3589456140229372,
+          "norm_bound": 0.892579972743988,
+          "unit_sensitivity": 0.005716581363230944,
+          "sensitivity_rank_score": 0.005102505907416344,
+          "offline_error_weighted_score": 0.012036534026265144,
+          "benefit": 0.0007919729972354808,
+          "delta_raw_mse": -0.0007919729972354808,
+          "delta_95_sampling": [
+            -0.00084339034054399,
+            -0.0007405556539269715
+          ],
+          "mean_change_norm": 0.07905480401009082,
+          "finite": true
+        },
+        {
+          "column": 8,
+          "coefficient": -1.9606304584293204,
+          "norm_bound": 0.29771316051483154,
+          "unit_sensitivity": 0.00236089457757771,
+          "sensitivity_rank_score": 0.0007028693798929453,
+          "offline_error_weighted_score": 0.0013780670706182718,
+          "benefit": -0.0022312850940210574,
+          "delta_raw_mse": 0.0022312850940210574,
+          "delta_95_sampling": [
+            0.002169022344331985,
+            0.00229354784371013
+          ],
+          "mean_change_norm": 0.12867273143829172,
+          "finite": true
+        },
+        {
+          "column": 9,
+          "coefficient": 4.221389208739183,
+          "norm_bound": 0.24683190882205963,
+          "unit_sensitivity": 0.0026466092094779015,
+          "sensitivity_rank_score": 0.0006532676052302122,
+          "offline_error_weighted_score": 0.0027576969005167484,
+          "benefit": 0.0005903534507450789,
+          "delta_raw_mse": -0.0005903534507450789,
+          "delta_95_sampling": [
+            -0.0006224280482991697,
+            -0.0005582788531909881
+          ],
+          "mean_change_norm": 0.06188812597541634,
+          "finite": true
+        },
+        {
+          "column": 10,
+          "coefficient": 0.7642935150956982,
+          "norm_bound": 0.6745378971099854,
+          "unit_sensitivity": 0.0041356394067406654,
+          "sensitivity_rank_score": 0.002789645455777645,
+          "offline_error_weighted_score": 0.0021321079693734646,
+          "benefit": 0.0003346240650794043,
+          "delta_raw_mse": -0.0003346240650794043,
+          "delta_95_sampling": [
+            -0.000349288488367698,
+            -0.00031995964179111063
+          ],
+          "mean_change_norm": 0.045952797699913873,
+          "finite": true
+        },
+        {
+          "column": 11,
+          "coefficient": -4.5351175414608695,
+          "norm_bound": 0.2812241017818451,
+          "unit_sensitivity": 0.0008157241973094642,
+          "sensitivity_rank_score": 0.00022940131020732224,
+          "offline_error_weighted_score": 0.0010403619380667806,
+          "benefit": 0.00012745475237023202,
+          "delta_raw_mse": -0.00012745475237023202,
+          "delta_95_sampling": [
+            -0.00013708572828332948,
+            -0.00011782377645713456
+          ],
+          "mean_change_norm": 0.0299983432255572,
+          "finite": true
+        },
+        {
+          "column": 12,
+          "coefficient": 1.300927162828331,
+          "norm_bound": 1.4484385251998901,
+          "unit_sensitivity": 0.0037814436946064234,
+          "sensitivity_rank_score": 0.005477188620716333,
+          "offline_error_weighted_score": 0.007125423289835453,
+          "benefit": 0.0006028556593058731,
+          "delta_raw_mse": -0.0006028556593058731,
+          "delta_95_sampling": [
+            -0.0006660460354707277,
+            -0.0005396652831410186
+          ],
+          "mean_change_norm": 0.08141481548505972,
+          "finite": true
+        },
+        {
+          "column": 13,
+          "coefficient": 0.017767372564517738,
+          "norm_bound": 0.4992614686489105,
+          "unit_sensitivity": 0.0009759987588040531,
+          "sensitivity_rank_score": 0.0004872785648331046,
+          "offline_error_weighted_score": 8.657660146127455e-06,
+          "benefit": -5.224444702192585e-06,
+          "delta_raw_mse": 5.224444702192585e-06,
+          "delta_95_sampling": [
+            4.630737808706755e-06,
+            5.818151595678414e-06
+          ],
+          "mean_change_norm": 0.0015028311415421249,
+          "finite": true
+        },
+        {
+          "column": 14,
+          "coefficient": 0.29730209080536096,
+          "norm_bound": 0.44258153438568115,
+          "unit_sensitivity": 0.0027275951579213142,
+          "sensitivity_rank_score": 0.001207183231599629,
+          "offline_error_weighted_score": 0.0003588981053326279,
+          "benefit": 5.352221180860172e-05,
+          "delta_raw_mse": -5.352221180860172e-05,
+          "delta_95_sampling": [
+            -6.086467065777375e-05,
+            -4.617975295942969e-05
+          ],
+          "mean_change_norm": 0.013459416606052528,
+          "finite": true
+        },
+        {
+          "column": 15,
+          "coefficient": 2.6584907259855455,
+          "norm_bound": 2.208925247192383,
+          "unit_sensitivity": 0.0028158524073660374,
+          "sensitivity_rank_score": 0.006220007315278053,
+          "offline_error_weighted_score": 0.01653583161532879,
+          "benefit": 0.0008514660356483543,
+          "delta_raw_mse": -0.0008514660356483543,
+          "delta_95_sampling": [
+            -0.0009628987977741725,
+            -0.0007400332735225362
+          ],
+          "mean_change_norm": 0.1336592826802856,
+          "finite": true
+        }
+      ]
+    }
+  ],
+  "informative_on_both": true
+}

@@ -1,0 +1,67 @@
+{
+  "protocol": "Unchanged official CLI; default Phase 2 caps; four threads; 100 samples for execution only; serial runs; all failures retained.",
+  "source": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\cumulant_generation_20261007\\public_v29\\estimator.py",
+  "source_sha256": "86d9ca9b28e6fe2b6c74750a0b6ae4bba4c14f742ddc3f5f56bc7fb4ec9d8e27",
+  "records": [
+    {
+      "runner": "subprocess",
+      "seed": 20261171,
+      "command": [
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+        "run",
+        "--estimator",
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\cumulant_generation_20261007\\public_v29\\estimator.py",
+        "--runner",
+        "subprocess",
+        "--n-mlps",
+        "4",
+        "--n-samples",
+        "100",
+        "--seed",
+        "20261171",
+        "--max-threads",
+        "4",
+        "--format",
+        "json"
+      ],
+      "returncode": 0,
+      "report": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\cumulant_generation_20261007\\public_v29_confirmation_gate_subprocess_20261171.json",
+      "summary": {
+        "n_failed_mlps": 0,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 0,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 587262754287,
+            "wall_time_s": 27.469529199996032,
+            "residual_wall_time_s": 0.39298430242342874
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 558473140719,
+            "wall_time_s": 35.02646109997295,
+            "residual_wall_time_s": 0.3852732024388388
+          },
+          {
+            "mlp_index": 2,
+            "flops_used": 555383704047,
+            "wall_time_s": 33.754024300025776,
+            "residual_wall_time_s": 0.33076529804384336
+          },
+          {
+            "mlp_index": 3,
+            "flops_used": 555383704047,
+            "wall_time_s": 33.653225799964275,
+            "residual_wall_time_s": 0.3346013033296913
+          }
+        ]
+      }
+    }
+  ]
+}

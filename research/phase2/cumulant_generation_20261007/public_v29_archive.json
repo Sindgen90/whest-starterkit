@@ -1,0 +1,14 @@
+{
+  "archive": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_REPRODUCTION_504aldo_V29_20261007.tar.gz",
+  "sha256": "d27f6c7768689c025b27403cb582c3bc33001b10a5b9b4cb5fd92d961506dcf6",
+  "source_sha256": "86d9ca9b28e6fe2b6c74750a0b6ae4bba4c14f742ddc3f5f56bc7fb4ec9d8e27",
+  "bytes": 31671,
+  "members": [
+    "estimator.py",
+    "LICENSE",
+    "PROVENANCE.md",
+    "manifest.json"
+  ],
+  "public_reproduction": true,
+  "heldout_nominal_adjusted": 5.124581998094555e-09
+}

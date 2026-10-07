@@ -1,0 +1,588 @@
+stage,family,block_size,width,seed,layer,partition,status,evidence
+oracle,A,,16,82071,0,,run,oracle_results_v2.json
+oracle,B,,16,82071,0,,run,oracle_results_v2.json
+oracle,C,,16,82071,0,,run,oracle_results_v2.json
+oracle,G,,16,82071,0,,run,oracle_results_v2.json
+oracle,D,4,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,D,4,16,82071,0,random,run,oracle_results_v2.json
+oracle,D,4,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,D,8,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,D,8,16,82071,0,random,run,oracle_results_v2.json
+oracle,D,8,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,D,16,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,D,16,16,82071,0,random,run,oracle_results_v2.json
+oracle,D,16,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,E,4,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,E,4,16,82071,0,random,run,oracle_results_v2.json
+oracle,E,4,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,E,8,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,E,8,16,82071,0,random,run,oracle_results_v2.json
+oracle,E,8,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,E,16,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,E,16,16,82071,0,random,run,oracle_results_v2.json
+oracle,E,16,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,F,4,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,F,4,16,82071,0,random,run,oracle_results_v2.json
+oracle,F,4,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,F,8,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,F,8,16,82071,0,random,run,oracle_results_v2.json
+oracle,F,8,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,F,16,16,82071,0,contiguous,run,oracle_results_v2.json
+oracle,F,16,16,82071,0,random,run,oracle_results_v2.json
+oracle,F,16,16,82071,0,correlation,run,oracle_results_v2.json
+oracle,A,,16,82071,7,,run,oracle_results_v2.json
+oracle,B,,16,82071,7,,run,oracle_results_v2.json
+oracle,C,,16,82071,7,,run,oracle_results_v2.json
+oracle,G,,16,82071,7,,run,oracle_results_v2.json
+oracle,D,4,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,D,4,16,82071,7,random,run,oracle_results_v2.json
+oracle,D,4,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,D,8,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,D,8,16,82071,7,random,run,oracle_results_v2.json
+oracle,D,8,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,D,16,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,D,16,16,82071,7,random,run,oracle_results_v2.json
+oracle,D,16,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,E,4,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,E,4,16,82071,7,random,run,oracle_results_v2.json
+oracle,E,4,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,E,8,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,E,8,16,82071,7,random,run,oracle_results_v2.json
+oracle,E,8,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,E,16,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,E,16,16,82071,7,random,run,oracle_results_v2.json
+oracle,E,16,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,F,4,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,F,4,16,82071,7,random,run,oracle_results_v2.json
+oracle,F,4,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,F,8,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,F,8,16,82071,7,random,run,oracle_results_v2.json
+oracle,F,8,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,F,16,16,82071,7,contiguous,run,oracle_results_v2.json
+oracle,F,16,16,82071,7,random,run,oracle_results_v2.json
+oracle,F,16,16,82071,7,correlation,run,oracle_results_v2.json
+oracle,A,,16,82071,14,,run,oracle_results_v2.json
+oracle,B,,16,82071,14,,run,oracle_results_v2.json
+oracle,C,,16,82071,14,,run,oracle_results_v2.json
+oracle,G,,16,82071,14,,run,oracle_results_v2.json
+oracle,D,4,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,D,4,16,82071,14,random,run,oracle_results_v2.json
+oracle,D,4,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,D,8,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,D,8,16,82071,14,random,run,oracle_results_v2.json
+oracle,D,8,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,D,16,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,D,16,16,82071,14,random,run,oracle_results_v2.json
+oracle,D,16,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,E,4,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,E,4,16,82071,14,random,run,oracle_results_v2.json
+oracle,E,4,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,E,8,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,E,8,16,82071,14,random,run,oracle_results_v2.json
+oracle,E,8,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,E,16,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,E,16,16,82071,14,random,run,oracle_results_v2.json
+oracle,E,16,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,F,4,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,F,4,16,82071,14,random,run,oracle_results_v2.json
+oracle,F,4,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,F,8,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,F,8,16,82071,14,random,run,oracle_results_v2.json
+oracle,F,8,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,F,16,16,82071,14,contiguous,run,oracle_results_v2.json
+oracle,F,16,16,82071,14,random,run,oracle_results_v2.json
+oracle,F,16,16,82071,14,correlation,run,oracle_results_v2.json
+oracle,A,,16,82072,0,,run,oracle_results_v2.json
+oracle,B,,16,82072,0,,run,oracle_results_v2.json
+oracle,C,,16,82072,0,,run,oracle_results_v2.json
+oracle,G,,16,82072,0,,run,oracle_results_v2.json
+oracle,D,4,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,D,4,16,82072,0,random,run,oracle_results_v2.json
+oracle,D,4,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,D,8,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,D,8,16,82072,0,random,run,oracle_results_v2.json
+oracle,D,8,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,D,16,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,D,16,16,82072,0,random,run,oracle_results_v2.json
+oracle,D,16,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,E,4,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,E,4,16,82072,0,random,run,oracle_results_v2.json
+oracle,E,4,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,E,8,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,E,8,16,82072,0,random,run,oracle_results_v2.json
+oracle,E,8,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,E,16,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,E,16,16,82072,0,random,run,oracle_results_v2.json
+oracle,E,16,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,F,4,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,F,4,16,82072,0,random,run,oracle_results_v2.json
+oracle,F,4,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,F,8,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,F,8,16,82072,0,random,run,oracle_results_v2.json
+oracle,F,8,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,F,16,16,82072,0,contiguous,run,oracle_results_v2.json
+oracle,F,16,16,82072,0,random,run,oracle_results_v2.json
+oracle,F,16,16,82072,0,correlation,run,oracle_results_v2.json
+oracle,A,,16,82072,7,,run,oracle_results_v2.json
+oracle,B,,16,82072,7,,run,oracle_results_v2.json
+oracle,C,,16,82072,7,,run,oracle_results_v2.json
+oracle,G,,16,82072,7,,run,oracle_results_v2.json
+oracle,D,4,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,D,4,16,82072,7,random,run,oracle_results_v2.json
+oracle,D,4,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,D,8,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,D,8,16,82072,7,random,run,oracle_results_v2.json
+oracle,D,8,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,D,16,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,D,16,16,82072,7,random,run,oracle_results_v2.json
+oracle,D,16,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,E,4,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,E,4,16,82072,7,random,run,oracle_results_v2.json
+oracle,E,4,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,E,8,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,E,8,16,82072,7,random,run,oracle_results_v2.json
+oracle,E,8,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,E,16,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,E,16,16,82072,7,random,run,oracle_results_v2.json
+oracle,E,16,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,F,4,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,F,4,16,82072,7,random,run,oracle_results_v2.json
+oracle,F,4,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,F,8,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,F,8,16,82072,7,random,run,oracle_results_v2.json
+oracle,F,8,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,F,16,16,82072,7,contiguous,run,oracle_results_v2.json
+oracle,F,16,16,82072,7,random,run,oracle_results_v2.json
+oracle,F,16,16,82072,7,correlation,run,oracle_results_v2.json
+oracle,A,,16,82072,14,,run,oracle_results_v2.json
+oracle,B,,16,82072,14,,run,oracle_results_v2.json
+oracle,C,,16,82072,14,,run,oracle_results_v2.json
+oracle,G,,16,82072,14,,run,oracle_results_v2.json
+oracle,D,4,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,D,4,16,82072,14,random,run,oracle_results_v2.json
+oracle,D,4,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,D,8,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,D,8,16,82072,14,random,run,oracle_results_v2.json
+oracle,D,8,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,D,16,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,D,16,16,82072,14,random,run,oracle_results_v2.json
+oracle,D,16,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,E,4,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,E,4,16,82072,14,random,run,oracle_results_v2.json
+oracle,E,4,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,E,8,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,E,8,16,82072,14,random,run,oracle_results_v2.json
+oracle,E,8,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,E,16,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,E,16,16,82072,14,random,run,oracle_results_v2.json
+oracle,E,16,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,F,4,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,F,4,16,82072,14,random,run,oracle_results_v2.json
+oracle,F,4,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,F,8,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,F,8,16,82072,14,random,run,oracle_results_v2.json
+oracle,F,8,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,F,16,16,82072,14,contiguous,run,oracle_results_v2.json
+oracle,F,16,16,82072,14,random,run,oracle_results_v2.json
+oracle,F,16,16,82072,14,correlation,run,oracle_results_v2.json
+oracle,A,,32,82081,0,,run,oracle_results_v2.json
+oracle,B,,32,82081,0,,run,oracle_results_v2.json
+oracle,C,,32,82081,0,,run,oracle_results_v2.json
+oracle,G,,32,82081,0,,run,oracle_results_v2.json
+oracle,D,4,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,D,4,32,82081,0,random,run,oracle_results_v2.json
+oracle,D,4,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,D,8,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,D,8,32,82081,0,random,run,oracle_results_v2.json
+oracle,D,8,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,D,16,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,D,16,32,82081,0,random,run,oracle_results_v2.json
+oracle,D,16,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,E,4,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,E,4,32,82081,0,random,run,oracle_results_v2.json
+oracle,E,4,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,E,8,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,E,8,32,82081,0,random,run,oracle_results_v2.json
+oracle,E,8,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,E,16,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,E,16,32,82081,0,random,run,oracle_results_v2.json
+oracle,E,16,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,F,4,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,F,4,32,82081,0,random,run,oracle_results_v2.json
+oracle,F,4,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,F,8,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,F,8,32,82081,0,random,run,oracle_results_v2.json
+oracle,F,8,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,F,16,32,82081,0,contiguous,run,oracle_results_v2.json
+oracle,F,16,32,82081,0,random,run,oracle_results_v2.json
+oracle,F,16,32,82081,0,correlation,run,oracle_results_v2.json
+oracle,A,,32,82081,7,,run,oracle_results_v2.json
+oracle,B,,32,82081,7,,run,oracle_results_v2.json
+oracle,C,,32,82081,7,,run,oracle_results_v2.json
+oracle,G,,32,82081,7,,run,oracle_results_v2.json
+oracle,D,4,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,D,4,32,82081,7,random,run,oracle_results_v2.json
+oracle,D,4,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,D,8,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,D,8,32,82081,7,random,run,oracle_results_v2.json
+oracle,D,8,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,D,16,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,D,16,32,82081,7,random,run,oracle_results_v2.json
+oracle,D,16,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,E,4,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,E,4,32,82081,7,random,run,oracle_results_v2.json
+oracle,E,4,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,E,8,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,E,8,32,82081,7,random,run,oracle_results_v2.json
+oracle,E,8,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,E,16,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,E,16,32,82081,7,random,run,oracle_results_v2.json
+oracle,E,16,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,F,4,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,F,4,32,82081,7,random,run,oracle_results_v2.json
+oracle,F,4,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,F,8,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,F,8,32,82081,7,random,run,oracle_results_v2.json
+oracle,F,8,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,F,16,32,82081,7,contiguous,run,oracle_results_v2.json
+oracle,F,16,32,82081,7,random,run,oracle_results_v2.json
+oracle,F,16,32,82081,7,correlation,run,oracle_results_v2.json
+oracle,A,,32,82081,14,,run,oracle_results_v2.json
+oracle,B,,32,82081,14,,run,oracle_results_v2.json
+oracle,C,,32,82081,14,,run,oracle_results_v2.json
+oracle,G,,32,82081,14,,run,oracle_results_v2.json
+oracle,D,4,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,D,4,32,82081,14,random,run,oracle_results_v2.json
+oracle,D,4,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,D,8,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,D,8,32,82081,14,random,run,oracle_results_v2.json
+oracle,D,8,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,D,16,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,D,16,32,82081,14,random,run,oracle_results_v2.json
+oracle,D,16,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,E,4,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,E,4,32,82081,14,random,run,oracle_results_v2.json
+oracle,E,4,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,E,8,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,E,8,32,82081,14,random,run,oracle_results_v2.json
+oracle,E,8,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,E,16,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,E,16,32,82081,14,random,run,oracle_results_v2.json
+oracle,E,16,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,F,4,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,F,4,32,82081,14,random,run,oracle_results_v2.json
+oracle,F,4,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,F,8,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,F,8,32,82081,14,random,run,oracle_results_v2.json
+oracle,F,8,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,F,16,32,82081,14,contiguous,run,oracle_results_v2.json
+oracle,F,16,32,82081,14,random,run,oracle_results_v2.json
+oracle,F,16,32,82081,14,correlation,run,oracle_results_v2.json
+oracle,A,,32,82082,0,,run,oracle_results_v2.json
+oracle,B,,32,82082,0,,run,oracle_results_v2.json
+oracle,C,,32,82082,0,,run,oracle_results_v2.json
+oracle,G,,32,82082,0,,run,oracle_results_v2.json
+oracle,D,4,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,D,4,32,82082,0,random,run,oracle_results_v2.json
+oracle,D,4,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,D,8,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,D,8,32,82082,0,random,run,oracle_results_v2.json
+oracle,D,8,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,D,16,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,D,16,32,82082,0,random,run,oracle_results_v2.json
+oracle,D,16,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,E,4,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,E,4,32,82082,0,random,run,oracle_results_v2.json
+oracle,E,4,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,E,8,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,E,8,32,82082,0,random,run,oracle_results_v2.json
+oracle,E,8,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,E,16,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,E,16,32,82082,0,random,run,oracle_results_v2.json
+oracle,E,16,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,F,4,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,F,4,32,82082,0,random,run,oracle_results_v2.json
+oracle,F,4,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,F,8,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,F,8,32,82082,0,random,run,oracle_results_v2.json
+oracle,F,8,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,F,16,32,82082,0,contiguous,run,oracle_results_v2.json
+oracle,F,16,32,82082,0,random,run,oracle_results_v2.json
+oracle,F,16,32,82082,0,correlation,run,oracle_results_v2.json
+oracle,A,,32,82082,7,,run,oracle_results_v2.json
+oracle,B,,32,82082,7,,run,oracle_results_v2.json
+oracle,C,,32,82082,7,,run,oracle_results_v2.json
+oracle,G,,32,82082,7,,run,oracle_results_v2.json
+oracle,D,4,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,D,4,32,82082,7,random,run,oracle_results_v2.json
+oracle,D,4,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,D,8,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,D,8,32,82082,7,random,run,oracle_results_v2.json
+oracle,D,8,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,D,16,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,D,16,32,82082,7,random,run,oracle_results_v2.json
+oracle,D,16,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,E,4,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,E,4,32,82082,7,random,run,oracle_results_v2.json
+oracle,E,4,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,E,8,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,E,8,32,82082,7,random,run,oracle_results_v2.json
+oracle,E,8,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,E,16,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,E,16,32,82082,7,random,run,oracle_results_v2.json
+oracle,E,16,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,F,4,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,F,4,32,82082,7,random,run,oracle_results_v2.json
+oracle,F,4,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,F,8,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,F,8,32,82082,7,random,run,oracle_results_v2.json
+oracle,F,8,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,F,16,32,82082,7,contiguous,run,oracle_results_v2.json
+oracle,F,16,32,82082,7,random,run,oracle_results_v2.json
+oracle,F,16,32,82082,7,correlation,run,oracle_results_v2.json
+oracle,A,,32,82082,14,,run,oracle_results_v2.json
+oracle,B,,32,82082,14,,run,oracle_results_v2.json
+oracle,C,,32,82082,14,,run,oracle_results_v2.json
+oracle,G,,32,82082,14,,run,oracle_results_v2.json
+oracle,D,4,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,D,4,32,82082,14,random,run,oracle_results_v2.json
+oracle,D,4,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,D,8,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,D,8,32,82082,14,random,run,oracle_results_v2.json
+oracle,D,8,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,D,16,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,D,16,32,82082,14,random,run,oracle_results_v2.json
+oracle,D,16,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,E,4,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,E,4,32,82082,14,random,run,oracle_results_v2.json
+oracle,E,4,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,E,8,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,E,8,32,82082,14,random,run,oracle_results_v2.json
+oracle,E,8,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,E,16,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,E,16,32,82082,14,random,run,oracle_results_v2.json
+oracle,E,16,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,F,4,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,F,4,32,82082,14,random,run,oracle_results_v2.json
+oracle,F,4,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,F,8,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,F,8,32,82082,14,random,run,oracle_results_v2.json
+oracle,F,8,32,82082,14,correlation,run,oracle_results_v2.json
+oracle,F,16,32,82082,14,contiguous,run,oracle_results_v2.json
+oracle,F,16,32,82082,14,random,run,oracle_results_v2.json
+oracle,F,16,32,82082,14,correlation,run,oracle_results_v2.json
+recurrence,baseline_diagnostic,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,exact_q_control,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,qr,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b4,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b16,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b4,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b8,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b16,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b4,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b8,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b16,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8_repair,,16,82071,all,correlation,run,recurrence_results_v2.json
+recurrence,baseline_diagnostic,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,exact_q_control,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,qr,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b4,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b16,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b4,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b8,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b16,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b4,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b8,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b16,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8_repair,,16,82072,all,correlation,run,recurrence_results_v2.json
+recurrence,baseline_diagnostic,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,exact_q_control,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,qr,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b4,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b16,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b4,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b8,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b16,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b4,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b8,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b16,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8_repair,,32,82081,all,correlation,run,recurrence_results_v2.json
+recurrence,baseline_diagnostic,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,exact_q_control,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,qr,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b4,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b16,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b4,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b8,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,qblock8_b16,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b4,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b8,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,qrblock8_b16,,32,82082,all,correlation,run,recurrence_results_v2.json
+recurrence,block8_b8_repair,,32,82082,all,correlation,run,recurrence_results_v2.json
+exact affine control,qr,8,16,82071,all,correlation,run,exact_transport_controls.json
+exact affine control,qblock8,8,16,82071,all,correlation,run,exact_transport_controls.json
+exact affine control,qrblock8,8,16,82071,all,correlation,run,exact_transport_controls.json
+exact affine control,qr,8,16,82072,all,correlation,run,exact_transport_controls.json
+exact affine control,qblock8,8,16,82072,all,correlation,run,exact_transport_controls.json
+exact affine control,qrblock8,8,16,82072,all,correlation,run,exact_transport_controls.json
+exact affine control,qr,8,32,82081,all,correlation,run,exact_transport_controls.json
+exact affine control,qblock8,8,32,82081,all,correlation,run,exact_transport_controls.json
+exact affine control,qrblock8,8,32,82081,all,correlation,run,exact_transport_controls.json
+exact affine control,qr,8,32,82082,all,correlation,run,exact_transport_controls.json
+exact affine control,qblock8,8,32,82082,all,correlation,run,exact_transport_controls.json
+exact affine control,qrblock8,8,32,82082,all,correlation,run,exact_transport_controls.json
+offline third control,complete vs repeated T,4,16,82071,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,16,82071,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,16,82071,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,4,16,82071,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,16,82071,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,16,82071,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,4,16,82072,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,16,82072,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,16,82072,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,4,16,82072,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,16,82072,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,16,82072,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,4,32,82081,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,32,82081,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,32,82081,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,4,32,82081,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,32,82081,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,32,82081,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,4,32,82082,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,32,82082,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,32,82082,0,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,4,32,82082,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,8,32,82082,7,correlation,run,recurrence_results.json
+offline third control,complete vs repeated T,16,32,82082,7,correlation,run,recurrence_results.json
+bounded kernels,global_QR_planes,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,partition_contiguous_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,partition_random_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,partition_correlation_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,construct_core_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,block_planes_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,block_to_blocks_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,global_Q_to_blocks_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,global_QR_to_blocks_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,third_core_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,nonlinear_core_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,consistency_repair_b8,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,partition_contiguous_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,partition_random_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,partition_correlation_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,construct_core_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,block_planes_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,block_to_blocks_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,global_Q_to_blocks_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,global_QR_to_blocks_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,third_core_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,nonlinear_core_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,consistency_repair_b16,,1024,20261007,one call,,run,kernel_profiles.json
+bounded kernels,partition_contiguous_b8,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,partition_random_b8,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,partition_correlation_b8,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,construct_core_b8,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,block_to_blocks_b8,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,partition_contiguous_b16,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,partition_random_b16,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,partition_correlation_b16,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,construct_core_b16,,1024,20261007,one call,,run,kernel_profiles_v2.json
+bounded kernels,block_to_blocks_b16,,1024,20261007,one call,,run,kernel_profiles_v2.json
+local nonlinear,A,,16,82071,0,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,16,82071,0,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,16,82071,0,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,16,82071,0,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,16,82071,0,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,16,82071,0,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,16,82071,7,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,16,82071,7,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,16,82071,7,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,16,82071,7,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,16,82071,7,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,16,82071,7,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,16,82071,14,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,16,82071,14,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,16,82071,14,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,16,82071,14,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,16,82071,14,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,16,82071,14,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,16,82072,0,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,16,82072,0,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,16,82072,0,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,16,82072,0,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,16,82072,0,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,16,82072,0,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,16,82072,7,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,16,82072,7,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,16,82072,7,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,16,82072,7,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,16,82072,7,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,16,82072,7,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,16,82072,14,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,16,82072,14,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,16,82072,14,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,16,82072,14,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,16,82072,14,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,16,82072,14,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,32,82081,0,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,32,82081,0,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,32,82081,0,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,32,82081,0,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,32,82081,0,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,32,82081,0,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,32,82081,7,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,32,82081,7,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,32,82081,7,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,32,82081,7,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,32,82081,7,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,32,82081,7,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,32,82081,14,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,32,82081,14,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,32,82081,14,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,32,82081,14,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,32,82081,14,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,32,82081,14,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,32,82082,0,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,32,82082,0,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,32,82082,0,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,32,82082,0,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,32,82082,0,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,32,82082,0,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,32,82082,7,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,32,82082,7,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,32,82082,7,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,32,82082,7,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,32,82082,7,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,32,82082,7,correlation,run,local_nonlinear_results.json
+local nonlinear,A,,32,82082,14,correlation,run,local_nonlinear_results.json
+local nonlinear,C,,32,82082,14,correlation,run,local_nonlinear_results.json
+local nonlinear,D8,8,32,82082,14,correlation,run,local_nonlinear_results.json
+local nonlinear,E8,8,32,82082,14,correlation,run,local_nonlinear_results.json
+local nonlinear,F8,8,32,82082,14,correlation,run,local_nonlinear_results.json
+local nonlinear,G,,32,82082,14,correlation,run,local_nonlinear_results.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,16,82071,0,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,16,82071,7,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,16,82071,14,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,16,82072,0,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,16,82072,7,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,16,82072,14,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,32,82081,0,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,32,82081,7,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,32,82081,14,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,32,82082,0,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,32,82082,7,,run,clipping_diagnostic.json
+offline guard diagnosis,G clipped vs unclipped M3/M4,,32,82082,14,,run,clipping_diagnostic.json
+full width,baseline_snapshot,,1024,"public 0,1 / official 20261071",all,,run/pass,baseline_snapshot_gate.json
+full width,qr,,1024,"public 0,1 / official 20261071",all,,failed residual,qr_gate.json
+full width,block8,,1024,"public 0,1 / official 20261071",all,correlation,failed residual,block8_gate.json
+full width,block16,,1024,"public 0,1 / official 20261071",all,correlation,failed residual,block16_gate.json
+full width,qblock8,,1024,"public 0,1 / official 20261071",all,correlation,failed residual,qblock8_gate.json
+full width,qblock16,,1024,"public 0,1 / official 20261071",all,correlation,failed FLOPs,qblock16_gate.json
+full width,qrblock8,,1024,"public 0,1 / official 20261071",all,correlation,failed residual,qrblock8_gate.json
+full width,qrblock16,,1024,"public 0,1 / official 20261071",all,correlation,infeasible FLOPs,qrblock16_infeasible.json
+full width,selective_block8,,1024,"public 0,1 / official 20261071",all,correlation,run/pass,selective_block8_gate.json
+full width,selective_block8_compat,,1024,"public 0,1 / official 20261071",all,correlation,run/pass,selective_block8_compat_gate.json

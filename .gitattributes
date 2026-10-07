@@ -1,0 +1,2 @@
+# Preserve research artifacts byte-for-byte for recorded SHA-256 provenance.
+research/phase2/** -text

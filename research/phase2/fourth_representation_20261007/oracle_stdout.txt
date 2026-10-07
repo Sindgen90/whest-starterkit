@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\oracle_study.py", line 6, in <module>
+    from scipy.special import ndtr
+ModuleNotFoundError: No module named 'scipy'

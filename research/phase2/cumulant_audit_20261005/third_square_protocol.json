@@ -1,0 +1,7 @@
+{
+  "source_sha256": "1cd36e60c5f201fac1851256a7476266c45a31495487adc2eff68be1e371905f",
+  "timing": "Added after original screen and memory confirmation, before any fresh-seed reference draws.",
+  "derivation": "The mixed third operator is D3=Pij/2*d_i^2*d_j+Pji/2*d_i*d_j^2. In D3^2/2, Pij*Pji/4*d_i^3*d_j^3 is already retained. Pij^2/8*d_i^4*d_j^2 and Pji^2/8*d_i^2*d_j^4 were missing. Add both to all three covariance planes; no fifth-to-eighth cumulant state.",
+  "selection": "One fixed ablation on identical networks 0-3. Only if it outperforms compressed history advance to excluded IDs 8-11 and official gate; freeze one choice before fresh-seed reference sampling.",
+  "parameters": "Analytical 1/8, no fitting, no combination, no grid."
+}

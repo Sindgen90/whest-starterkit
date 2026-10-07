@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+      "validate",
+      "--estimator",
+      "research\\phase2\\three_approaches_20261005\\conditional\\estimator.py",
+      "--seed",
+      "20261081",
+      "--format",
+      "json"
+    ],
+    "returncode": 0,
+    "report": "research\\phase2\\three_approaches_20261005\\conditional_validate.json"
+  },
+  {
+    "command": [
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+      "validate",
+      "--estimator",
+      "research\\phase2\\three_approaches_20261005\\random_control\\estimator.py",
+      "--seed",
+      "20261081",
+      "--format",
+      "json"
+    ],
+    "returncode": 0,
+    "report": "research\\phase2\\three_approaches_20261005\\random_control_validate.json"
+  }
+]

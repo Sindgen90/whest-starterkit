@@ -1,0 +1,6 @@
+{
+  "stage": "After exposed screening, before excluded networks are loaded",
+  "reason": "The top-16 history candidate improves 3 of 4 screened networks and aggregate adjusted error by 1.157 percent at only 1.49 percent extra FLOPs. Below the initial 2 percent screen threshold, but cheap independent confirmation is warranted. This is a documented protocol deviation, not a claim that the original criterion passed. No parameters change.",
+  "decision": "Advance only third_memory16 to IDs 8-11. If aggregate improvement and official execution pass, evaluate fresh seeds 20261051,20261052 with paired independent reference streams before promotion. Require positive improvement on both fresh networks and a paired sampling-confidence interval excluding zero; otherwise retain baseline.",
+  "other_candidates": "No retuning or composition; fourth_cross1 and fourth_response stop after screen."
+}

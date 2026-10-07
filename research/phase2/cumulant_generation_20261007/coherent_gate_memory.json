@@ -1,0 +1,52 @@
+{
+  "method": "coherent",
+  "returncode": 0,
+  "sampled_tree_peak_bytes": 3650674688,
+  "observations": 98,
+  "period_s": 0.5,
+  "processes": [
+    {
+      "pid": 13236,
+      "name": "python.exe",
+      "peak_working_set_bytes": 3731456,
+      "working_set_bytes": 3702784
+    },
+    {
+      "pid": 16740,
+      "name": "python.exe",
+      "peak_working_set_bytes": 3751936,
+      "working_set_bytes": 3706880
+    },
+    {
+      "pid": 1452,
+      "name": "python.exe",
+      "peak_working_set_bytes": 2074271744,
+      "working_set_bytes": 292245504
+    },
+    {
+      "pid": 38932,
+      "name": "whest.exe",
+      "peak_working_set_bytes": 4395008,
+      "working_set_bytes": 4341760
+    },
+    {
+      "pid": 32508,
+      "name": "python.exe",
+      "peak_working_set_bytes": 19746816,
+      "working_set_bytes": 19742720
+    },
+    {
+      "pid": 13512,
+      "name": "python.exe",
+      "peak_working_set_bytes": 3739648,
+      "working_set_bytes": 3706880
+    },
+    {
+      "pid": 37808,
+      "name": "python.exe",
+      "peak_working_set_bytes": 2349871104,
+      "working_set_bytes": 1787154432
+    }
+  ],
+  "limitation": "OS process lifetime peaks and sampled simultaneous RSS, including CLI/worker/backend/helper; can miss short-lived children. Official Windows gate is unchanged; Linux RLIMIT_AS is not reproduced."
+}

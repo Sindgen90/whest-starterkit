@@ -1,0 +1,43 @@
+{
+  "note": "First ReLU, exactly Gaussian incoming law. Existing four independent 32768-sample streams; cross-stream risk removes leading MC variance. Tree is the leading off-diagonal covariance term, not an exact full ReLU cumulant. These are small networks, not evidence of a width1024 adjusted-score gain.",
+  "records": [
+    {
+      "n": 16,
+      "seed": 82071,
+      "distinct_birth_risk_zero": 0.0007385238947054238,
+      "distinct_birth_risk_gaussian_tree": 6.945484957999546e-06,
+      "next_marginal_distinct_contraction_risk_zero": 0.007750651906519206,
+      "next_marginal_distinct_contraction_risk_tree": -0.00012496700202375716
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "distinct_birth_risk_zero": 0.0003795945963018033,
+      "distinct_birth_risk_gaussian_tree": 1.4244004645705979e-06,
+      "next_marginal_distinct_contraction_risk_zero": 0.015097060064913459,
+      "next_marginal_distinct_contraction_risk_tree": -1.605898110905417e-05
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "distinct_birth_risk_zero": 0.00026185339155711273,
+      "distinct_birth_risk_gaussian_tree": 9.44454414656204e-07,
+      "next_marginal_distinct_contraction_risk_zero": 0.006734483673269297,
+      "next_marginal_distinct_contraction_risk_tree": -1.407018314009557e-05
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "distinct_birth_risk_zero": 0.00015300989376107054,
+      "distinct_birth_risk_gaussian_tree": 4.930409149310769e-07,
+      "next_marginal_distinct_contraction_risk_zero": 0.005569850271568688,
+      "next_marginal_distinct_contraction_risk_tree": -2.3608390274841736e-05
+    }
+  ],
+  "summary": {
+    "distinct_birth_risk_zero": 0.0003832454440813526,
+    "distinct_birth_risk_gaussian_tree": 2.451845188039356e-06,
+    "next_marginal_distinct_contraction_risk_zero": 0.008788011479067662,
+    "next_marginal_distinct_contraction_risk_tree": -4.467613913693716e-05
+  }
+}

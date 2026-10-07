@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "width": 1024,
+    "depth": 16,
+    "n_reference_samples": 100000000,
+    "baked_mean_copy_maxabs": 0.0,
+    "reference_mean_final_mse_to_baked": 7.054760289208079e-10,
+    "first_prevariance_rms_to_exact": 0.0002823510032719311,
+    "weights_sha256": "d524e662eca3d117e9ba164fc3ae51a790dd675c585914a895ec69725fd880d0",
+    "moment_file_sha256": "ef8a424bf1791008610cdbcac0f746c9ea400a5bba4681ea68552b529237ad59",
+    "matches_remote_lfs_hash": true
+  },
+  {
+    "id": 1,
+    "width": 1024,
+    "depth": 16,
+    "n_reference_samples": 100000000,
+    "baked_mean_copy_maxabs": 0.0,
+    "reference_mean_final_mse_to_baked": 1.0449890784760402e-09,
+    "first_prevariance_rms_to_exact": 0.0002960921444022827,
+    "weights_sha256": "41f9a2a1d715abfc9f0ca535b515fb0aa0ae0edda0f022b3f76d61abfc69ae54",
+    "moment_file_sha256": "4be4ef8787182b977bb93a15fa97038b37de0f1c94dc962d231f93f7af5b997d",
+    "matches_remote_lfs_hash": true
+  },
+  {
+    "id": 80,
+    "width": 1024,
+    "depth": 16,
+    "n_reference_samples": 100000000,
+    "baked_mean_copy_maxabs": 0.0,
+    "reference_mean_final_mse_to_baked": 6.361928923493654e-10,
+    "first_prevariance_rms_to_exact": 0.00028233987936064387,
+    "weights_sha256": "7da1e369d4b9ca4034451f76244e0082c3524840d2722be4b316b0cda37ffad0",
+    "moment_file_sha256": "36a44c22da20d66488b50900f8d5b47d0cb1ac48eb5c06f570c27df2d8211b75",
+    "matches_remote_lfs_hash": true
+  },
+  {
+    "id": 81,
+    "width": 1024,
+    "depth": 16,
+    "n_reference_samples": 100000000,
+    "baked_mean_copy_maxabs": 0.0,
+    "reference_mean_final_mse_to_baked": 8.86413481985311e-10,
+    "first_prevariance_rms_to_exact": 0.00029148694895716256,
+    "weights_sha256": "e288549524039fdd56f630cb1c53595e5506999eb40f3e7ff1ff1ac7f43399bf",
+    "moment_file_sha256": "61e4c0690b0887d45c97574760b56bf4437fdec3a8b0135f255ece112b190b72",
+    "matches_remote_lfs_hash": true
+  }
+]

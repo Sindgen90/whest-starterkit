@@ -1,0 +1,22 @@
+{
+  "methods": {
+    "baseline_snapshot": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+    "unclip34": "02dc32fc3ae178aeb8fee13b324aa66f64931a28f271e09b7caed7cbd892d796",
+    "centered": "d7a52fb02d45386b9012af9785368d45ef2dba08975b79dfa27225f2b3313f49",
+    "coherent": "60123fdee5ac88468fbe6c51821455402523cd1a7eb503a9713a37c653807f25",
+    "public_v25": "c0ae6f12d27d851ddd104dd749ac1f2a6400a6b18a0b4104c389150b93bd4b20",
+    "public_v29": "86d9ca9b28e6fe2b6c74750a0b6ae4bba4c14f742ddc3f5f56bc7fb4ec9d8e27"
+  },
+  "heldout_global_ids": [
+    80,
+    81,
+    82,
+    83
+  ],
+  "development_global_ids": [
+    0,
+    1
+  ],
+  "rule": "Evaluate all frozen variants once; require lower aggregate held-out adjusted objective and official subprocess pass. No changes after targets are examined. Public reproductions are benchmarks; no claim of original prize eligibility.",
+  "public_environment_overrides": {}
+}

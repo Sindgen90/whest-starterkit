@@ -1,0 +1,14 @@
+{
+  "repository": "aicrowd/arc-whestbench-public-2026",
+  "commit": "aa99830fdc09fad15407b10e8e3459d3e18bba0a",
+  "url": "https://huggingface.co/datasets/aicrowd/arc-whestbench-public-2026/resolve/aa99830fdc09fad15407b10e8e3459d3e18bba0a/prepared/mini/data-00011-of-00014.arrow",
+  "sha256": "e14b67d08c212afaaacd81e08e78051a82aed58b123c0d8f53854ffcc1c51cef",
+  "bytes": 470732896,
+  "reserved_global_ids": [
+    80,
+    81,
+    82,
+    83
+  ],
+  "note": "Shard contains IDs79..85; confirmation uses only frozen80..83."
+}

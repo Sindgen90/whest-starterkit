@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-05",
+  "command": "whest run --estimator research/phase2/puffi_reference.py --runner subprocess --n-mlps 1 --n-samples 100 --seed 20260905 --max-threads 4 --format json",
+  "purpose": "Resource and subprocess transport smoke test only; 100-sample target is too noisy for accuracy comparison.",
+  "n_failed_mlps": 0,
+  "flops_used": 551467809263,
+  "compute_utilization": 0.25077852536151113,
+  "wall_time_s": 6.189002700150013,
+  "flopscope_backend_time_s": 4.670477396808565,
+  "flopscope_overhead_time_s": 1.206344406120479,
+  "residual_wall_time_s": 0.3121808972209692,
+  "caps": {
+    "flops": 2199023255552,
+    "wall_time_s": 120.0,
+    "residual_wall_time_s": 0.4
+  },
+  "passed_caps": true
+}

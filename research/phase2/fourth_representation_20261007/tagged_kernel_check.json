@@ -1,0 +1,10 @@
+[
+  {
+    "kernel": "global_QR_planes",
+    "flops": 19337846784
+  },
+  {
+    "kernel": "global_QR_to_blocks_b16",
+    "flops": 62885200896
+  }
+]

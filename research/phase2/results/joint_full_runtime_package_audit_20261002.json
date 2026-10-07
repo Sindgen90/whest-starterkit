@@ -1,0 +1,19 @@
+{
+  "archive": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_joint_full_runtime_20261002.tar.gz",
+  "archive_sha256": "89035799f6acfe5dd14948fbedefd37ea2bc35472ce2ce72518c4485676782b3",
+  "size_bytes": 6373,
+  "files": [
+    "estimator.py",
+    "LICENSE",
+    "PROVENANCE.md",
+    "manifest.json"
+  ],
+  "estimator_sha256": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+  "official_package_validation": {
+    "ok": true,
+    "artifact": "submissions/phase2_joint_full_runtime_20261002.tar.gz",
+    "issues": [],
+    "whestbench_version": "0.16.1"
+  },
+  "previous_archive_unchanged": true
+}

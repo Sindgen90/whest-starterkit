@@ -1,0 +1,49 @@
+{
+  "protocol": "Unchanged official CLI; default Phase 2 caps; four threads; 100 samples for execution only; serial runs; all failures retained.",
+  "source": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\joint_full_runtime\\estimator.py",
+  "source_sha256": "13079720330d88d81a8de86b43a394e65b0c58092f4fb1eab91a0de35e325c4c",
+  "records": [
+    {
+      "runner": "subprocess",
+      "seed": 20260926,
+      "command": [
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+        "run",
+        "--estimator",
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\joint_full_runtime\\estimator.py",
+        "--runner",
+        "subprocess",
+        "--n-mlps",
+        "1",
+        "--n-samples",
+        "100",
+        "--seed",
+        "20260926",
+        "--max-threads",
+        "4",
+        "--format",
+        "json"
+      ],
+      "returncode": 0,
+      "report": "research\\phase2\\results\\joint_full_runtime_v1_gate_20261002_subprocess_20260926.json",
+      "summary": {
+        "n_failed_mlps": 0,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 0,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 196325437438,
+            "wall_time_s": 8.30001100001391,
+            "residual_wall_time_s": 0.31289390241727233
+          }
+        ]
+      }
+    }
+  ]
+}

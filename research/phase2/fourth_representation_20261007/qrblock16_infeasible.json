@@ -1,0 +1,14 @@
+{
+  "method": "qrblock16",
+  "status": "infeasible",
+  "reason": "FLOP budget exceeded by 14 mandatory affine transports alone; no full-width accuracy test or archive. This excludes covariance/third/nonlinear construction, terminal contractions and preparation, so is a lower bound for this implementation.",
+  "mandatory_kernel_flops": {
+    "block_planes_b16": 45169508352,
+    "block_to_blocks_b16": 35437674496,
+    "global_QR_planes": 19337846784,
+    "global_QR_to_blocks_b16": 62885200896
+  },
+  "lower_bound_flops": 2279623227392,
+  "budget": 2199023255552,
+  "source_sha256": "c737ba0c14610aa2dedd5f89f25c51cd0758401fd74a9b296457d1dae52f63e4"
+}

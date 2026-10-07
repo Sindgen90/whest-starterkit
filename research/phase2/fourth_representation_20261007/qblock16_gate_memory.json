@@ -1,0 +1,50 @@
+{
+  "observations": 274,
+  "period_s": 0.5,
+  "max_observed_tree_working_set_bytes": 5332881408,
+  "processes": [
+    {
+      "pid": 20992,
+      "name": "python.exe",
+      "peak_working_set_bytes": 3731456,
+      "working_set_bytes": 3702784
+    },
+    {
+      "pid": 28900,
+      "name": "whest.exe",
+      "peak_working_set_bytes": 4378624,
+      "working_set_bytes": 4337664
+    },
+    {
+      "pid": 32264,
+      "name": "python.exe",
+      "peak_working_set_bytes": 19763200,
+      "working_set_bytes": 19681280
+    },
+    {
+      "pid": 11820,
+      "name": "python.exe",
+      "peak_working_set_bytes": 3743744,
+      "working_set_bytes": 3706880
+    },
+    {
+      "pid": 30324,
+      "name": "python.exe",
+      "peak_working_set_bytes": 2076254208,
+      "working_set_bytes": 293163008
+    },
+    {
+      "pid": 6696,
+      "name": "python.exe",
+      "peak_working_set_bytes": 3735552,
+      "working_set_bytes": 3706880
+    },
+    {
+      "pid": 8600,
+      "name": "python.exe",
+      "peak_working_set_bytes": 5017853952,
+      "working_set_bytes": 1817939968
+    }
+  ],
+  "limitation": "Sampled process tree, includes CLI/helper/backend/worker. Each process reports OS lifetime peak; can miss short-lived children. No runner or timing-accounting changes."
+}

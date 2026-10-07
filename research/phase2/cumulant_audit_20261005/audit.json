@@ -1,0 +1,224 @@
+{
+  "decision": "Retain frozen joint_full_runtime and existing archive. No new submission packaged.",
+  "reason": "Top-16 older third sources improve exposed and excluded public point estimates, but fresh-network gains have mixed signs and the paired 95% sampling interval includes zero. Other ablations do not warrant advancement.",
+  "baseline_sha256": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+  "candidate_sha256": {
+    "third_memory16": "90a373c4a2dec2a738732630566d4edbce30826e82c2b0e821963b2925a1cc7c",
+    "fourth_cross1": "3b18227d659dc50656fc02d651c23210daf67542cf7ee39a7a778e5c27277672",
+    "fourth_response": "646ed783227ab8f3941791f468cbe81064e2a3b1632ce41b558ce8ba4dc485f2",
+    "third_square": "1cd36e60c5f201fac1851256a7476266c45a31495487adc2eff68be1e371905f"
+  },
+  "preservation": {
+    "checked_files": 373,
+    "changed_files": [],
+    "runner_and_metering_unchanged": true,
+    "archive": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_joint_full_runtime_20261002.tar.gz",
+    "archive_sha256": "89035799f6acfe5dd14948fbedefd37ea2bc35472ce2ce72518c4485676782b3",
+    "archive_estimator_matches_baseline": true
+  },
+  "screen": {
+    "baseline": {
+      "raw_mse": 9.425604193592625e-07,
+      "nominal_adjusted": 9.425604193592626e-08,
+      "flops": 196317442558.0,
+      "wall_s": 8.088216750000356,
+      "residual_s": 0.2655405499099288,
+      "raw_improvement_fraction": 0.0
+    },
+    "third_memory16": {
+      "raw_mse": 9.316557872788393e-07,
+      "nominal_adjusted": 9.316557872788393e-08,
+      "flops": 199249391038.0,
+      "wall_s": 8.798582050001642,
+      "residual_s": 0.3272034751062165,
+      "raw_improvement_fraction": 0.011569159765732695
+    },
+    "fourth_cross1": {
+      "raw_mse": 9.425840779690447e-07,
+      "nominal_adjusted": 9.425840779690447e-08,
+      "flops": 204957755918.0,
+      "wall_s": 8.436664749997362,
+      "residual_s": 0.29255449996526295,
+      "raw_improvement_fraction": -2.5100364174246437e-05
+    },
+    "fourth_response": {
+      "raw_mse": 9.40937797425202e-07,
+      "nominal_adjusted": 9.409377974252021e-08,
+      "flops": 196626034370.0,
+      "wall_s": 8.688031850000698,
+      "residual_s": 0.29615889998240164,
+      "raw_improvement_fraction": 0.0017215044263831913
+    },
+    "third_square": {
+      "raw_mse": 9.462916239554583e-07,
+      "nominal_adjusted": 9.462916239554583e-08,
+      "flops": 196625896130.0,
+      "wall_s": 8.373093525000513,
+      "residual_s": 0.2698767749097897,
+      "raw_improvement_fraction": -0.00395858400115312
+    }
+  },
+  "confirmation": {
+    "baseline": {
+      "raw_mse": 9.576359622788887e-07,
+      "nominal_adjusted": 9.576359622788887e-08,
+      "flops": 196317442558.0,
+      "wall_s": 8.108912649997364,
+      "residual_s": 0.2614537750305317
+    },
+    "third_memory16": {
+      "raw_mse": 9.507456521716341e-07,
+      "nominal_adjusted": 9.507456521716343e-08,
+      "flops": 199249391038.0,
+      "wall_s": 8.87512229999993,
+      "residual_s": 0.3233582251050393
+    }
+  },
+  "fresh_validation": {
+    "final_raw_cross_stream_risk": {
+      "baseline": 8.107910957095299e-07,
+      "third_memory16": 8.055039659978205e-07
+    },
+    "final_adjusted_cross_stream_risk": {
+      "baseline": 8.107910957095299e-08,
+      "third_memory16": 8.055039659978206e-08
+    },
+    "raw_improvement_fraction": 0.006520951869954272,
+    "final_paired_delta_interval": {
+      "mean": -5.2871297117093235e-09,
+      "standard_error": 2.2236634560723072e-09,
+      "lower_95": -1.2363819261681013e-08,
+      "upper_95": 1.789559838262366e-09
+    },
+    "positive_on_both_networks": false,
+    "all_official_passed": true,
+    "promotion_criterion_passed": false
+  },
+  "official_initial": {
+    "baseline_gate": [
+      {
+        "mlp_index": 0,
+        "flops_used": 196317442558,
+        "wall_time_s": 8.72198919999937,
+        "residual_wall_time_s": 0.3026111999497516
+      },
+      {
+        "mlp_index": 1,
+        "flops_used": 196317442558,
+        "wall_time_s": 8.631357599995681,
+        "residual_wall_time_s": 0.28115880006953375
+      }
+    ],
+    "memory_gate": [
+      {
+        "mlp_index": 0,
+        "flops_used": 199249391038,
+        "wall_time_s": 8.720685799999046,
+        "residual_wall_time_s": 0.3214892997930292
+      },
+      {
+        "mlp_index": 1,
+        "flops_used": 199249391038,
+        "wall_time_s": 8.85501359999762,
+        "residual_wall_time_s": 0.32239799993112683
+      }
+    ]
+  },
+  "official_fresh": {
+    "baseline": {
+      "report": "research\\phase2\\cumulant_audit_20261005\\fresh_validation_baseline_official.json",
+      "n_failed_mlps": 0,
+      "adjusted_pooled_target_score": 1.1374833093213967e-07,
+      "per_mlp": [
+        {
+          "flops_used": 196317442558,
+          "wall_time_s": 8.513436599998386,
+          "residual_wall_time_s": 0.28344200009451015
+        },
+        {
+          "flops_used": 196317442558,
+          "wall_time_s": 8.425494199997047,
+          "residual_wall_time_s": 0.2823895000110497
+        }
+      ]
+    },
+    "third_memory16": {
+      "report": "research\\phase2\\cumulant_audit_20261005\\fresh_validation_third_memory16_official.json",
+      "n_failed_mlps": 0,
+      "adjusted_pooled_target_score": 1.132196246089734e-07,
+      "per_mlp": [
+        {
+          "flops_used": 199249391038,
+          "wall_time_s": 8.936399199999869,
+          "residual_wall_time_s": 0.323977099993499
+        },
+        {
+          "flops_used": 199249391038,
+          "wall_time_s": 8.816985999997996,
+          "residual_wall_time_s": 0.319061999580299
+        }
+      ]
+    }
+  },
+  "tests": {
+    "passed": 33,
+    "warnings": 399,
+    "command": ".venv-phase2/Scripts/python.exe -m pytest research/phase2/test_cumulant_audit.py research/phase2/test_joint_full_runtime.py research/phase2/test_joint_cumulant.py research/phase2/test_fourth_transport.py -q --disable-warnings"
+  },
+  "evidence_sha256": {
+    "cumulant_audit_20261005\\baseline_gate.json": "4403705b86333c0882fb9ee737cab3d974c47e7b0d37127f2549d393eb2cd6d8",
+    "cumulant_audit_20261005\\baseline_gate_subprocess_20261005.json": "4b4c4e0df94d6e804a4df909740b3a85dffb6db6cb5f0fbb988375dcd7f21b3b",
+    "cumulant_audit_20261005\\baseline_gate_subprocess_20261005.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cumulant_audit_20261005\\confirmation.json": "8ab40aa962e36b2d3e5714cbbd8fc6039b70234f7b19bb3233b56aeea90a6d5a",
+    "cumulant_audit_20261005\\confirmation_amendment.json": "bb93436b120f1b0538de425034508f0a88870bbe77639255481ac69091156bbf",
+    "cumulant_audit_20261005\\confirmation_mlp10.npz": "88edd3d5a529e16f6cfcae5f0723fc421f6cd91704f70ed938e874713981270e",
+    "cumulant_audit_20261005\\confirmation_mlp11.npz": "6ee6be7964799cbf202bcf487b0cc418c4b3df5c5fbcdf6cf4a595319f682929",
+    "cumulant_audit_20261005\\confirmation_mlp8.npz": "eb0ed57d195cd657ba07233a4dc008b21b4d018785e33a6cbd00cfefe9c2acd8",
+    "cumulant_audit_20261005\\confirmation_mlp9.npz": "35622f50f29eccc9c8f9e69e1a5788d02ddeda87ab941fd139f706f0520d7143",
+    "cumulant_audit_20261005\\CUMULANT_AUDIT.md": "9777b0c8e71f88e9356463a386d48a23ec80e4d9143ba43b197ae4492976ab17",
+    "cumulant_audit_20261005\\fresh_validation.json": "b5d9c5c7a63016a0ed573e54e1181e592e2e077b95f8e3e640b7b829cbde6835",
+    "cumulant_audit_20261005\\fresh_validation_baseline_official.json": "7f03d93220a343aa34c8ea5b98ad7d0db9a9bae0ea9ffbb401dc1e2cfeb29dbd",
+    "cumulant_audit_20261005\\fresh_validation_seed20261051.npz": "a1365da88713c23a5c6e3c9206272108dea297a064a4c49d92a639ed6a5f3680",
+    "cumulant_audit_20261005\\fresh_validation_seed20261052.npz": "d87fd0c08d02c16389988021069dc0f7124ee33e89945be4f6a139e9821028b9",
+    "cumulant_audit_20261005\\fresh_validation_third_memory16_official.json": "4a257a5021336445842630861ed947466bfc5d3182bd73f8c625c9b3933385a2",
+    "cumulant_audit_20261005\\local_diagnostics.json": "7ccd9ff7a3c8b67482c1b2501a87d4dc760dad5fff546a7443dbbad500bd3e39",
+    "cumulant_audit_20261005\\local_diagnostics_baseline_mlp0.npz": "7415c4ca61f2aee4d4330b39b4bcaa8b752df1fb908a29d8ecde933ebd2b30bb",
+    "cumulant_audit_20261005\\local_diagnostics_baseline_mlp1.npz": "13f6b735312f49f9751c7b152b4be8d3470c09af57fd997f4de1ff4983552818",
+    "cumulant_audit_20261005\\local_diagnostics_baseline_mlp2.npz": "b1db5f5532b9059ddb8da67b8621bee4a00def9340db32af66459621d2206b84",
+    "cumulant_audit_20261005\\local_diagnostics_baseline_mlp3.npz": "44d5bdcc3b4eee1052356fd1d97c62193241c1e12f63e1eba595c219485af475",
+    "cumulant_audit_20261005\\local_diagnostics_third_memory16_mlp0.npz": "2584f635bbcb212dd18417c5a79201aeb078cb93d4af3b59910889bc77c42992",
+    "cumulant_audit_20261005\\local_diagnostics_third_memory16_mlp1.npz": "463163227541ced57e256c070929ac6842acbbf5faab4ca4ca9ffb3c48100579",
+    "cumulant_audit_20261005\\local_diagnostics_third_memory16_mlp2.npz": "acc84ed7b005a339fde8373a33d116b2324826476c3ce4c4cf99af1e1d4add11",
+    "cumulant_audit_20261005\\local_diagnostics_third_memory16_mlp3.npz": "443410e8ed082d1332d401435bdffd6f25cef3fcdf16eccdc2453d52007c0f60",
+    "cumulant_audit_20261005\\memory_gate.json": "a26c224dff4f5459adee98a83ecc0c0bff5c3e395a9aef98463ac7ef0e09f65d",
+    "cumulant_audit_20261005\\memory_gate_subprocess_20261005.json": "23f82e0e8637645056d1f36bbff1d6388cd02392ab0b67124a9f7ddd0a16779a",
+    "cumulant_audit_20261005\\memory_gate_subprocess_20261005.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "cumulant_audit_20261005\\preserved.json": "947540d61b3329a9986ded4926be713fe32531676f3c75b3e4e86ec183256256",
+    "cumulant_audit_20261005\\protocol.json": "7a22d2bc0df7221c3112d1877d439c4c3c2d1d4bf9327bd50ec681f3e03694a6",
+    "cumulant_audit_20261005\\screen.json": "1775d8f1d14901cc966859c99b0557d3878089170a3b9cdda0f4c52e1f082451",
+    "cumulant_audit_20261005\\screen_mlp0.npz": "ecac45e7b4d62b55e556aa3105930caff74e011e39f45095407032901e528f47",
+    "cumulant_audit_20261005\\screen_mlp1.npz": "148b752ac5b83e0b2f1cc28b27e50889627f476ea3fd564b2ba1a179df9b6ab8",
+    "cumulant_audit_20261005\\screen_mlp2.npz": "51a4586cfd2ba7600e22fbacb83ae20bbb4a11d7acea0c36d21c44a722e1feb1",
+    "cumulant_audit_20261005\\screen_mlp3.npz": "e823709bd0ac4a1d9f2c5749b70969bc62d9b3a48cea12750a3d1a803d57d784",
+    "cumulant_audit_20261005\\third_square_protocol.json": "ea6fad546b65cf3c690d49a8dbba17efb8ec79dc677ddf9a5271b936d32eccd7",
+    "cumulant_audit_20261005\\third_square_screen.json": "7f550cefee7661b8ba1c11cdc9afc66edf875cc8d10d3bc26c8ed4b0bf03470a",
+    "cumulant_audit_20261005\\third_square_screen_mlp0.npz": "7f350010f5ab839290f7f9690359cd12f9f1da40c856fd605c1474b9e9d5c830",
+    "cumulant_audit_20261005\\third_square_screen_mlp1.npz": "e0db79003f3669cc3a82b6fa050fdaca7a6b9db5f49517061c9c0ff91f105d7a",
+    "cumulant_audit_20261005\\third_square_screen_mlp2.npz": "587aca94b0d8ed42747c091bd86b7cbf0b5ec20efd21bea8d1452dc91542535d",
+    "cumulant_audit_20261005\\third_square_screen_mlp3.npz": "34c90e72aee044b9a273522e1f2539b1b78025703aeaa7c48d8fd1c7c8bd6321",
+    "cumulant_audit_20261005\\baseline_snapshot\\estimator.py": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+    "cumulant_audit_20261005\\baseline_snapshot\\LICENSE": "0414ac446fa4925715fb5d9c119b1dca026f18bca81a28f6ec587691f85e5005",
+    "cumulant_audit_20261005\\fourth_cross1\\estimator.py": "3b18227d659dc50656fc02d651c23210daf67542cf7ee39a7a778e5c27277672",
+    "cumulant_audit_20261005\\fourth_cross1\\LICENSE": "0414ac446fa4925715fb5d9c119b1dca026f18bca81a28f6ec587691f85e5005",
+    "cumulant_audit_20261005\\fourth_cross1\\PROVENANCE.md": "77810d449ba678b28c91cf33c618acbb2a5cfc90e85ee92593260c10c895c3f8",
+    "cumulant_audit_20261005\\fourth_response\\estimator.py": "646ed783227ab8f3941791f468cbe81064e2a3b1632ce41b558ce8ba4dc485f2",
+    "cumulant_audit_20261005\\fourth_response\\LICENSE": "0414ac446fa4925715fb5d9c119b1dca026f18bca81a28f6ec587691f85e5005",
+    "cumulant_audit_20261005\\fourth_response\\PROVENANCE.md": "3a2f6c1f18d601e6db005bf82994e4b187c1bfa93a9a1dfb75ef28b1194a8748",
+    "cumulant_audit_20261005\\third_memory16\\estimator.py": "90a373c4a2dec2a738732630566d4edbce30826e82c2b0e821963b2925a1cc7c",
+    "cumulant_audit_20261005\\third_memory16\\LICENSE": "0414ac446fa4925715fb5d9c119b1dca026f18bca81a28f6ec587691f85e5005",
+    "cumulant_audit_20261005\\third_memory16\\PROVENANCE.md": "d145474c98e6dc701ea338e2bdc9afdcc7b90a9adad399ecccfc825c788b7f55",
+    "cumulant_audit_20261005\\third_square\\estimator.py": "1cd36e60c5f201fac1851256a7476266c45a31495487adc2eff68be1e371905f",
+    "cumulant_audit_20261005\\third_square\\LICENSE": "0414ac446fa4925715fb5d9c119b1dca026f18bca81a28f6ec587691f85e5005",
+    "cumulant_audit_20261005\\third_square\\PROVENANCE.md": "96c3c576b206613aa8f2336ea44ae71285af6733c26d75c9df33556ba615be4e"
+  }
+}

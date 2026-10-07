@@ -1,0 +1,20 @@
+{"starting": "full_width.py", "args": ["--names", "selective_block8_compat", "--output", "compat_full_width_results.json"]}
+{"completed": "full_width.py", "returncode": 0, "wall_s": 17.4459543999983}
+{"starting": "gate_all.py", "args": ["--names", "selective_block8_compat"]}
+{"completed": "gate_all.py", "returncode": 0, "wall_s": 52.36113529998693}
+{"starting": "package_candidate.py", "args": ["selective_block8_compat"]}
+{"completed": "package_candidate.py", "returncode": 0, "wall_s": 4.2513636000221595}
+{"starting": "timing_pair.py", "args": []}
+{"completed": "timing_pair.py", "returncode": 0, "wall_s": 59.19641920001595}
+{"starting": "oracle_study.py", "args": ["--output", "oracle_results_v2.json"]}
+{"completed": "oracle_study.py", "returncode": 0, "wall_s": 20.027212800021516}
+{"starting": "exact_controls.py", "args": []}
+{"completed": "exact_controls.py", "returncode": 0, "wall_s": 16.019974299997557}
+{"starting": "local_nonlinear.py", "args": []}
+{"completed": "local_nonlinear.py", "returncode": 0, "wall_s": 30.27250809999532}
+{"starting": "large_covariance.py", "args": []}
+{"completed": "large_covariance.py", "returncode": 0, "wall_s": 217.05222660000436}
+{"starting": "make_report.py", "args": []}
+{"completed": "make_report.py", "returncode": 0, "wall_s": 0.202982000017073}
+{"starting": "verify_preservation.py", "args": []}
+{"completed": "verify_preservation.py", "returncode": 0, "wall_s": 0.6255835999909323}

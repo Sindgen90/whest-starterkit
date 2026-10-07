@@ -1,0 +1,18 @@
+[
+  {
+    "method": "qr",
+    "max_difference": 3.026798367500305e-09
+  },
+  {
+    "method": "block8",
+    "max_difference": 9.313225746154785e-10
+  },
+  {
+    "method": "qblock8",
+    "max_difference": 3.725290298461914e-09
+  },
+  {
+    "method": "qrblock8",
+    "max_difference": 6.984919309616089e-10
+  }
+]

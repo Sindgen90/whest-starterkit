@@ -1,0 +1,203 @@
+{
+  "protocol": "Frozen candidate. No fitting. Networks 4-7 and 12-15 excluded from current scout; previously exposed in earlier research. Four backend threads.",
+  "source_sha256": {
+    "venture_runtime": "5ca23ae4a41c0f49c1a90c2ccffd3a2f1d1839a55de7a927530eb507025f8f69",
+    "joint_full_candidate": "3539c3eaa325a5ffa92279fb3e39034ba5b36d73c97612a7ecb0680289bca8d9"
+  },
+  "records": [
+    {
+      "method": "venture_runtime",
+      "mlp_id": 4,
+      "raw_mse": 1.4677219891186744e-06,
+      "nominal_adjusted": 1.4677219891186746e-07,
+      "flops": 55281615328,
+      "residual_s": 0.2775940026040189,
+      "wall_s": 2.9547827999922447,
+      "valid": true,
+      "cap_aware_score": 1.4677219891186746e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 4,
+      "raw_mse": 1.1092159627297657e-06,
+      "nominal_adjusted": 1.1092159627297657e-07,
+      "flops": 202869442542,
+      "residual_s": 0.28519420087104663,
+      "wall_s": 7.100077100039925,
+      "valid": true,
+      "cap_aware_score": 1.1092159627297657e-07
+    },
+    {
+      "method": "venture_runtime",
+      "mlp_id": 5,
+      "raw_mse": 1.4131243849910273e-06,
+      "nominal_adjusted": 1.4131243849910274e-07,
+      "flops": 55281615328,
+      "residual_s": 0.371688500745222,
+      "wall_s": 4.064645899983589,
+      "valid": true,
+      "cap_aware_score": 1.4131243849910274e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 5,
+      "raw_mse": 1.03006514068038e-06,
+      "nominal_adjusted": 1.03006514068038e-07,
+      "flops": 202869442542,
+      "residual_s": 0.34504979982739314,
+      "wall_s": 7.997771899972577,
+      "valid": true,
+      "cap_aware_score": 1.03006514068038e-07
+    },
+    {
+      "method": "venture_runtime",
+      "mlp_id": 6,
+      "raw_mse": 1.1353143456533375e-06,
+      "nominal_adjusted": 1.1353143456533376e-07,
+      "flops": 55281615328,
+      "residual_s": 0.37415070086717606,
+      "wall_s": 4.112053200020455,
+      "valid": true,
+      "cap_aware_score": 1.1353143456533376e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 6,
+      "raw_mse": 9.538317702502888e-07,
+      "nominal_adjusted": 9.538317702502889e-08,
+      "flops": 202869442542,
+      "residual_s": 0.3449811013415456,
+      "wall_s": 8.029282499977853,
+      "valid": true,
+      "cap_aware_score": 9.538317702502889e-08
+    },
+    {
+      "method": "venture_runtime",
+      "mlp_id": 7,
+      "raw_mse": 1.3560213476329632e-06,
+      "nominal_adjusted": 1.3560213476329634e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3754260018467903,
+      "wall_s": 4.092137300001923,
+      "valid": true,
+      "cap_aware_score": 1.3560213476329634e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 7,
+      "raw_mse": 7.009122209724781e-07,
+      "nominal_adjusted": 7.009122209724781e-08,
+      "flops": 202869442542,
+      "residual_s": 0.3468533999985084,
+      "wall_s": 7.933872099965811,
+      "valid": true,
+      "cap_aware_score": 7.009122209724781e-08
+    },
+    {
+      "method": "venture_runtime",
+      "mlp_id": 12,
+      "raw_mse": 1.2908191416789307e-06,
+      "nominal_adjusted": 1.2908191416789307e-07,
+      "flops": 55281615328,
+      "residual_s": 0.37603900057729334,
+      "wall_s": 4.165167399973143,
+      "valid": true,
+      "cap_aware_score": 1.2908191416789307e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 12,
+      "raw_mse": 8.937082115917139e-07,
+      "nominal_adjusted": 8.937082115917139e-08,
+      "flops": 202869442542,
+      "residual_s": 0.3462877020938322,
+      "wall_s": 8.064453199971467,
+      "valid": true,
+      "cap_aware_score": 8.937082115917139e-08
+    },
+    {
+      "method": "venture_runtime",
+      "mlp_id": 13,
+      "raw_mse": 1.5831702163166121e-06,
+      "nominal_adjusted": 1.583170216316612e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3764747987734154,
+      "wall_s": 4.153335099981632,
+      "valid": true,
+      "cap_aware_score": 1.583170216316612e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 13,
+      "raw_mse": 1.0746094422915932e-06,
+      "nominal_adjusted": 1.0746094422915933e-07,
+      "flops": 202869442542,
+      "residual_s": 0.345979199744761,
+      "wall_s": 7.877369299996644,
+      "valid": true,
+      "cap_aware_score": 1.0746094422915933e-07
+    },
+    {
+      "method": "venture_runtime",
+      "mlp_id": 14,
+      "raw_mse": 1.2370220230393944e-06,
+      "nominal_adjusted": 1.2370220230393945e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3719302010140382,
+      "wall_s": 4.099425100022927,
+      "valid": true,
+      "cap_aware_score": 1.2370220230393945e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 14,
+      "raw_mse": 7.520889030587801e-07,
+      "nominal_adjusted": 7.520889030587802e-08,
+      "flops": 202869442542,
+      "residual_s": 0.34440789982909337,
+      "wall_s": 7.990726799995173,
+      "valid": true,
+      "cap_aware_score": 7.520889030587802e-08
+    },
+    {
+      "method": "venture_runtime",
+      "mlp_id": 15,
+      "raw_mse": 1.2082013867881784e-06,
+      "nominal_adjusted": 1.2082013867881786e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3704923007171601,
+      "wall_s": 4.1685356999514624,
+      "valid": true,
+      "cap_aware_score": 1.2082013867881786e-07
+    },
+    {
+      "method": "joint_full_candidate",
+      "mlp_id": 15,
+      "raw_mse": 8.766842579253972e-07,
+      "nominal_adjusted": 8.766842579253973e-08,
+      "flops": 202869442542,
+      "residual_s": 0.3448847996769473,
+      "wall_s": 8.097023600013927,
+      "valid": true,
+      "cap_aware_score": 8.766842579253973e-08
+    }
+  ],
+  "summary": {
+    "venture_runtime": {
+      "failures": 0,
+      "raw_mse": 1.3364243544023898e-06,
+      "nominal_adjusted": 1.3364243544023898e-07,
+      "cap_aware_score": 1.3364243544023898e-07,
+      "residual_s": 0.3617244383931393,
+      "flops": 55281615328.0
+    },
+    "joint_full_candidate": {
+      "failures": 0,
+      "raw_mse": 9.238894886875496e-07,
+      "nominal_adjusted": 9.238894886875497e-08,
+      "cap_aware_score": 9.238894886875497e-08,
+      "residual_s": 0.33795476292289095,
+      "flops": 202869442542.0
+    }
+  }
+}

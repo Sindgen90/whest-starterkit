@@ -1,0 +1,30 @@
+[
+  {
+    "method": "unclip34",
+    "paired_adjusted_difference_candidate_minus_incumbent": -2.2793554144458566e-09,
+    "lower95_t3": -6.866584221141007e-09,
+    "upper95_t3": 2.3078733922492937e-09,
+    "n_networks": 4
+  },
+  {
+    "method": "centered",
+    "paired_adjusted_difference_candidate_minus_incumbent": -2.277138169106176e-09,
+    "lower95_t3": -6.85996591231823e-09,
+    "upper95_t3": 2.305689574105878e-09,
+    "n_networks": 4
+  },
+  {
+    "method": "coherent",
+    "paired_adjusted_difference_candidate_minus_incumbent": -2.521537094265111e-09,
+    "lower95_t3": -7.512889980893439e-09,
+    "upper95_t3": 2.4698157923632163e-09,
+    "n_networks": 4
+  },
+  {
+    "method": "public_v29",
+    "paired_adjusted_difference_candidate_minus_incumbent": -7.906003206535693e-08,
+    "lower95_t3": -8.379120190867791e-08,
+    "upper95_t3": -7.432886222203596e-08,
+    "n_networks": 4
+  }
+]

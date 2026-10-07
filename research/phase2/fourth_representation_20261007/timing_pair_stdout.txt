@@ -1,0 +1,3 @@
+{"method": "baseline_snapshot", "local_returncode": 0}
+{"method": "selective_block8", "local_returncode": 0}
+{"method": "qr", "local_returncode": 1}

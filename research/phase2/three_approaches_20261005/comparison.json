@@ -1,0 +1,423 @@
+{
+  "protocol_sha256": "9dcc1574396d8f086c0b78266c14efcf0577fe8118d226200446ecdc5b4b7e9c",
+  "source_sha256": {
+    "baseline_snapshot": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+    "surrogate": "a965bfd64e6885f30ad23a316d03ebe7016d00968de3952aca0bceff77150b57",
+    "allocation": "a0ccebe7e9716c1822c8364a4cd6255d7bccc5a86081ee5fc97f7a0a3f8a01a1",
+    "conditional": "66c781dd7280a2b00e63391b8f4b42b6e4ffcbeacac171d3d9078ba92cbdf1e1",
+    "random_control": "62feea37422e69e8a5137e371187053b49e9955b2733921c244c34c79d3552b1",
+    "repair_diagnostic": "465040624bef6042a26562cd92eb9b11fb06d618f7d8af86718ec12c63fceb99"
+  },
+  "records": [
+    {
+      "method": "baseline",
+      "raw_mse": 9.136408012235149e-07,
+      "nominal_adjusted": 9.13640801223515e-08,
+      "flops": 196317442558.0,
+      "wall_s": 6.977008099995146,
+      "residual_s": 0.20484079988091253,
+      "per_case": [
+        {
+          "mlp_id": 0,
+          "random_seed": 20261211,
+          "raw_mse": 8.910184249919935e-07,
+          "nominal_adjusted": 8.910184249919935e-08,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261211,
+          "raw_mse": 9.362631774550362e-07,
+          "nominal_adjusted": 9.362631774550363e-08,
+          "finite": true
+        }
+      ],
+      "official_gate": {
+        "n_failed_mlps": 0,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 0,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 196317442558,
+            "wall_time_s": 7.143648800003575,
+            "residual_wall_time_s": 0.21094020032614935
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 196317442558,
+            "wall_time_s": 6.913508700003149,
+            "residual_wall_time_s": 0.20484539955214132
+          }
+        ]
+      },
+      "execution_eligible": true,
+      "subprocess_wall_range": [
+        6.913508700003149,
+        7.143648800003575
+      ],
+      "subprocess_residual_range": [
+        0.20484539955214132,
+        0.21094020032614935
+      ]
+    },
+    {
+      "method": "surrogate",
+      "raw_mse": 2.0905820880629205e-05,
+      "nominal_adjusted": 2.0905820880629208e-06,
+      "flops": 160173107356.0,
+      "wall_s": 0.7043840666641094,
+      "residual_s": 0.05451051661657402,
+      "per_case": [
+        {
+          "mlp_id": 0,
+          "random_seed": 20261211,
+          "raw_mse": 1.751067993221301e-05,
+          "nominal_adjusted": 1.7510679932213012e-06,
+          "finite": true
+        },
+        {
+          "mlp_id": 0,
+          "random_seed": 20261212,
+          "raw_mse": 1.94799657373281e-05,
+          "nominal_adjusted": 1.94799657373281e-06,
+          "finite": true
+        },
+        {
+          "mlp_id": 0,
+          "random_seed": 20261213,
+          "raw_mse": 2.3132592583355122e-05,
+          "nominal_adjusted": 2.3132592583355125e-06,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261211,
+          "raw_mse": 1.719777462122504e-05,
+          "nominal_adjusted": 1.7197774621225043e-06,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261212,
+          "raw_mse": 2.081844086605816e-05,
+          "nominal_adjusted": 2.0818440866058163e-06,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261213,
+          "raw_mse": 2.7295471543595785e-05,
+          "nominal_adjusted": 2.7295471543595786e-06,
+          "finite": true
+        }
+      ],
+      "official_gate": {
+        "n_failed_mlps": 0,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 0,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 160173107356,
+            "wall_time_s": 0.7293204000015976,
+            "residual_wall_time_s": 0.0578294002043549
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 160173107356,
+            "wall_time_s": 0.70257870000205,
+            "residual_wall_time_s": 0.052931800018996
+          }
+        ]
+      },
+      "execution_eligible": true,
+      "subprocess_wall_range": [
+        0.70257870000205,
+        0.7293204000015976
+      ],
+      "subprocess_residual_range": [
+        0.052931800018996,
+        0.0578294002043549
+      ]
+    },
+    {
+      "method": "norm_control",
+      "raw_mse": 8.99960772563933e-07,
+      "nominal_adjusted": 8.99960772563933e-08,
+      "flops": 199249391038.0,
+      "wall_s": 7.1627384000094025,
+      "residual_s": 0.23643920017639175,
+      "per_case": [
+        {
+          "mlp_id": 0,
+          "random_seed": 20261211,
+          "raw_mse": 8.7014417798168e-07,
+          "nominal_adjusted": 8.7014417798168e-08,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261211,
+          "raw_mse": 9.29777367146186e-07,
+          "nominal_adjusted": 9.29777367146186e-08,
+          "finite": true
+        }
+      ]
+    },
+    {
+      "method": "allocation",
+      "raw_mse": 9.090599696606237e-07,
+      "nominal_adjusted": 9.090599696606238e-08,
+      "flops": 200765545718.0,
+      "wall_s": 7.3971070000043255,
+      "residual_s": 0.2525865002826322,
+      "per_case": [
+        {
+          "mlp_id": 0,
+          "random_seed": 20261211,
+          "raw_mse": 8.780561847078468e-07,
+          "nominal_adjusted": 8.780561847078469e-08,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261211,
+          "raw_mse": 9.400637546134005e-07,
+          "nominal_adjusted": 9.400637546134005e-08,
+          "finite": true
+        }
+      ],
+      "official_gate": {
+        "n_failed_mlps": 0,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 0,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 200765545718,
+            "wall_time_s": 7.457729200003087,
+            "residual_wall_time_s": 0.25273239954549354
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 200765545718,
+            "wall_time_s": 7.346735799990711,
+            "residual_wall_time_s": 0.2568455997534329
+          }
+        ]
+      },
+      "execution_eligible": true,
+      "subprocess_wall_range": [
+        7.346735799990711,
+        7.457729200003087
+      ],
+      "subprocess_residual_range": [
+        0.25273239954549354,
+        0.2568455997534329
+      ]
+    },
+    {
+      "method": "conditional",
+      "raw_mse": 8.996202223916898e-07,
+      "nominal_adjusted": 2.417529230803129e-07,
+      "flops": 590938583548.0,
+      "wall_s": 21.28274607500134,
+      "residual_s": 0.6588706996044493,
+      "per_case": [
+        {
+          "mlp_id": 0,
+          "random_seed": 20261211,
+          "raw_mse": 8.753141138353341e-07,
+          "nominal_adjusted": 2.352211970853319e-07,
+          "finite": true
+        },
+        {
+          "mlp_id": 0,
+          "random_seed": 20261212,
+          "raw_mse": 8.771254506726591e-07,
+          "nominal_adjusted": 2.3570795356790872e-07,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261211,
+          "raw_mse": 9.15220373643195e-07,
+          "nominal_adjusted": 2.4594511671010924e-07,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261212,
+          "raw_mse": 9.308209514155708e-07,
+          "nominal_adjusted": 2.5013742495790174e-07,
+          "finite": true
+        }
+      ],
+      "official_gate": {
+        "n_failed_mlps": 2,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 2,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 590938583548,
+            "wall_time_s": 21.142212299993844,
+            "residual_wall_time_s": 0.6630536999582546
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 590938583548,
+            "wall_time_s": 21.33104309999908,
+            "residual_wall_time_s": 0.6537789003778016
+          }
+        ]
+      },
+      "execution_eligible": false,
+      "subprocess_wall_range": [
+        21.142212299993844,
+        21.33104309999908
+      ],
+      "subprocess_residual_range": [
+        0.6537789003778016,
+        0.6630536999582546
+      ]
+    },
+    {
+      "method": "random_control",
+      "raw_mse": 9.110633152726189e-07,
+      "nominal_adjusted": 2.442697769246613e-07,
+      "flops": 589591207418.0,
+      "wall_s": 21.21627882499888,
+      "residual_s": 0.6557251247722888,
+      "per_case": [
+        {
+          "mlp_id": 0,
+          "random_seed": 20261211,
+          "raw_mse": 8.862696179907324e-07,
+          "nominal_adjusted": 2.3762221379413202e-07,
+          "finite": true
+        },
+        {
+          "mlp_id": 0,
+          "random_seed": 20261212,
+          "raw_mse": 8.892227733288758e-07,
+          "nominal_adjusted": 2.3841399915479742e-07,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261211,
+          "raw_mse": 9.359778942014338e-07,
+          "nominal_adjusted": 2.509497502427532e-07,
+          "finite": true
+        },
+        {
+          "mlp_id": 1,
+          "random_seed": 20261212,
+          "raw_mse": 9.327829755694335e-07,
+          "nominal_adjusted": 2.5009314450696236e-07,
+          "finite": true
+        }
+      ],
+      "official_gate": {
+        "n_failed_mlps": 2,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 2,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 589591207418,
+            "wall_time_s": 21.199643900006777,
+            "residual_wall_time_s": 0.6569274004577892
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 589591207418,
+            "wall_time_s": 21.432600399988587,
+            "residual_wall_time_s": 0.6549417012865888
+          }
+        ]
+      },
+      "execution_eligible": false,
+      "subprocess_wall_range": [
+        21.199643900006777,
+        21.432600399988587
+      ],
+      "subprocess_residual_range": [
+        0.6549417012865888,
+        0.6569274004577892
+      ]
+    }
+  ],
+  "new_archives": [
+    {
+      "archive": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_EXPERIMENTAL_surrogate_20261005.tar.gz",
+      "sha256": "69f0c7bb80532cdd1a1383637e793b31d83a48143537a9161f861f83c60be56b",
+      "source_sha256": "a965bfd64e6885f30ad23a316d03ebe7016d00968de3952aca0bceff77150b57",
+      "bytes": 2752,
+      "members": [
+        "estimator.py",
+        "LICENSE",
+        "PROVENANCE.md",
+        "manifest.json"
+      ],
+      "experimental_not_recommended": true,
+      "official_gate_passed": true,
+      "packaging_passed": true
+    },
+    {
+      "archive": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_EXPERIMENTAL_allocation_20261005.tar.gz",
+      "sha256": "ad1606520fc1edb964fa0bfa3e81594309c6b5460fb80f70f36be8e1a7bbb599",
+      "source_sha256": "a0ccebe7e9716c1822c8364a4cd6255d7bccc5a86081ee5fc97f7a0a3f8a01a1",
+      "bytes": 6345,
+      "members": [
+        "estimator.py",
+        "LICENSE",
+        "PROVENANCE.md",
+        "manifest.json"
+      ],
+      "experimental_not_recommended": true,
+      "official_gate_passed": true,
+      "packaging_passed": true
+    }
+  ],
+  "best_validated_archive": {
+    "path": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_joint_full_runtime_20261002.tar.gz",
+    "sha256": "89035799f6acfe5dd14948fbedefd37ea2bc35472ce2ce72518c4485676782b3",
+    "recommendation": "Retain existing best. No fresh-reference trigger or promotion criterion met. User-reported leaderboard score 8.62e-8 is not a local result."
+  },
+  "preservation": {
+    "checked": 438,
+    "changed": [],
+    "all_unchanged": true,
+    "baseline_snapshot_equal": true
+  },
+  "fresh_networks_generated": false,
+  "uploaded": false
+}

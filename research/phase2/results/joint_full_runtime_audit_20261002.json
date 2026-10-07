@@ -1,0 +1,101 @@
+{
+  "source_sha256": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+  "official_subprocess_rows": [
+    {
+      "seed": 20260926,
+      "mlp_index": 0,
+      "flops_used": 196317442558,
+      "wall_time_s": 8.395521500031464,
+      "residual_wall_time_s": 0.29668809950817376,
+      "calls": 3122
+    },
+    {
+      "seed": 20260926,
+      "mlp_index": 1,
+      "flops_used": 196317442558,
+      "wall_time_s": 8.193698700051755,
+      "residual_wall_time_s": 0.29199739976320416,
+      "calls": 3122
+    },
+    {
+      "seed": 20260927,
+      "mlp_index": 0,
+      "flops_used": 196317442558,
+      "wall_time_s": 8.17118299996946,
+      "residual_wall_time_s": 0.29551189753692597,
+      "calls": 3122
+    },
+    {
+      "seed": 20260927,
+      "mlp_index": 1,
+      "flops_used": 196317442558,
+      "wall_time_s": 8.049582500010729,
+      "residual_wall_time_s": 0.2920638007344678,
+      "calls": 3122
+    },
+    {
+      "seed": 20260928,
+      "mlp_index": 0,
+      "flops_used": 196317442558,
+      "wall_time_s": 8.084791400004178,
+      "residual_wall_time_s": 0.29840000008698553,
+      "calls": 3122
+    },
+    {
+      "seed": 20260928,
+      "mlp_index": 1,
+      "flops_used": 196317442558,
+      "wall_time_s": 8.151857299963012,
+      "residual_wall_time_s": 0.2951368003850803,
+      "calls": 3122
+    }
+  ],
+  "official_subprocess_summary": {
+    "predictions": 6,
+    "failures": 0,
+    "max_residual_s": 0.29840000008698553,
+    "mean_residual_s": 0.29496633300247294,
+    "min_residual_s": 0.29199739976320416,
+    "max_wall_s": 8.395521500031464
+  },
+  "accuracy_summary": {
+    "equivalence_failures": 0,
+    "max_abs_prediction_difference": 3.814697265625e-06,
+    "mean_raw_final_mse": {
+      "joint_full_candidate": 9.218310459017418e-07,
+      "joint_full_runtime": 9.218368388800604e-07
+    }
+  },
+  "accuracy_groups": {
+    "development": {
+      "networks": 2,
+      "mean_raw_final_mse": {
+        "joint_full_candidate": 9.135972747585103e-07,
+        "joint_full_runtime": 9.136408012235149e-07
+      },
+      "relative_mse_drift": 4.764294531867108e-05
+    },
+    "frozen_evaluation": {
+      "networks": 8,
+      "mean_raw_final_mse": {
+        "joint_full_candidate": 9.238894886875496e-07,
+        "joint_full_runtime": 9.238858482941969e-07
+      },
+      "relative_mse_drift": -3.9402909085550775e-06
+    }
+  },
+  "max_individual_relative_mse_drift": 0.00016770676833210985,
+  "preservation": {
+    "files_verified": 190,
+    "mismatches": [],
+    "completed_new_diagnostics": [
+      {
+        "path": "research\\phase2\\results\\joint_overhead_diagnostic_20261002.json",
+        "snapshot_sha256": "1b2a1498ebf1a2d1a33ea7f717cedd22eb704aa566bc29aeae31d54534655686",
+        "completed_sha256": "9a4fd94549ed4570f32606552dad605914ccd4efa2e36b9a746beef684cca028",
+        "reason": "New diagnostic manifest was still appending when the preservation snapshot was taken; all four completed children and their reference hashes verified."
+      }
+    ],
+    "includes": "Original candidates, prior results, all existing archives, and installed runner/meter Python sources."
+  }
+}

@@ -1,0 +1,8 @@
+{"method": "baseline_snapshot", "returncode": 0, "max_tree_working_set_bytes": 3554115584}
+{"method": "selective_block8", "returncode": 0, "max_tree_working_set_bytes": 3635851264}
+{"method": "qr", "returncode": 1, "max_tree_working_set_bytes": 3485376512}
+{"method": "block8", "returncode": 1, "max_tree_working_set_bytes": 3700899840}
+{"method": "block16", "returncode": 1, "max_tree_working_set_bytes": 5261598720}
+{"method": "qblock8", "returncode": 1, "max_tree_working_set_bytes": 3521929216}
+{"method": "qblock16", "returncode": 1, "max_tree_working_set_bytes": 5332881408}
+{"method": "qrblock8", "returncode": 1, "max_tree_working_set_bytes": 3675738112}

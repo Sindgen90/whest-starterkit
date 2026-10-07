@@ -1,0 +1,27 @@
+{
+  "versions": {
+    "whestbench": "0.16.1",
+    "flopscope": "0.12.1",
+    "numpy": "2.2.6",
+    "datasets": "5.0.1",
+    "threadpoolctl": "3.6.0",
+    "pytest": "9.1.1"
+  },
+  "official_spec": {
+    "width": 1024,
+    "depth": 16,
+    "n_mlps": 2,
+    "flop_budget": 2199023255552,
+    "ground_truth_samples": 100,
+    "setup_timeout_s": 5.0,
+    "predict_timeout_s": 30.0,
+    "memory_limit_mb": 8192,
+    "wall_time_limit_s": 120.0,
+    "residual_wall_time_limit_s": 0.4,
+    "seed": 20261071,
+    "lambda_flops_per_second": 0.0
+  },
+  "psutil_installed": false,
+  "protocol_sha256": "301731ed0366c06964efa5b6c1f5854f72fe8d63d110333f2f43b530b37d9712",
+  "preserved_files": 528
+}

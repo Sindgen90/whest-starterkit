@@ -1,0 +1,18 @@
+[
+  {
+    "mode": "array",
+    "report": "research\\phase2\\results\\joint_overhead_diagnostic_20261002_array.json"
+  },
+  {
+    "mode": "float64",
+    "report": "research\\phase2\\results\\joint_overhead_diagnostic_20261002_float64.json"
+  },
+  {
+    "mode": "payload",
+    "report": "research\\phase2\\results\\joint_overhead_diagnostic_20261002_payload.json"
+  },
+  {
+    "mode": "payload-released",
+    "report": "research\\phase2\\results\\joint_overhead_diagnostic_20261002_payload-released.json"
+  }
+]

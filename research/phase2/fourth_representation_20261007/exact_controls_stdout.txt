@@ -1,0 +1,12 @@
+{"n": 16, "seed": 82071, "method": "qr", "status": "run"}
+{"n": 16, "seed": 82071, "method": "qblock8", "status": "run"}
+{"n": 16, "seed": 82071, "method": "qrblock8", "status": "run"}
+{"n": 16, "seed": 82072, "method": "qr", "status": "run"}
+{"n": 16, "seed": 82072, "method": "qblock8", "status": "run"}
+{"n": 16, "seed": 82072, "method": "qrblock8", "status": "run"}
+{"n": 32, "seed": 82081, "method": "qr", "status": "run"}
+{"n": 32, "seed": 82081, "method": "qblock8", "status": "run"}
+{"n": 32, "seed": 82081, "method": "qrblock8", "status": "run"}
+{"n": 32, "seed": 82082, "method": "qr", "status": "run"}
+{"n": 32, "seed": 82082, "method": "qblock8", "status": "run"}
+{"n": 32, "seed": 82082, "method": "qrblock8", "status": "run"}

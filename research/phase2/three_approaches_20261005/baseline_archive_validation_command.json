@@ -1,0 +1,10 @@
+{
+  "command": [
+    "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+    "validate-package",
+    "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_joint_full_runtime_20261002.tar.gz",
+    "--format",
+    "json"
+  ],
+  "returncode": 0
+}

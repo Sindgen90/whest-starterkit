@@ -1,0 +1,30 @@
+{
+  "repository": "https://github.com/504aldo/whest-p2-cumulant-k3",
+  "commit": "1a4083f89184d6b1cc55d2e55a5a561d2ae50a8d",
+  "files": {
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/504aldo/whest-p2-cumulant-k3/1a4083f89184d6b1cc55d2e55a5a561d2ae50a8d/LICENSE",
+      "sha256": "d2c9a83a86ed95c8d279219cd36d5a025c0372dee57d072fe4718850e226e740"
+    },
+    "README.md": {
+      "url": "https://raw.githubusercontent.com/504aldo/whest-p2-cumulant-k3/1a4083f89184d6b1cc55d2e55a5a561d2ae50a8d/README.md",
+      "sha256": "07639023b9c42da008551493f0b7d99ce86d04238f4ebbf9adb84e8d96e4d740"
+    },
+    "estimators/estimator_v25.py": {
+      "url": "https://raw.githubusercontent.com/504aldo/whest-p2-cumulant-k3/1a4083f89184d6b1cc55d2e55a5a561d2ae50a8d/estimators/estimator_v25.py",
+      "sha256": "c0ae6f12d27d851ddd104dd749ac1f2a6400a6b18a0b4104c389150b93bd4b20"
+    },
+    "estimators/estimator_v29.py": {
+      "url": "https://raw.githubusercontent.com/504aldo/whest-p2-cumulant-k3/1a4083f89184d6b1cc55d2e55a5a561d2ae50a8d/estimators/estimator_v29.py",
+      "sha256": "86d9ca9b28e6fe2b6c74750a0b6ae4bba4c14f742ddc3f5f56bc7fb4ec9d8e27"
+    },
+    "docs/derivation_code_map.md": {
+      "url": "https://raw.githubusercontent.com/504aldo/whest-p2-cumulant-k3/1a4083f89184d6b1cc55d2e55a5a561d2ae50a8d/docs/derivation_code_map.md",
+      "sha256": "d956b22b6170271eca3d20f7d332ab5f8b9b7a717705e8b28e092ab4866f1a28"
+    },
+    "docs/community_post.md": {
+      "url": "https://raw.githubusercontent.com/504aldo/whest-p2-cumulant-k3/1a4083f89184d6b1cc55d2e55a5a561d2ae50a8d/docs/community_post.md",
+      "sha256": "bf0a471bd5187020e2a2be65d5199c286ce5c20ed9e53e5502ce509557c7c55d"
+    }
+  }
+}

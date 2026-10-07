@@ -1,0 +1,13 @@
+{"stage": "oracle", "n": 16, "seed": 82071, "layer": 0, "records": 31}
+{"stage": "oracle", "n": 16, "seed": 82071, "layer": 7, "records": 62}
+{"stage": "oracle", "n": 16, "seed": 82071, "layer": 14, "records": 93}
+{"stage": "oracle", "n": 16, "seed": 82072, "layer": 0, "records": 124}
+{"stage": "oracle", "n": 16, "seed": 82072, "layer": 7, "records": 155}
+{"stage": "oracle", "n": 16, "seed": 82072, "layer": 14, "records": 186}
+{"stage": "oracle", "n": 32, "seed": 82081, "layer": 0, "records": 217}
+{"stage": "oracle", "n": 32, "seed": 82081, "layer": 7, "records": 248}
+{"stage": "oracle", "n": 32, "seed": 82081, "layer": 14, "records": 279}
+{"stage": "oracle", "n": 32, "seed": 82082, "layer": 0, "records": 310}
+{"stage": "oracle", "n": 32, "seed": 82082, "layer": 7, "records": 341}
+{"stage": "oracle", "n": 32, "seed": 82082, "layer": 14, "records": 372}
+{"selected_rule": "correlation", "normalized_transport_risk": {"contiguous": 0.35850175664082673, "random": 0.3778479125063447, "correlation": 0.2831804030404825}, "criterion": "Frozen PROTOCOL.md, averaged E/F d4/Q/R actual-weight cross-stream risks; 1% tie preference contiguous/random/correlation.", "no_oracle_clusters": true}

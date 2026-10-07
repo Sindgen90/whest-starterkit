@@ -1,0 +1,57 @@
+{
+  "protocol": "Unchanged official CLI; default Phase 2 caps; four threads; 100 samples for execution only; serial runs; all failures retained.",
+  "source": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\joint_full_candidate\\estimator.py",
+  "source_sha256": "3539c3eaa325a5ffa92279fb3e39034ba5b36d73c97612a7ecb0680289bca8d9",
+  "records": [
+    {
+      "runner": "local",
+      "seed": 20260926,
+      "command": [
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+        "run",
+        "--estimator",
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\joint_full_candidate\\estimator.py",
+        "--runner",
+        "local",
+        "--n-mlps",
+        "1",
+        "--n-samples",
+        "100",
+        "--seed",
+        "20260926",
+        "--max-threads",
+        "4",
+        "--format",
+        "json"
+      ],
+      "returncode": 0,
+      "report": "research\\phase2\\results\\joint_overhead_baseline_20261001_local_20260926.json",
+      "parse_error": "Missing/invalid official summary; inspect raw output."
+    },
+    {
+      "runner": "subprocess",
+      "seed": 20260926,
+      "command": [
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+        "run",
+        "--estimator",
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\joint_full_candidate\\estimator.py",
+        "--runner",
+        "subprocess",
+        "--n-mlps",
+        "1",
+        "--n-samples",
+        "100",
+        "--seed",
+        "20260926",
+        "--max-threads",
+        "4",
+        "--format",
+        "json"
+      ],
+      "returncode": 0,
+      "report": "research\\phase2\\results\\joint_overhead_baseline_20261001_subprocess_20260926.json",
+      "parse_error": "Missing/invalid official summary; inspect raw output."
+    }
+  ]
+}

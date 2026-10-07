@@ -1,0 +1,13 @@
+{
+  "command": [
+    "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\python.exe",
+    "-m",
+    "pytest",
+    "research/phase2/three_approaches_20261005/test_methods.py",
+    "research/phase2/test_joint_full_runtime.py",
+    "-q",
+    "--disable-warnings"
+  ],
+  "returncode": 0,
+  "log": "research\\phase2\\three_approaches_20261005\\final_tests.txt"
+}

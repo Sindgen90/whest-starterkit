@@ -1,0 +1,12 @@
+{"n": 16, "seed": 82071, "source_layer": 0}
+{"n": 16, "seed": 82071, "source_layer": 7}
+{"n": 16, "seed": 82071, "source_layer": 14}
+{"n": 16, "seed": 82072, "source_layer": 0}
+{"n": 16, "seed": 82072, "source_layer": 7}
+{"n": 16, "seed": 82072, "source_layer": 14}
+{"n": 32, "seed": 82081, "source_layer": 0}
+{"n": 32, "seed": 82081, "source_layer": 7}
+{"n": 32, "seed": 82081, "source_layer": 14}
+{"n": 32, "seed": 82082, "source_layer": 0}
+{"n": 32, "seed": 82082, "source_layer": 7}
+{"n": 32, "seed": 82082, "source_layer": 14}

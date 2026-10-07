@@ -1,0 +1,55 @@
+{
+  "protocol": "Unchanged official CLI; default Phase 2 caps; four threads; 100 samples for execution only; serial runs; all failures retained.",
+  "source": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\fourth_representation_20261007\\baseline_snapshot\\estimator.py",
+  "source_sha256": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+  "records": [
+    {
+      "runner": "local",
+      "seed": 20261071,
+      "command": [
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+        "run",
+        "--estimator",
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\fourth_representation_20261007\\baseline_snapshot\\estimator.py",
+        "--runner",
+        "local",
+        "--n-mlps",
+        "2",
+        "--n-samples",
+        "100",
+        "--seed",
+        "20261071",
+        "--max-threads",
+        "4",
+        "--format",
+        "json"
+      ],
+      "returncode": 0,
+      "report": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\fourth_representation_20261007\\baseline_snapshot_local_timing_local_20261071.json",
+      "summary": {
+        "n_failed_mlps": 0,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 0,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 196317442558,
+            "wall_time_s": 7.058735200000228,
+            "residual_wall_time_s": 0.2048526010767091
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 196317442558,
+            "wall_time_s": 6.999669399985578,
+            "residual_wall_time_s": 0.20476750054513104
+          }
+        ]
+      }
+    }
+  ]
+}

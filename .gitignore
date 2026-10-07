@@ -5,6 +5,7 @@ __pycache__/
 .pytest_cache/
 .ruff_cache/
 .venv/
+.venv-phase2/
 .local/
 .tools/
 .uv-cache/
@@ -16,6 +17,7 @@ __pycache__/
 # Build / packaging artifacts
 *.tar.gz
 *.npz
+research/phase2/**/*.arrow
 build/
 dist/
 *.egg-info/
@@ -28,6 +30,12 @@ results/
 research/results/*stdout.txt
 research/results/*stderr.txt
 research/results/*pid.txt
+!research/phase2/results/
+research/phase2/results/*
+!research/phase2/results/*.json
+!research/phase2/results/*.csv
+!research/phase2/results/*.py
+!research/phase2/results/*.txt
 
 # OS
 .DS_Store

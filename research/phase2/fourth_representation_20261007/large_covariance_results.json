@@ -1,0 +1,580 @@
+{
+  "cohort": "Exploratory public ID 0 only, checkpoints 0,7,14; independent 4x8192 reference inputs. Final mean ranking uses baked targets on IDs 0,1 separately. Observations do not enter inference.",
+  "records": [
+    {
+      "method": "baseline_snapshot",
+      "status": "run",
+      "exception": null,
+      "source_sha256": "bd4c808d47068dcf2b0515472925598f56c43b2b603a2159b982d4d1f9dbce7e",
+      "observer_sha256": "d4de05d05e8a9a6350d95fff1ba85ae99a682a7e9f3708c9a6c38c0e7c2c82fc",
+      "cost": {
+        "flops": 196317442558,
+        "wall_s": 7.088032100000419,
+        "residual_s": 0.21038400067482144,
+        "process_peak_working_set_bytes": 526123008
+      },
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.642140893906799e-08,
+          "cov_risk_interval": {
+            "mean": 4.642139295185643e-08,
+            "lower95": -2.8627506985365383e-07,
+            "upper95": 3.791178557573667e-07,
+            "estimate": 4.642140893906799e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": null
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 2.997464036980091e-07,
+          "cov_risk_interval": {
+            "mean": 2.997464676468553e-07,
+            "lower95": 2.7447929410780446e-07,
+            "upper95": 3.2501364118590615e-07,
+            "estimate": 2.997464036980091e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -7.481265051900721e-10,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.15365540981292725,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": null
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 2.8956836217730597e-07,
+          "cov_risk_interval": {
+            "mean": 2.895684900749984e-07,
+            "lower95": 1.7228446631517694e-07,
+            "upper95": 4.068525138348199e-07,
+            "estimate": 2.8956836217730597e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -6.277927013798035e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.2853451371192932,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": null
+        }
+      ],
+      "wall_including_offline_checks_s": 7.8488205000176094
+    },
+    {
+      "method": "qr",
+      "status": "run",
+      "exception": null,
+      "source_sha256": "5809777f3027ccce85cbba29b5049e714150b545be819fd8c4f8357c4861ebc5",
+      "observer_sha256": "69d7e4de3c705a9c9e31bf367ccb7de08b111c57e983867ff5a2a066c706af18",
+      "cost": {
+        "flops": 445556725439,
+        "wall_s": 10.901489500014577,
+        "residual_s": 0.40643900068243966,
+        "process_peak_working_set_bytes": 614600704
+      },
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.6421419597209024e-08,
+          "cov_risk_interval": {
+            "mean": 4.642143291988532e-08,
+            "lower95": -2.8627497920321325e-07,
+            "upper95": 3.791178450429839e-07,
+            "estimate": 4.6421419597209024e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 2.9928503408882534e-07,
+          "cov_risk_interval": {
+            "mean": 2.9928494882369705e-07,
+            "lower95": 2.7430193473072065e-07,
+            "upper95": 3.2426796291667345e-07,
+            "estimate": 2.9928503408882534e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -6.806520902458146e-10,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.15472900867462158,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 2.901110178754607e-07,
+          "cov_risk_interval": {
+            "mean": 2.901110818243069e-07,
+            "lower95": 1.7329747295902935e-07,
+            "upper95": 4.069246906895844e-07,
+            "estimate": 2.901110178754607e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -5.731190526603314e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.28668317198753357,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0
+        }
+      ],
+      "wall_including_offline_checks_s": 11.666333200002555
+    },
+    {
+      "method": "block8",
+      "status": "run",
+      "exception": null,
+      "source_sha256": "7a4d891d2b42fd89470c920b71e77f828a03d834ffc31253524f911b46365c4d",
+      "observer_sha256": "f129e59a4d7347047657058a565c8f0efe9759091e334e4dfd0ddb61c54639c1",
+      "cost": {
+        "flops": 525092354207,
+        "wall_s": 22.718376700009685,
+        "residual_s": 1.3036074995761737,
+        "process_peak_working_set_bytes": 1237331968
+      },
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.6421419597209024e-08,
+          "cov_risk_interval": {
+            "mean": 4.642143291988532e-08,
+            "lower95": -2.8627497920321325e-07,
+            "upper95": 3.791178450429839e-07,
+            "estimate": 4.6421419597209024e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": 0.2766368091106415,
+          "S_negative_blocks": 0,
+          "S_violation_sum": 0.0,
+          "tensor_symmetry_error": 9.313225746154785e-10
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 3.7563842170129647e-07,
+          "cov_risk_interval": {
+            "mean": 3.7563882671065585e-07,
+            "lower95": 3.258222823101027e-07,
+            "upper95": 4.25455371111209e-07,
+            "estimate": 3.7563842170129647e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -1.060744381220502e-08,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.023994386196136475,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.03743695840239525,
+          "S_negative_blocks": 27,
+          "S_violation_sum": 0.06570580286698435,
+          "tensor_symmetry_error": 1.1641532182693481e-10
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 6.325665253825719e-07,
+          "cov_risk_interval": {
+            "mean": 6.325664401174436e-07,
+            "lower95": 4.6531546877866035e-07,
+            "upper95": 7.998174114562268e-07,
+            "estimate": 6.325665253825719e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -6.143787345536111e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.2015499621629715,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.20566512644290924,
+          "S_negative_blocks": 101,
+          "S_violation_sum": 3.3175117505896865,
+          "tensor_symmetry_error": 5.820766091346741e-11
+        }
+      ],
+      "wall_including_offline_checks_s": 23.589511400001356
+    },
+    {
+      "method": "block16",
+      "status": "run",
+      "exception": null,
+      "source_sha256": "775ff8c9c7f2e0bf0c55488500f56de199dfd8dd7bf22f340c9b6aa8698045a1",
+      "observer_sha256": "93635f130b5cd65262c1c980b387ff0c7ecab2f7a60314074917dfe37663954e",
+      "cost": {
+        "flops": 1324960065151,
+        "wall_s": 49.046340200002305,
+        "residual_s": 4.911188500002027,
+        "process_peak_working_set_bytes": 3713843200
+      },
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.6421419597209024e-08,
+          "cov_risk_interval": {
+            "mean": 4.642143291988532e-08,
+            "lower95": -2.8627497920321325e-07,
+            "upper95": 3.791178450429839e-07,
+            "estimate": 4.6421419597209024e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": 0.27066776156425476,
+          "S_negative_blocks": 0,
+          "S_violation_sum": 0.0,
+          "tensor_symmetry_error": 9.313225746154785e-10
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 3.74742427311503e-07,
+          "cov_risk_interval": {
+            "mean": 3.747423420463747e-07,
+            "lower95": 3.2509864800575764e-07,
+            "upper95": 4.2438603608699174e-07,
+            "estimate": 3.74742427311503e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -1.0603637079498185e-08,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.024063169956207275,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.06253093481063843,
+          "S_negative_blocks": 37,
+          "S_violation_sum": 0.11457501033433304,
+          "tensor_symmetry_error": 2.3283064365386963e-10
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 6.298159291873162e-07,
+          "cov_risk_interval": {
+            "mean": 6.298158439221879e-07,
+            "lower95": 4.6351583918692117e-07,
+            "upper95": 7.961158486574547e-07,
+            "estimate": 6.298159291873162e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -6.218510861799587e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.2019903063774109,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.22869472205638885,
+          "S_negative_blocks": 64,
+          "S_violation_sum": 3.1675464310420978,
+          "tensor_symmetry_error": 1.1641532182693481e-10
+        }
+      ],
+      "wall_including_offline_checks_s": 50.13005790000898
+    },
+    {
+      "method": "qblock8",
+      "status": "run",
+      "exception": null,
+      "source_sha256": "5dd70e4f897e5d0f9def9ab05868c0d42cbe853115feaa290def9537d8555465",
+      "observer_sha256": "9812bded3588f196932aa244f4a92ce594b896b2c6792d320d22d23c7067153c",
+      "cost": {
+        "flops": 948626906271,
+        "wall_s": 24.528117199981352,
+        "residual_s": 1.3620152016810607,
+        "process_peak_working_set_bytes": 3713843200
+      },
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.6421419597209024e-08,
+          "cov_risk_interval": {
+            "mean": 4.642143291988532e-08,
+            "lower95": -2.8627497920321325e-07,
+            "upper95": 3.791178450429839e-07,
+            "estimate": 4.6421419597209024e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": 0.2766368091106415,
+          "S_negative_blocks": 0,
+          "S_violation_sum": 0.0,
+          "tensor_symmetry_error": 9.313225746154785e-10
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 2.995385273152351e-07,
+          "cov_risk_interval": {
+            "mean": 2.9953835678497853e-07,
+            "lower95": 2.7493518961034787e-07,
+            "upper95": 3.241415239596092e-07,
+            "estimate": 2.995385273152351e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -7.08997305309822e-10,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.15378043055534363,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.16218875348567963,
+          "S_negative_blocks": 20,
+          "S_violation_sum": 0.3098298756559223,
+          "tensor_symmetry_error": 1.1641532182693481e-10
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 2.901199422922218e-07,
+          "cov_risk_interval": {
+            "mean": 2.9011998492478597e-07,
+            "lower95": 1.7359909257846297e-07,
+            "upper95": 4.06640877271109e-07,
+            "estimate": 2.901199422922218e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -5.970371148578124e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.2861829996109009,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.29041093587875366,
+          "S_negative_blocks": 102,
+          "S_violation_sum": 5.415416979810381,
+          "tensor_symmetry_error": 2.9103830456733704e-11
+        }
+      ],
+      "wall_including_offline_checks_s": 25.38290880000568
+    },
+    {
+      "method": "qblock16",
+      "status": "failed",
+      "exception": "BudgetExhaustedError('matmul would cost 8,573,157,376 FLOPs but only 7,176,255,873 remain. See: https://aicrowd.github.io/flopscope/docs/guides/budget-planning')",
+      "source_sha256": "ac825c6e197625f7f5c84e94582392dd408227fae71e1b62f7d1f862b7b2f83b",
+      "observer_sha256": "2abaeafc77fc51ed62a3d4cbe71d122b5519e5b2b13db184b0e7a4af924629ff",
+      "cost": null,
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.6421419597209024e-08,
+          "cov_risk_interval": {
+            "mean": 4.642143291988532e-08,
+            "lower95": -2.8627497920321325e-07,
+            "upper95": 3.791178450429839e-07,
+            "estimate": 4.6421419597209024e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": 0.27066776156425476,
+          "S_negative_blocks": 0,
+          "S_violation_sum": 0.0,
+          "tensor_symmetry_error": 9.313225746154785e-10
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 2.9951939950478845e-07,
+          "cov_risk_interval": {
+            "mean": 2.9951948476991674e-07,
+            "lower95": 2.748074764870607e-07,
+            "upper95": 3.242314930527728e-07,
+            "estimate": 2.9951939950478845e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -7.084792752465319e-10,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.15390995144844055,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.182215616106987,
+          "S_negative_blocks": 26,
+          "S_violation_sum": 0.39464586016832737,
+          "tensor_symmetry_error": 2.3283064365386963e-10
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 2.900701758790092e-07,
+          "cov_risk_interval": {
+            "mean": 2.900703037767016e-07,
+            "lower95": 1.7360738392071424e-07,
+            "upper95": 4.06533223632689e-07,
+            "estimate": 2.900701758790092e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -5.965540594843333e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.28595075011253357,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.3175024092197418,
+          "S_negative_blocks": 63,
+          "S_violation_sum": 4.882811476910419,
+          "tensor_symmetry_error": 1.1641532182693481e-10
+        }
+      ],
+      "wall_including_offline_checks_s": 53.577901599986944
+    },
+    {
+      "method": "qrblock8",
+      "status": "run",
+      "exception": null,
+      "source_sha256": "23893301e2f0151e01b850045f24d8a73b9e5739b87559e4447491a2ed224584",
+      "observer_sha256": "4ed5904f8304fa07cf3403cbe7944113198dd62a816fc2a32911ec9c682f48dd",
+      "cost": {
+        "flops": 1118271311007,
+        "wall_s": 26.07513020001352,
+        "residual_s": 1.4556601015792694,
+        "process_peak_working_set_bytes": 3739549696
+      },
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.6421419597209024e-08,
+          "cov_risk_interval": {
+            "mean": 4.642143291988532e-08,
+            "lower95": -2.8627497920321325e-07,
+            "upper95": 3.791178450429839e-07,
+            "estimate": 4.6421419597209024e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": 0.2766368091106415,
+          "S_negative_blocks": 0,
+          "S_violation_sum": 0.0,
+          "tensor_symmetry_error": 9.313225746154785e-10
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 2.992862278006214e-07,
+          "cov_risk_interval": {
+            "mean": 2.992859293726724e-07,
+            "lower95": 2.743019552368349e-07,
+            "upper95": 3.242699035085099e-07,
+            "estimate": 2.992862278006214e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -6.806306074302881e-10,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.15485292673110962,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.16322721540927887,
+          "S_negative_blocks": 20,
+          "S_violation_sum": 0.3116949781735805,
+          "tensor_symmetry_error": 1.1641532182693481e-10
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 2.9011380320298485e-07,
+          "cov_risk_interval": {
+            "mean": 2.9011420821234424e-07,
+            "lower95": 1.7329744430897794e-07,
+            "upper95": 4.069309721157105e-07,
+            "estimate": 2.9011380320298485e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -5.731022270083486e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.28643664717674255,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.29066598415374756,
+          "S_negative_blocks": 102,
+          "S_violation_sum": 5.424596436037062,
+          "tensor_symmetry_error": 5.820766091346741e-11
+        }
+      ],
+      "wall_including_offline_checks_s": 26.9255678000045
+    },
+    {
+      "method": "selective_block8",
+      "status": "run",
+      "exception": null,
+      "source_sha256": "74f455f4495cb548eaa2f087134a9b9b5467967ab9dcf3fe309ae24edc68b295",
+      "observer_sha256": "b13484776059446304eed4aad17212473ce95242a5718de4ae6e78c2bc494198",
+      "cost": {
+        "flops": 267402417311,
+        "wall_s": 7.967246800020803,
+        "residual_s": 0.34104459919035435,
+        "process_peak_working_set_bytes": 3739549696
+      },
+      "diagnostics": [
+        {
+          "layer": 0,
+          "cov_cross_stream_risk": 4.6421419597209024e-08,
+          "cov_risk_interval": {
+            "mean": 4.642143291988532e-08,
+            "lower95": -2.8627497920321325e-07,
+            "upper95": 3.791178450429839e-07,
+            "estimate": 4.6421419597209024e-08,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": 0.17587831616401672,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": 1.4661954641342163,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": 0.2766368091106415,
+          "S_negative_blocks": 0,
+          "S_violation_sum": 0.0,
+          "tensor_symmetry_error": 9.313225746154785e-10
+        },
+        {
+          "layer": 7,
+          "cov_cross_stream_risk": 2.87920130404018e-07,
+          "cov_risk_interval": {
+            "mean": 2.879201090877359e-07,
+            "lower95": 2.6543485294332126e-07,
+            "upper95": 3.1040536523215056e-07,
+            "estimate": 2.87920130404018e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -6.650837658384035e-10,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.14071401953697205,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": 0.0,
+          "S_min_eigenvalue": -0.14939536154270172,
+          "S_negative_blocks": 16,
+          "S_violation_sum": 0.268747611498357,
+          "tensor_symmetry_error": 1.1641532182693481e-10
+        },
+        {
+          "layer": 14,
+          "cov_cross_stream_risk": 2.960071299185074e-07,
+          "cov_risk_interval": {
+            "mean": 2.96007002020815e-07,
+            "lower95": 2.341667302559813e-07,
+            "upper95": 3.5784727378564863e-07,
+            "estimate": 2.960071299185074e-07,
+            "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+          },
+          "cov_min_eigenvalue": -5.480835625348845e-07,
+          "cov_symmetry": 0.0,
+          "marginal_min_slack": -0.2486070692539215,
+          "q_symmetry_error": 0.0,
+          "qr_diagonal_difference": null
+        }
+      ],
+      "wall_including_offline_checks_s": 8.792544900003122
+    }
+  ]
+}

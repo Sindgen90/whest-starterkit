@@ -1,0 +1,417 @@
+{
+  "purpose": "Post-hoc offline explanation, not a selected estimator. Hold corrected mean/M2 fixed and remove only raw-M3/M4 clipping in the complete-fourth oracle. No recurrence, inference or submission change; no new fitted coefficient.",
+  "translation_counterexample": [
+    {
+      "mean": 10.0,
+      "input_variance": 0.75,
+      "input_third": 0.75,
+      "true_input_and_output_fourth": -0.375,
+      "clipped_fourth": -6.3545655283814995,
+      "unclipped34_fourth": -0.375,
+      "clipped_marginal_slack": -5.2295655283814995,
+      "support": [
+        9.5,
+        11.5
+      ],
+      "probabilities": [
+        0.75,
+        0.25
+      ]
+    },
+    {
+      "mean": 20.0,
+      "input_variance": 0.75,
+      "input_third": 0.75,
+      "true_input_and_output_fourth": -0.375,
+      "clipped_fourth": -12.849756056675687,
+      "unclipped34_fourth": -0.375,
+      "clipped_marginal_slack": -11.724756056675687,
+      "support": [
+        19.5,
+        21.5
+      ],
+      "probabilities": [
+        0.75,
+        0.25
+      ]
+    }
+  ],
+  "records": [
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 0,
+      "risks": {
+        "clipped": 4.310403867996864,
+        "unclipped34": 0.00773978360244862
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 4.310403867996865,
+          "lower95": 4.160058517785621,
+          "upper95": 4.460749218208108,
+          "estimate": 4.310403867996864,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 0.0077397836024486215,
+          "lower95": 0.005201167315549907,
+          "upper95": 0.010278399889347336,
+          "estimate": 0.00773978360244862,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.25,
+        0.546875
+      ]
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 7,
+      "risks": {
+        "clipped": 170.1175005093969,
+        "unclipped34": 0.027036632738586933
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 170.11750050939705,
+          "lower95": 155.5297215860339,
+          "upper95": 184.7052794327602,
+          "estimate": 170.1175005093969,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 0.027036632738586922,
+          "lower95": -4.9741939184673456e-05,
+          "upper95": 0.05412300741635852,
+          "estimate": 0.027036632738586933,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.5,
+        0.5625
+      ]
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 14,
+      "risks": {
+        "clipped": 406486.293426731,
+        "unclipped34": 98.59606486800274
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 406486.2934267311,
+          "lower95": 374152.21143276023,
+          "upper95": 438820.3754207019,
+          "estimate": 406486.293426731,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 98.59606486800277,
+          "lower95": 8.81033691161339,
+          "upper95": 188.38179282439216,
+          "estimate": 98.59606486800274,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 0,
+      "risks": {
+        "clipped": 1.7693465095613607,
+        "unclipped34": 0.0007481410237729909
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 1.7693465095613616,
+          "lower95": 1.6159502483034986,
+          "upper95": 1.9227427708192246,
+          "estimate": 1.7693465095613607,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 0.0007481410237729909,
+          "lower95": 6.320654669638868e-05,
+          "upper95": 0.001433075500849593,
+          "estimate": 0.0007481410237729909,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.21875,
+        0.5625
+      ]
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 7,
+      "risks": {
+        "clipped": 0.00033787140844017394,
+        "unclipped34": 2.659074557975182e-06
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 0.00033787140844017416,
+          "lower95": 0.00028317648261503274,
+          "upper95": 0.0003925663342653156,
+          "estimate": 0.00033787140844017394,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 2.6590745579751827e-06,
+          "lower95": 1.224971070139025e-06,
+          "upper95": 4.093178045811341e-06,
+          "estimate": 2.659074557975182e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.375,
+        0.421875
+      ]
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 14,
+      "risks": {
+        "clipped": 4.264100603329176e-08,
+        "unclipped34": 4.947049460458544e-10
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 4.2641006033291776e-08,
+          "lower95": 3.1128500531097036e-08,
+          "upper95": 5.4153511535486516e-08,
+          "estimate": 4.264100603329176e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 4.947049460458542e-10,
+          "lower95": 1.8942946106833257e-10,
+          "upper95": 7.999804310233759e-10,
+          "estimate": 4.947049460458544e-10,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.5625,
+        0.5625
+      ]
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 0,
+      "risks": {
+        "clipped": 0.7108407619730854,
+        "unclipped34": 3.268737465911988e-05
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 0.7108407619730852,
+          "lower95": 0.6836034948427766,
+          "upper95": 0.7380780291033938,
+          "estimate": 0.7108407619730854,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 3.268737465911988e-05,
+          "lower95": -0.00022565414085933154,
+          "upper95": 0.0002910288901775713,
+          "estimate": 3.268737465911988e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.125,
+        0.53125
+      ]
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 7,
+      "risks": {
+        "clipped": 0.4651271672035855,
+        "unclipped34": 0.0011446602085573377
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 0.465127167203585,
+          "lower95": 0.4090897928490308,
+          "upper95": 0.5211645415581392,
+          "estimate": 0.4651271672035855,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 0.0011446602085573377,
+          "lower95": 0.0006771734750990125,
+          "upper95": 0.0016121469420156628,
+          "estimate": 0.0011446602085573377,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.375,
+        0.4140625
+      ]
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 14,
+      "risks": {
+        "clipped": 0.2081897073830298,
+        "unclipped34": 0.0004932074918745488
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 0.2081897073830297,
+          "lower95": 0.16927547706475596,
+          "upper95": 0.24710393770130343,
+          "estimate": 0.2081897073830298,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 0.000493207491874549,
+          "lower95": 0.00011914333183381406,
+          "upper95": 0.0008672716519152839,
+          "estimate": 0.0004932074918745488,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.53125,
+        0.5625
+      ]
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 0,
+      "risks": {
+        "clipped": 0.46141843509050595,
+        "unclipped34": 0.00021262299588768486
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 0.46141843509050606,
+          "lower95": 0.41359667910473463,
+          "upper95": 0.5092401910762775,
+          "estimate": 0.46141843509050595,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 0.00021262299588768483,
+          "lower95": 1.1592374737371281e-05,
+          "upper95": 0.0004136536170379984,
+          "estimate": 0.00021262299588768486,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.1015625,
+        0.2578125
+      ]
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 7,
+      "risks": {
+        "clipped": 0.20080197863115057,
+        "unclipped34": 0.0008603648799687571
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 0.20080197863115043,
+          "lower95": 0.1705880076944433,
+          "upper95": 0.23101594956785756,
+          "estimate": 0.20080197863115057,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 0.0008603648799687579,
+          "lower95": 0.000776225934699083,
+          "upper95": 0.0009445038252384328,
+          "estimate": 0.0008603648799687571,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.3125,
+        0.3984375
+      ]
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 14,
+      "risks": {
+        "clipped": 0.3145026191703012,
+        "unclipped34": 9.914416152539018e-05
+      },
+      "intervals": {
+        "clipped": {
+          "mean": 0.3145026191703012,
+          "lower95": 0.2551242130915149,
+          "upper95": 0.3738810252490875,
+          "estimate": 0.3145026191703012,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "unclipped34": {
+          "mean": 9.914416152539011e-05,
+          "lower95": -2.8525449941500184e-05,
+          "upper95": 0.0002268137729922804,
+          "estimate": 9.914416152539018e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      },
+      "raw_moment_clip_fractions": [
+        0.0,
+        0.0,
+        0.40625,
+        0.53125
+      ]
+    }
+  ],
+  "summary": {
+    "clipped": 33888.737658016784,
+    "unclipped34": 8.219536231004108
+  }
+}

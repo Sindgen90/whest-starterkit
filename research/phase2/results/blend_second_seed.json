@@ -1,0 +1,256 @@
+{
+  "dataset": "aicrowd/arc-whestbench-public-2026@v2-phase2",
+  "scope": "First public Mini Arrow shard; small scout, not leaderboard replication or holdout",
+  "estimator_sha256": "6c37d15caed0f2c4a4f5a18361cd7a3dd1c51159aa5b2eaef2d7408c25785392",
+  "versions": {
+    "flopscope": "0.12.1",
+    "whestbench": "0.16.1",
+    "numpy": "2.2.6"
+  },
+  "seed_protocol": "fixed independent estimator seed; no inference from dataset identity",
+  "seed": 20260906,
+  "budget": 2199023255552,
+  "score_floor": 0.1,
+  "threads": 4,
+  "presets": {
+    "covariance": {
+      "mode": "covariance"
+    },
+    "published_blend": {
+      "mode": "blend",
+      "samples": 4038
+    }
+  },
+  "records": [
+    {
+      "mlp_id": 0,
+      "method": "covariance",
+      "raw_mse": 4.501686445186785e-06,
+      "all_layer_mse": 2.35453289385963e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.8515857998281717,
+      "residual_s": 0.017395902890712023,
+      "local_caps_pass": true,
+      "nominal_adjusted": 4.5016864451867847e-07,
+      "cap_aware_score": 4.5016864451867847e-07
+    },
+    {
+      "mlp_id": 0,
+      "method": "published_blend",
+      "raw_mse": 2.30345242960108e-06,
+      "all_layer_mse": 2.0090760654878082e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.3309817998670042,
+      "residual_s": 0.033573994878679514,
+      "local_caps_pass": true,
+      "nominal_adjusted": 2.3034524296010803e-07,
+      "cap_aware_score": 2.3034524296010803e-07
+    },
+    {
+      "mlp_id": 1,
+      "method": "covariance",
+      "raw_mse": 5.055192652492001e-06,
+      "all_layer_mse": 2.6422942023415775e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.7492337999865413,
+      "residual_s": 0.015007704962044954,
+      "local_caps_pass": true,
+      "nominal_adjusted": 5.055192652492001e-07,
+      "cap_aware_score": 5.055192652492001e-07
+    },
+    {
+      "mlp_id": 1,
+      "method": "published_blend",
+      "raw_mse": 2.7528108378043962e-06,
+      "all_layer_mse": 2.153001264537599e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.2411845000460744,
+      "residual_s": 0.028295403346419334,
+      "local_caps_pass": true,
+      "nominal_adjusted": 2.752810837804396e-07,
+      "cap_aware_score": 2.752810837804396e-07
+    },
+    {
+      "mlp_id": 2,
+      "method": "covariance",
+      "raw_mse": 5.891221416894452e-06,
+      "all_layer_mse": 3.089582035714616e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.7408571001142263,
+      "residual_s": 0.015542201697826385,
+      "local_caps_pass": true,
+      "nominal_adjusted": 5.891221416894452e-07,
+      "cap_aware_score": 5.891221416894452e-07
+    },
+    {
+      "mlp_id": 2,
+      "method": "published_blend",
+      "raw_mse": 4.540725375110632e-06,
+      "all_layer_mse": 3.095726277863285e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.2547738002613187,
+      "residual_s": 0.028562803752720356,
+      "local_caps_pass": true,
+      "nominal_adjusted": 4.540725375110632e-07,
+      "cap_aware_score": 4.540725375110632e-07
+    },
+    {
+      "mlp_id": 3,
+      "method": "covariance",
+      "raw_mse": 3.694895600055787e-06,
+      "all_layer_mse": 2.0438555703752674e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.7920244997367263,
+      "residual_s": 0.015675699803978205,
+      "local_caps_pass": true,
+      "nominal_adjusted": 3.694895600055787e-07,
+      "cap_aware_score": 3.694895600055787e-07
+    },
+    {
+      "mlp_id": 3,
+      "method": "published_blend",
+      "raw_mse": 3.672291261617549e-06,
+      "all_layer_mse": 2.614602486965539e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.2862947001121938,
+      "residual_s": 0.02951730042695999,
+      "local_caps_pass": true,
+      "nominal_adjusted": 3.6722912616175496e-07,
+      "cap_aware_score": 3.6722912616175496e-07
+    },
+    {
+      "mlp_id": 4,
+      "method": "covariance",
+      "raw_mse": 3.338080817634801e-06,
+      "all_layer_mse": 2.031415306469873e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.7824161997996271,
+      "residual_s": 0.015015596523880959,
+      "local_caps_pass": true,
+      "nominal_adjusted": 3.338080817634801e-07,
+      "cap_aware_score": 3.338080817634801e-07
+    },
+    {
+      "mlp_id": 4,
+      "method": "published_blend",
+      "raw_mse": 2.3643760535618446e-06,
+      "all_layer_mse": 1.9474468092389057e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.2783037000335753,
+      "residual_s": 0.02887889789417386,
+      "local_caps_pass": true,
+      "nominal_adjusted": 2.3643760535618446e-07,
+      "cap_aware_score": 2.3643760535618446e-07
+    },
+    {
+      "mlp_id": 5,
+      "method": "covariance",
+      "raw_mse": 5.201242188902176e-06,
+      "all_layer_mse": 2.7243316187843157e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.7502597002312541,
+      "residual_s": 0.015321201179176569,
+      "local_caps_pass": true,
+      "nominal_adjusted": 5.201242188902176e-07,
+      "cap_aware_score": 5.201242188902176e-07
+    },
+    {
+      "mlp_id": 5,
+      "method": "published_blend",
+      "raw_mse": 2.5650401263786687e-06,
+      "all_layer_mse": 1.988633112183417e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.2198614003136754,
+      "residual_s": 0.028621199540793896,
+      "local_caps_pass": true,
+      "nominal_adjusted": 2.565040126378669e-07,
+      "cap_aware_score": 2.565040126378669e-07
+    },
+    {
+      "mlp_id": 6,
+      "method": "covariance",
+      "raw_mse": 2.5113222132986287e-06,
+      "all_layer_mse": 1.7838868428868248e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.8025209996849298,
+      "residual_s": 0.015827794559299946,
+      "local_caps_pass": true,
+      "nominal_adjusted": 2.5113222132986286e-07,
+      "cap_aware_score": 2.5113222132986286e-07
+    },
+    {
+      "mlp_id": 6,
+      "method": "published_blend",
+      "raw_mse": 2.288139140283805e-06,
+      "all_layer_mse": 2.131255158720701e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.243048599921167,
+      "residual_s": 0.028914903290569782,
+      "local_caps_pass": true,
+      "nominal_adjusted": 2.288139140283805e-07,
+      "cap_aware_score": 2.288139140283805e-07
+    },
+    {
+      "mlp_id": 7,
+      "method": "covariance",
+      "raw_mse": 4.960166571401892e-06,
+      "all_layer_mse": 2.558088915502032e-06,
+      "flops": 51709125615,
+      "utilization": 0.023514587890076655,
+      "wall_s": 0.7577141001820564,
+      "residual_s": 0.015251503325998783,
+      "local_caps_pass": true,
+      "nominal_adjusted": 4.960166571401892e-07,
+      "cap_aware_score": 4.960166571401892e-07
+    },
+    {
+      "mlp_id": 7,
+      "method": "published_blend",
+      "raw_mse": 3.163180245053395e-06,
+      "all_layer_mse": 2.161388264457792e-06,
+      "flops": 209770554351,
+      "utilization": 0.09539260388510229,
+      "wall_s": 1.1832455000840127,
+      "residual_s": 0.02833489701151848,
+      "local_caps_pass": true,
+      "nominal_adjusted": 3.1631802450533953e-07,
+      "cap_aware_score": 3.1631802450533953e-07
+    }
+  ],
+  "summary": {
+    "covariance": {
+      "count": 8,
+      "failures": 0,
+      "mean_cap_aware_score": 4.394225988233316e-07,
+      "mean_raw_mse": 4.394225988233315e-06,
+      "mean_nominal_adjusted": 4.394225988233316e-07,
+      "mean_utilization": 0.023514587890076655,
+      "mean_wall_s": 0.7783265249454416,
+      "mean_residual_s": 0.015629700617864728
+    },
+    "published_blend": {
+      "count": 8,
+      "failures": 0,
+      "mean_cap_aware_score": 2.9562519336764214e-07,
+      "mean_raw_mse": 2.9562519336764214e-06,
+      "mean_nominal_adjusted": 2.9562519336764214e-07,
+      "mean_utilization": 0.09539260388510229,
+      "mean_wall_s": 1.2547117500798777,
+      "mean_residual_s": 0.0293374250177294
+    }
+  }
+}

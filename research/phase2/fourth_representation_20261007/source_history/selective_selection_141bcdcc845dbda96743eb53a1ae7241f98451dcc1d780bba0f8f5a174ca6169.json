@@ -1,0 +1,13 @@
+{
+  "family": "D",
+  "block_size": 8,
+  "partition": "correlation",
+  "source_layers": [
+    0,
+    7
+  ],
+  "selected_before_confirmation": true,
+  "justification": "Frozen schedule in PROTOCOL.md. D,b8 is strongest small recurrence; all-layer full-width D,b8 exceeds the residual cap in screen. No selective coefficient/schedule sweep.",
+  "reversion": "At a rich source the represented K is block-only. After consumption, recompute global Q from the current full covariance and marginal/bivariate closure; do not copy discarded cross-block K. At source 7 construct incoming core by restricting the current global Q projection.",
+  "source_sha256": "e63167cd50deb546c19810af592ab68952f3dfba12b8ec95100dd48a6018ea86"
+}

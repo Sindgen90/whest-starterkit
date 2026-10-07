@@ -1,0 +1,626 @@
+{
+  "_id": "6a8ce6f0bb942fb7961ad461",
+  "id": "keenanpepper/arc-whestbench-p2-higher-moments-2026",
+  "author": "keenanpepper",
+  "sha": "1bb00b739619154ca255db6443af0b6a9dd960ce",
+  "lastModified": "2026-08-25T00:54:10.000Z",
+  "private": false,
+  "gated": false,
+  "disabled": false,
+  "tags": [
+    "region:us"
+  ],
+  "description": "\n\t\n\t\t\n\t\n\t\n\t\tarc-whestbench-p2-higher-moments-2026\n\t\n\nHigher-order joint activation moments for the Phase 2 (v2-phase2) benchmark MLPs\nof the ARC WhiteBox Estimation Challenge 2026 \u2014 the 1024-wide, 16-layer analog of\narc-whestbench-higher-moments-2026.\nSource MLPs: the 100 MLPs of the mini split of\naicrowd/arc-whestbench-public-2026\nat revision v2-phase2 (width 1024, depth 16, He-init, no biases, fp32 weights,\ninput x ~ N(0, I), forward a_l = relu(a_{l-1} @ W_l)).\nMoments are estimated from N =\u2026 See the full description on the dataset page: https://huggingface.co/datasets/keenanpepper/arc-whestbench-p2-higher-moments-2026.",
+  "downloads": 633,
+  "likes": 0,
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "cache/mlp00000.npz"
+    },
+    {
+      "rfilename": "cache/mlp00001.npz"
+    },
+    {
+      "rfilename": "cache/mlp00002.npz"
+    },
+    {
+      "rfilename": "cache/mlp00003.npz"
+    },
+    {
+      "rfilename": "cache/mlp00004.npz"
+    },
+    {
+      "rfilename": "cache/mlp00005.npz"
+    },
+    {
+      "rfilename": "cache/mlp00006.npz"
+    },
+    {
+      "rfilename": "cache/mlp00007.npz"
+    },
+    {
+      "rfilename": "cache/mlp00008.npz"
+    },
+    {
+      "rfilename": "cache/mlp00009.npz"
+    },
+    {
+      "rfilename": "cache/mlp00010.npz"
+    },
+    {
+      "rfilename": "cache/mlp00011.npz"
+    },
+    {
+      "rfilename": "cache/mlp00012.npz"
+    },
+    {
+      "rfilename": "cache/mlp00013.npz"
+    },
+    {
+      "rfilename": "cache/mlp00014.npz"
+    },
+    {
+      "rfilename": "cache/mlp00015.npz"
+    },
+    {
+      "rfilename": "cache/mlp00016.npz"
+    },
+    {
+      "rfilename": "cache/mlp00017.npz"
+    },
+    {
+      "rfilename": "cache/mlp00018.npz"
+    },
+    {
+      "rfilename": "cache/mlp00019.npz"
+    },
+    {
+      "rfilename": "cache/mlp00020.npz"
+    },
+    {
+      "rfilename": "cache/mlp00021.npz"
+    },
+    {
+      "rfilename": "cache/mlp00022.npz"
+    },
+    {
+      "rfilename": "cache/mlp00023.npz"
+    },
+    {
+      "rfilename": "cache/mlp00024.npz"
+    },
+    {
+      "rfilename": "cache/mlp00025.npz"
+    },
+    {
+      "rfilename": "cache/mlp00026.npz"
+    },
+    {
+      "rfilename": "cache/mlp00027.npz"
+    },
+    {
+      "rfilename": "cache/mlp00028.npz"
+    },
+    {
+      "rfilename": "cache/mlp00029.npz"
+    },
+    {
+      "rfilename": "cache/mlp00030.npz"
+    },
+    {
+      "rfilename": "cache/mlp00031.npz"
+    },
+    {
+      "rfilename": "cache/mlp00032.npz"
+    },
+    {
+      "rfilename": "cache/mlp00033.npz"
+    },
+    {
+      "rfilename": "cache/mlp00034.npz"
+    },
+    {
+      "rfilename": "cache/mlp00035.npz"
+    },
+    {
+      "rfilename": "cache/mlp00036.npz"
+    },
+    {
+      "rfilename": "cache/mlp00037.npz"
+    },
+    {
+      "rfilename": "cache/mlp00038.npz"
+    },
+    {
+      "rfilename": "cache/mlp00039.npz"
+    },
+    {
+      "rfilename": "cache/mlp00040.npz"
+    },
+    {
+      "rfilename": "cache/mlp00041.npz"
+    },
+    {
+      "rfilename": "cache/mlp00042.npz"
+    },
+    {
+      "rfilename": "cache/mlp00043.npz"
+    },
+    {
+      "rfilename": "cache/mlp00044.npz"
+    },
+    {
+      "rfilename": "cache/mlp00045.npz"
+    },
+    {
+      "rfilename": "cache/mlp00046.npz"
+    },
+    {
+      "rfilename": "cache/mlp00047.npz"
+    },
+    {
+      "rfilename": "cache/mlp00048.npz"
+    },
+    {
+      "rfilename": "cache/mlp00049.npz"
+    },
+    {
+      "rfilename": "cache/mlp00050.npz"
+    },
+    {
+      "rfilename": "cache/mlp00051.npz"
+    },
+    {
+      "rfilename": "cache/mlp00052.npz"
+    },
+    {
+      "rfilename": "cache/mlp00053.npz"
+    },
+    {
+      "rfilename": "cache/mlp00054.npz"
+    },
+    {
+      "rfilename": "cache/mlp00055.npz"
+    },
+    {
+      "rfilename": "cache/mlp00056.npz"
+    },
+    {
+      "rfilename": "cache/mlp00057.npz"
+    },
+    {
+      "rfilename": "cache/mlp00058.npz"
+    },
+    {
+      "rfilename": "cache/mlp00059.npz"
+    },
+    {
+      "rfilename": "cache/mlp00060.npz"
+    },
+    {
+      "rfilename": "cache/mlp00061.npz"
+    },
+    {
+      "rfilename": "cache/mlp00062.npz"
+    },
+    {
+      "rfilename": "cache/mlp00063.npz"
+    },
+    {
+      "rfilename": "cache/mlp00064.npz"
+    },
+    {
+      "rfilename": "cache/mlp00065.npz"
+    },
+    {
+      "rfilename": "cache/mlp00066.npz"
+    },
+    {
+      "rfilename": "cache/mlp00067.npz"
+    },
+    {
+      "rfilename": "cache/mlp00068.npz"
+    },
+    {
+      "rfilename": "cache/mlp00069.npz"
+    },
+    {
+      "rfilename": "cache/mlp00070.npz"
+    },
+    {
+      "rfilename": "cache/mlp00071.npz"
+    },
+    {
+      "rfilename": "cache/mlp00072.npz"
+    },
+    {
+      "rfilename": "cache/mlp00073.npz"
+    },
+    {
+      "rfilename": "cache/mlp00074.npz"
+    },
+    {
+      "rfilename": "cache/mlp00075.npz"
+    },
+    {
+      "rfilename": "cache/mlp00076.npz"
+    },
+    {
+      "rfilename": "cache/mlp00077.npz"
+    },
+    {
+      "rfilename": "cache/mlp00078.npz"
+    },
+    {
+      "rfilename": "cache/mlp00079.npz"
+    },
+    {
+      "rfilename": "cache/mlp00080.npz"
+    },
+    {
+      "rfilename": "cache/mlp00081.npz"
+    },
+    {
+      "rfilename": "cache/mlp00082.npz"
+    },
+    {
+      "rfilename": "cache/mlp00083.npz"
+    },
+    {
+      "rfilename": "cache/mlp00084.npz"
+    },
+    {
+      "rfilename": "cache/mlp00085.npz"
+    },
+    {
+      "rfilename": "cache/mlp00086.npz"
+    },
+    {
+      "rfilename": "cache/mlp00087.npz"
+    },
+    {
+      "rfilename": "cache/mlp00088.npz"
+    },
+    {
+      "rfilename": "cache/mlp00089.npz"
+    },
+    {
+      "rfilename": "cache/mlp00090.npz"
+    },
+    {
+      "rfilename": "cache/mlp00091.npz"
+    },
+    {
+      "rfilename": "cache/mlp00092.npz"
+    },
+    {
+      "rfilename": "cache/mlp00093.npz"
+    },
+    {
+      "rfilename": "cache/mlp00094.npz"
+    },
+    {
+      "rfilename": "cache/mlp00095.npz"
+    },
+    {
+      "rfilename": "cache/mlp00096.npz"
+    },
+    {
+      "rfilename": "cache/mlp00097.npz"
+    },
+    {
+      "rfilename": "cache/mlp00098.npz"
+    },
+    {
+      "rfilename": "cache/mlp00099.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00000.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00001.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00002.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00003.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00004.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00005.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00006.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00007.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00008.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00009.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00010.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00011.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00012.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00013.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00014.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00015.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00016.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00017.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00018.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00019.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00020.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00021.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00022.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00023.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00024.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00025.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00026.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00027.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00028.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00029.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00030.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00031.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00032.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00033.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00034.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00035.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00036.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00037.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00038.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00039.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00040.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00041.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00042.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00043.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00044.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00045.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00046.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00047.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00048.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00049.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00050.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00051.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00052.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00053.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00054.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00055.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00056.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00057.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00058.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00059.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00060.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00061.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00062.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00063.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00064.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00065.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00066.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00067.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00068.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00069.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00070.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00071.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00072.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00073.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00074.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00075.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00076.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00077.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00078.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00079.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00080.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00081.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00082.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00083.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00084.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00085.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00086.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00087.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00088.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00089.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00090.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00091.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00092.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00093.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00094.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00095.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00096.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00097.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00098.npz"
+    },
+    {
+      "rfilename": "moments/mlp_00099.npz"
+    }
+  ],
+  "createdAt": "2026-08-25T00:50:56.000Z",
+  "usedStorage": 49412154420
+}

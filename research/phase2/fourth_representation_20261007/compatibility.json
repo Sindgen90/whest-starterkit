@@ -1,0 +1,5 @@
+{
+  "original_sha256": "74f455f4495cb548eaa2f087134a9b9b5467967ab9dcf3fe309ae24edc68b295",
+  "source_sha256": "033c8c06adb55abe21c5137993f36d61b19dda33ca70fc3f223bb8faaa7c6fad",
+  "change": "Use block width min(8,n) to satisfy the official width-four/depth-two validation contract. Identical arithmetic at all study widths 16,32,1024; no coefficient, schedule or partition changes."
+}

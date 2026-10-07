@@ -1,0 +1,17 @@
+{
+  "status": "specified before evaluating reconstructed-reference targets",
+  "reference": "Puffi appendix A.7 reconstruction, not recovered A716",
+  "development": "v2-phase2 prepared/mini/data-00000-of-00014.arrow, all 8 networks",
+  "validation": "v2-phase2 prepared/mini/data-00001-of-00014.arrow, all 8 networks; read only after beta frozen",
+  "anchor_layer_one_based": 9,
+  "history": 8,
+  "propagation_scale": 0.8,
+  "training_objective": "joint layer-9 transported residual, per-neuron squared error",
+  "ridge_candidates": [0.000001, 0.0001, 0.01, 1.0],
+  "selection": "leave-one-network-out development error at layer 9; no validation-based parameter changes",
+  "unpublished_g4_channel": "disabled, beta channel 3 fixed zero",
+  "public_zero_channel": "channel 5 fixed zero",
+  "benchmark": ["gain covariance", "unfitted reconstruction", "fitted reconstruction"],
+  "primary_reference_measure": "layer-9 raw MSE; not the competition final-layer score",
+  "secondary_measures": ["per-layer raw MSE", "layer-16 adjusted score", "FLOPs", "wall time", "residual time", "failures"]
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "command": [
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+      "validate",
+      "--estimator",
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\three_approaches_20261005\\allocation\\estimator.py",
+      "--seed",
+      "20261081",
+      "--format",
+      "json"
+    ],
+    "returncode": 0,
+    "report": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\three_approaches_20261005\\allocation_validate.json"
+  },
+  {
+    "command": [
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+      "package",
+      "--estimator",
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\three_approaches_20261005\\allocation",
+      "--output",
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_EXPERIMENTAL_allocation_20261005.tar.gz",
+      "--yes",
+      "--format",
+      "json"
+    ],
+    "returncode": 0,
+    "report": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\three_approaches_20261005\\allocation_package.json"
+  },
+  {
+    "command": [
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+      "validate-package",
+      "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_EXPERIMENTAL_allocation_20261005.tar.gz",
+      "--format",
+      "json"
+    ],
+    "returncode": 0,
+    "report": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\three_approaches_20261005\\allocation_validate_package.json"
+  }
+]

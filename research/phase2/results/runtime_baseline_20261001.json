@@ -1,0 +1,215 @@
+{
+  "protocol": "No fitting. Paired four networks per exposed shard; identical eight-node formula and calibration, float32, four threads.",
+  "records": [
+    {
+      "mlp_id": 0,
+      "method": "venture_baseline",
+      "raw_mse": 1.557671108301512e-06,
+      "nominal_adjusted": 1.557671108301512e-07,
+      "flops": 56786552287,
+      "residual_s": 0.32704340072814375,
+      "wall_s": 4.658471399976406,
+      "valid": true,
+      "cap_aware_score": 1.557671108301512e-07,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 0,
+      "method": "venture_runtime",
+      "raw_mse": 1.5577264665742341e-06,
+      "nominal_adjusted": 1.5577264665742342e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3004855986800976,
+      "wall_s": 3.7210096000344492,
+      "valid": true,
+      "cap_aware_score": 1.5577264665742342e-07,
+      "max_abs_prediction_difference": 3.337860107421875e-06
+    },
+    {
+      "mlp_id": 1,
+      "method": "venture_baseline",
+      "raw_mse": 1.4781859201298987e-06,
+      "nominal_adjusted": 1.4781859201298987e-07,
+      "flops": 56786552287,
+      "residual_s": 0.480178699886892,
+      "wall_s": 6.896051899995655,
+      "valid": false,
+      "cap_aware_score": 1.1239106329426312,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 1,
+      "method": "venture_runtime",
+      "raw_mse": 1.4783205608203806e-06,
+      "nominal_adjusted": 1.4783205608203807e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3828650955692865,
+      "wall_s": 4.611151899967808,
+      "valid": true,
+      "cap_aware_score": 1.4783205608203807e-07,
+      "max_abs_prediction_difference": 3.337860107421875e-06
+    },
+    {
+      "mlp_id": 2,
+      "method": "venture_baseline",
+      "raw_mse": 1.3111876591239134e-06,
+      "nominal_adjusted": 1.3111876591239135e-07,
+      "flops": 56786552287,
+      "residual_s": 0.4852258992032148,
+      "wall_s": 6.939814799989108,
+      "valid": false,
+      "cap_aware_score": 1.2309822175086254,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 2,
+      "method": "venture_runtime",
+      "raw_mse": 1.31098090371559e-06,
+      "nominal_adjusted": 1.31098090371559e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3850193000980653,
+      "wall_s": 4.647709799988661,
+      "valid": true,
+      "cap_aware_score": 1.31098090371559e-07,
+      "max_abs_prediction_difference": 3.814697265625e-06
+    },
+    {
+      "mlp_id": 3,
+      "method": "venture_baseline",
+      "raw_mse": 1.3233601660438645e-06,
+      "nominal_adjusted": 1.3233601660438644e-07,
+      "flops": 56786552287,
+      "residual_s": 0.48969190049683675,
+      "wall_s": 6.915653300005943,
+      "valid": false,
+      "cap_aware_score": 0.9376759714362006,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 3,
+      "method": "venture_runtime",
+      "raw_mse": 1.3235037981761665e-06,
+      "nominal_adjusted": 1.3235037981761665e-07,
+      "flops": 55281615328,
+      "residual_s": 0.39013899985002354,
+      "wall_s": 4.622055999992881,
+      "valid": true,
+      "cap_aware_score": 1.3235037981761665e-07,
+      "max_abs_prediction_difference": 4.0531158447265625e-06
+    },
+    {
+      "mlp_id": 8,
+      "method": "venture_baseline",
+      "raw_mse": 1.1182764107388267e-06,
+      "nominal_adjusted": 1.1182764107388268e-07,
+      "flops": 56786552287,
+      "residual_s": 0.4873938006348908,
+      "wall_s": 6.957211000029929,
+      "valid": false,
+      "cap_aware_score": 0.7100356152497023,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 8,
+      "method": "venture_runtime",
+      "raw_mse": 1.1183076174295782e-06,
+      "nominal_adjusted": 1.1183076174295782e-07,
+      "flops": 55281615328,
+      "residual_s": 0.3786929020425305,
+      "wall_s": 4.581413300009444,
+      "valid": true,
+      "cap_aware_score": 1.1183076174295782e-07,
+      "max_abs_prediction_difference": 2.384185791015625e-06
+    },
+    {
+      "mlp_id": 9,
+      "method": "venture_baseline",
+      "raw_mse": 1.6617783313854493e-06,
+      "nominal_adjusted": 1.6617783313854494e-07,
+      "flops": 56786552287,
+      "residual_s": 0.4862188990227878,
+      "wall_s": 6.907741100003477,
+      "valid": false,
+      "cap_aware_score": 1.0805430191305967,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 9,
+      "method": "venture_runtime",
+      "raw_mse": 1.6618960244773589e-06,
+      "nominal_adjusted": 1.661896024477359e-07,
+      "flops": 55281615328,
+      "residual_s": 0.378497599682305,
+      "wall_s": 4.5442769000073895,
+      "valid": true,
+      "cap_aware_score": 1.661896024477359e-07,
+      "max_abs_prediction_difference": 3.814697265625e-06
+    },
+    {
+      "mlp_id": 10,
+      "method": "venture_baseline",
+      "raw_mse": 1.3940468333042153e-06,
+      "nominal_adjusted": 1.3940468333042153e-07,
+      "flops": 56786552287,
+      "residual_s": 0.48098699998809025,
+      "wall_s": 6.932265000010375,
+      "valid": false,
+      "cap_aware_score": 0.992869240707537,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 10,
+      "method": "venture_runtime",
+      "raw_mse": 1.394253182553357e-06,
+      "nominal_adjusted": 1.394253182553357e-07,
+      "flops": 55281615328,
+      "residual_s": 0.38195070094661787,
+      "wall_s": 4.60541469999589,
+      "valid": true,
+      "cap_aware_score": 1.394253182553357e-07,
+      "max_abs_prediction_difference": 3.337860107421875e-06
+    },
+    {
+      "mlp_id": 11,
+      "method": "venture_baseline",
+      "raw_mse": 1.4937746621019743e-06,
+      "nominal_adjusted": 1.4937746621019744e-07,
+      "flops": 56786552287,
+      "residual_s": 0.49149010120891035,
+      "wall_s": 7.025058100000024,
+      "valid": false,
+      "cap_aware_score": 1.2793785290353172,
+      "max_abs_prediction_difference": 0.0
+    },
+    {
+      "mlp_id": 11,
+      "method": "venture_runtime",
+      "raw_mse": 1.493821569008246e-06,
+      "nominal_adjusted": 1.493821569008246e-07,
+      "flops": 55281615328,
+      "residual_s": 0.39444459963124245,
+      "wall_s": 4.694266000005882,
+      "valid": true,
+      "cap_aware_score": 1.493821569008246e-07,
+      "max_abs_prediction_difference": 4.291534423828125e-06
+    }
+  ],
+  "summary": {
+    "venture_baseline": {
+      "failures": 7,
+      "raw_mse": 1.4172851363912067e-06,
+      "nominal_adjusted": 1.417285136391207e-07,
+      "residual_s": 0.4660287126462208,
+      "flops": 56786552287.0,
+      "cap_aware_score": 0.9194244227222153
+    },
+    "venture_runtime": {
+      "failures": 0,
+      "raw_mse": 1.417351265344364e-06,
+      "nominal_adjusted": 1.417351265344364e-07,
+      "residual_s": 0.3740118495625211,
+      "flops": 55281615328.0,
+      "cap_aware_score": 1.417351265344364e-07
+    }
+  }
+}

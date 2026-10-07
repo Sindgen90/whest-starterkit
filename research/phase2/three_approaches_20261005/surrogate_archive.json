@@ -1,0 +1,15 @@
+{
+  "archive": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_EXPERIMENTAL_surrogate_20261005.tar.gz",
+  "sha256": "69f0c7bb80532cdd1a1383637e793b31d83a48143537a9161f861f83c60be56b",
+  "source_sha256": "a965bfd64e6885f30ad23a316d03ebe7016d00968de3952aca0bceff77150b57",
+  "bytes": 2752,
+  "members": [
+    "estimator.py",
+    "LICENSE",
+    "PROVENANCE.md",
+    "manifest.json"
+  ],
+  "experimental_not_recommended": true,
+  "official_gate_passed": true,
+  "packaging_passed": true
+}

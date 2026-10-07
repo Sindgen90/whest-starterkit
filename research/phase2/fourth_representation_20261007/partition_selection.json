@@ -1,0 +1,10 @@
+{
+  "selected_rule": "correlation",
+  "normalized_transport_risk": {
+    "contiguous": 0.35850175664082673,
+    "random": 0.3778479125063447,
+    "correlation": 0.2831804030404825
+  },
+  "criterion": "Frozen PROTOCOL.md, averaged E/F d4/Q/R actual-weight cross-stream risks; 1% tie preference contiguous/random/correlation.",
+  "no_oracle_clusters": true
+}

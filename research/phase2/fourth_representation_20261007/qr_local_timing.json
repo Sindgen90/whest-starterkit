@@ -1,0 +1,55 @@
+{
+  "protocol": "Unchanged official CLI; default Phase 2 caps; four threads; 100 samples for execution only; serial runs; all failures retained.",
+  "source": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\fourth_representation_20261007\\qr\\estimator.py",
+  "source_sha256": "5809777f3027ccce85cbba29b5049e714150b545be819fd8c4f8357c4861ebc5",
+  "records": [
+    {
+      "runner": "local",
+      "seed": 20261071,
+      "command": [
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\.venv-phase2\\Scripts\\whest.exe",
+        "run",
+        "--estimator",
+        "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\fourth_representation_20261007\\qr\\estimator.py",
+        "--runner",
+        "local",
+        "--n-mlps",
+        "2",
+        "--n-samples",
+        "100",
+        "--seed",
+        "20261071",
+        "--max-threads",
+        "4",
+        "--format",
+        "json"
+      ],
+      "returncode": 0,
+      "report": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\research\\phase2\\fourth_representation_20261007\\qr_local_timing_local_20261071.json",
+      "summary": {
+        "n_failed_mlps": 2,
+        "failure_breakdown": {
+          "budget_exhausted": 0,
+          "time_exhausted": 0,
+          "residual_wall_time_exhausted": 2,
+          "combined_budget_exhausted": 0,
+          "error": 0
+        },
+        "per_mlp": [
+          {
+            "mlp_index": 0,
+            "flops_used": 445556725439,
+            "wall_time_s": 10.945834299986018,
+            "residual_wall_time_s": 0.41068329859990627
+          },
+          {
+            "mlp_index": 1,
+            "flops_used": 445556725439,
+            "wall_time_s": 10.963714599987725,
+            "residual_wall_time_s": 0.4091718993149698
+          }
+        ]
+      }
+    }
+  ]
+}

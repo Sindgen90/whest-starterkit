@@ -1,0 +1,3 @@
+.venv-phase2/Scripts/python.exe -m pytest research/phase2/test_cumulant_audit.py research/phase2/test_joint_full_runtime.py research/phase2/test_joint_cumulant.py research/phase2/test_fourth_transport.py -q --disable-warnings
+33 passed, 399 warnings in 10.94s
+Result recorded from the completed tool execution; warnings suppressed in display, counts retained.

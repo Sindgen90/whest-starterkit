@@ -1,0 +1,15 @@
+{
+  "cost": {
+    "flops": 8833860,
+    "wall_s": 0.6814745999872684,
+    "residual_s": 0.08535840027616359,
+    "process_peak_working_set_bytes": 139943936
+  },
+  "partition_equal": [
+    true,
+    true,
+    true
+  ],
+  "finite": true,
+  "final_crossrisk": 0.11955224105719411
+}

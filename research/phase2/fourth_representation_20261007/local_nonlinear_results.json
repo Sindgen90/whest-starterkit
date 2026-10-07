@@ -1,0 +1,3605 @@
+{
+  "protocol": "Identical oracle mu,C,T; only represented input fourth tensor changes. Four independent reference streams. Same bivariate/marginal closure as inference. Oracle inputs stay offline. Cross-stream risks/intervals remain nonlinear plug-in diagnostics.",
+  "records": [
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 0,
+      "family": "A",
+      "risks": {
+        "mean": 1.5060815707001434e-05,
+        "cov": 5.752414032265758e-05,
+        "post_d4": 4.306059946746077,
+        "post_Q": 0.27272816495459984,
+        "post_R": 0.28337592618896695
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.5060815707001434e-05,
+          "lower95": 1.2659049086176538e-05,
+          "upper95": 1.746258232782633e-05,
+          "estimate": 1.5060815707001434e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.752414032265759e-05,
+          "lower95": 5.5041286187139617e-05,
+          "upper95": 6.000699445817556e-05,
+          "estimate": 5.752414032265758e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.306059946746077,
+          "lower95": 4.15410681441376,
+          "upper95": 4.458013079078395,
+          "estimate": 4.306059946746077,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.2727281649545995,
+          "lower95": 0.26321484017680113,
+          "upper95": 0.2822414897323979,
+          "estimate": 0.27272816495459984,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.2833759261889668,
+          "lower95": 0.2719969221881007,
+          "upper95": 0.2947549301898329,
+          "estimate": 0.28337592618896695,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 0,
+      "family": "C",
+      "risks": {
+        "mean": 7.824617722379648e-06,
+        "cov": 5.3384070964725886e-05,
+        "post_d4": 4.301343316570058,
+        "post_Q": 0.27218126829414185,
+        "post_R": 0.27198617647058254
+      },
+      "intervals": {
+        "mean": {
+          "mean": 7.82461772237965e-06,
+          "lower95": 5.944572876429532e-06,
+          "upper95": 9.704662568329768e-06,
+          "estimate": 7.824617722379648e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.338407096472589e-05,
+          "lower95": 5.0035381113461114e-05,
+          "upper95": 5.673276081599067e-05,
+          "estimate": 5.3384070964725886e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.301343316570057,
+          "lower95": 4.152083215254736,
+          "upper95": 4.450603417885379,
+          "estimate": 4.301343316570058,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.2721812682941418,
+          "lower95": 0.2628073056196372,
+          "upper95": 0.2815552309686464,
+          "estimate": 0.27218126829414185,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.27198617647058243,
+          "lower95": 0.2620994417259157,
+          "upper95": 0.28187291121524916,
+          "estimate": 0.27198617647058254,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 0,
+      "family": "D8",
+      "risks": {
+        "mean": 1.5849515889914077e-05,
+        "cov": 5.9991799187335046e-05,
+        "post_d4": 4.303268011613403,
+        "post_Q": 0.2728908894901181,
+        "post_R": 0.2764877310666698
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.5849515889914084e-05,
+          "lower95": 1.3863345454899528e-05,
+          "upper95": 1.783568632492864e-05,
+          "estimate": 1.5849515889914077e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.999179918733508e-05,
+          "lower95": 5.665585649574383e-05,
+          "upper95": 6.332774187892633e-05,
+          "estimate": 5.9991799187335046e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.3032680116134,
+          "lower95": 4.152447451296573,
+          "upper95": 4.454088571930227,
+          "estimate": 4.303268011613403,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.2728908894901181,
+          "lower95": 0.26332187106756433,
+          "upper95": 0.28245990791267184,
+          "estimate": 0.2728908894901181,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.2764877310666698,
+          "lower95": 0.265216953131667,
+          "upper95": 0.2877585090016726,
+          "estimate": 0.2764877310666698,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 0,
+      "family": "E8",
+      "risks": {
+        "mean": 1.5264650734365086e-05,
+        "cov": 5.4769100640752246e-05,
+        "post_d4": 4.293893105970113,
+        "post_Q": 0.27142961998768267,
+        "post_R": 0.2740370496398854
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.526465073436509e-05,
+          "lower95": 1.2900781692091287e-05,
+          "upper95": 1.7628519776638893e-05,
+          "estimate": 1.5264650734365086e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.476910064075228e-05,
+          "lower95": 5.144946015473131e-05,
+          "upper95": 5.808874112677325e-05,
+          "estimate": 5.4769100640752246e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.293893105970114,
+          "lower95": 4.143981876622429,
+          "upper95": 4.443804335317799,
+          "estimate": 4.293893105970113,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.27142961998768256,
+          "lower95": 0.26191374877345847,
+          "upper95": 0.28094549120190665,
+          "estimate": 0.27142961998768267,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.2740370496398854,
+          "lower95": 0.26325731031785854,
+          "upper95": 0.28481678896191226,
+          "estimate": 0.2740370496398854,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 0,
+      "family": "F8",
+      "risks": {
+        "mean": 8.104294373386807e-06,
+        "cov": 4.818053670847774e-05,
+        "post_d4": 4.312589303778,
+        "post_Q": 0.2723124545355552,
+        "post_R": 0.2726837661231491
+      },
+      "intervals": {
+        "mean": {
+          "mean": 8.104294373386804e-06,
+          "lower95": 5.9611509899647305e-06,
+          "upper95": 1.0247437756808877e-05,
+          "estimate": 8.104294373386807e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.818053670847773e-05,
+          "lower95": 4.4216035274097416e-05,
+          "upper95": 5.214503814285805e-05,
+          "estimate": 4.818053670847774e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.312589303777999,
+          "lower95": 4.166123919152369,
+          "upper95": 4.459054688403629,
+          "estimate": 4.312589303778,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.2723124545355552,
+          "lower95": 0.26310747023376924,
+          "upper95": 0.28151743883734115,
+          "estimate": 0.2723124545355552,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.27268376612314893,
+          "lower95": 0.2628352589854107,
+          "upper95": 0.28253227326088715,
+          "estimate": 0.2726837661231491,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 0,
+      "family": "G",
+      "risks": {
+        "mean": 8.46982541731687e-06,
+        "cov": 4.951620102473945e-05,
+        "post_d4": 4.310406521194842,
+        "post_Q": 0.2712987692885229,
+        "post_R": 0.2707490089999473
+      },
+      "intervals": {
+        "mean": {
+          "mean": 8.469825417316868e-06,
+          "lower95": 6.0360725864125745e-06,
+          "upper95": 1.0903578248221162e-05,
+          "estimate": 8.46982541731687e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.951620102473945e-05,
+          "lower95": 4.528997101433419e-05,
+          "upper95": 5.3742431035144705e-05,
+          "estimate": 4.951620102473945e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.310406521194843,
+          "lower95": 4.160050195518027,
+          "upper95": 4.46076284687166,
+          "estimate": 4.310406521194842,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.27129876928852303,
+          "lower95": 0.26175439861752625,
+          "upper95": 0.2808431399595198,
+          "estimate": 0.2712987692885229,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.27074900899994725,
+          "lower95": 0.2611809075048667,
+          "upper95": 0.2803171104950278,
+          "estimate": 0.2707490089999473,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 7,
+      "family": "A",
+      "risks": {
+        "mean": 0.0028477910986010402,
+        "cov": 0.0033293608786036334,
+        "post_d4": 155.12227705812526,
+        "post_Q": 9.918187501642844,
+        "post_R": 11.36857102537705
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0028477910986010394,
+          "lower95": 0.002801657603806093,
+          "upper95": 0.0028939245933959855,
+          "estimate": 0.0028477910986010402,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.0033293608786036347,
+          "lower95": 0.0030369934081978123,
+          "upper95": 0.003621728349009457,
+          "estimate": 0.0033293608786036334,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 155.12227705812518,
+          "lower95": 141.98543143653157,
+          "upper95": 168.25912267971879,
+          "estimate": 155.12227705812526,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 9.918187501642855,
+          "lower95": 9.058737341791863,
+          "upper95": 10.777637661493847,
+          "estimate": 9.918187501642844,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 11.36857102537705,
+          "lower95": 10.283477388366402,
+          "upper95": 12.4536646623877,
+          "estimate": 11.36857102537705,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 7,
+      "family": "C",
+      "risks": {
+        "mean": 0.0019854146639140765,
+        "cov": 0.0058721510528900265,
+        "post_d4": 162.64668793044163,
+        "post_Q": 10.337427330449403,
+        "post_R": 10.656651647771499
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.001985414663914076,
+          "lower95": 0.001830264524911365,
+          "upper95": 0.002140564802916787,
+          "estimate": 0.0019854146639140765,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.005872151052890025,
+          "lower95": 0.004945894416149955,
+          "upper95": 0.006798407689630095,
+          "estimate": 0.0058721510528900265,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 162.6466879304416,
+          "lower95": 148.83814502584147,
+          "upper95": 176.45523083504173,
+          "estimate": 162.64668793044163,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 10.337427330449405,
+          "lower95": 9.45990779922464,
+          "upper95": 11.21494686167417,
+          "estimate": 10.337427330449403,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 10.6566516477715,
+          "lower95": 9.702519065856956,
+          "upper95": 11.610784229686045,
+          "estimate": 10.656651647771499,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 7,
+      "family": "D8",
+      "risks": {
+        "mean": 0.00031545652322751463,
+        "cov": 0.0022097578656609857,
+        "post_d4": 152.8994000893345,
+        "post_Q": 9.734609926095166,
+        "post_R": 10.539024814464483
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.00031545652322751447,
+          "lower95": 0.00027419891333689913,
+          "upper95": 0.0003567141331181298,
+          "estimate": 0.00031545652322751463,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.0022097578656609853,
+          "lower95": 0.001965387054638784,
+          "upper95": 0.0024541286766831868,
+          "estimate": 0.0022097578656609857,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 152.89940008933453,
+          "lower95": 139.9856981541861,
+          "upper95": 165.81310202448296,
+          "estimate": 152.8994000893345,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 9.734609926095168,
+          "lower95": 8.90329186493036,
+          "upper95": 10.565927987259975,
+          "estimate": 9.734609926095166,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 10.539024814464472,
+          "lower95": 9.558992439960846,
+          "upper95": 11.519057188968098,
+          "estimate": 10.539024814464483,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 7,
+      "family": "E8",
+      "risks": {
+        "mean": 0.002870307830747666,
+        "cov": 0.008904994788959255,
+        "post_d4": 157.38809420108592,
+        "post_Q": 10.0075760100537,
+        "post_R": 10.615728591813085
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.002870307830747666,
+          "lower95": 0.0028158788660103814,
+          "upper95": 0.0029247367954849503,
+          "estimate": 0.002870307830747666,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.008904994788959255,
+          "lower95": 0.007400803452572735,
+          "upper95": 0.010409186125345775,
+          "estimate": 0.008904994788959255,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 157.38809420108603,
+          "lower95": 144.09658566181525,
+          "upper95": 170.6796027403568,
+          "estimate": 157.38809420108592,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 10.007576010053718,
+          "lower95": 9.15811518187374,
+          "upper95": 10.857036838233697,
+          "estimate": 10.0075760100537,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 10.615728591813077,
+          "lower95": 9.644858038201603,
+          "upper95": 11.586599145424552,
+          "estimate": 10.615728591813085,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 7,
+      "family": "F8",
+      "risks": {
+        "mean": 0.0015451460241156798,
+        "cov": 0.0035020626448087917,
+        "post_d4": 161.40606392440864,
+        "post_Q": 10.274789255941924,
+        "post_R": 10.588715783446807
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0015451460241156787,
+          "lower95": 0.0013646285417897002,
+          "upper95": 0.0017256635064416572,
+          "estimate": 0.0015451460241156798,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.003502062644808791,
+          "lower95": 0.002993289720322279,
+          "upper95": 0.004010835569295303,
+          "estimate": 0.0035020626448087917,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 161.40606392440873,
+          "lower95": 147.7061913465191,
+          "upper95": 175.10593650229836,
+          "estimate": 161.40606392440864,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 10.27478925594193,
+          "lower95": 9.403296978192014,
+          "upper95": 11.146281533691845,
+          "estimate": 10.274789255941924,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 10.588715783446816,
+          "lower95": 9.641043058163797,
+          "upper95": 11.536388508729834,
+          "estimate": 10.588715783446807,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 7,
+      "family": "G",
+      "risks": {
+        "mean": 4.026510293450172e-06,
+        "cov": 0.00013139499886205785,
+        "post_d4": 170.11632074299487,
+        "post_Q": 11.034261344109854,
+        "post_R": 10.7181991641305
+      },
+      "intervals": {
+        "mean": {
+          "mean": 4.026510293450172e-06,
+          "lower95": 3.2865203568163318e-06,
+          "upper95": 4.766500230084012e-06,
+          "estimate": 4.026510293450172e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00013139499886205785,
+          "lower95": 0.00012642902597663388,
+          "upper95": 0.00013636097174748183,
+          "estimate": 0.00013139499886205785,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 170.1163207429949,
+          "lower95": 155.52753583932736,
+          "upper95": 184.70510564666245,
+          "estimate": 170.11632074299487,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 11.034261344109861,
+          "lower95": 10.083442490187876,
+          "upper95": 11.985080198031847,
+          "estimate": 11.034261344109854,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 10.718199164130496,
+          "lower95": 9.797228652354985,
+          "upper95": 11.639169675906007,
+          "estimate": 10.7181991641305,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 14,
+      "family": "A",
+      "risks": {
+        "mean": 0.00723750547646245,
+        "cov": 0.15441951877663385,
+        "post_d4": 391052.130206038,
+        "post_Q": 25120.99861583984,
+        "post_R": 28300.066640899357
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.00723750547646245,
+          "lower95": 0.00662209828193357,
+          "upper95": 0.00785291267099133,
+          "estimate": 0.00723750547646245,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.15441951877663387,
+          "lower95": 0.14345201817304182,
+          "upper95": 0.16538701938022593,
+          "estimate": 0.15441951877663385,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 391052.13020603807,
+          "lower95": 360080.05657114345,
+          "upper95": 422024.2038409327,
+          "estimate": 391052.130206038,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 25120.998615839864,
+          "lower95": 23125.04328904755,
+          "upper95": 27116.95394263218,
+          "estimate": 25120.99861583984,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 28300.066640899364,
+          "lower95": 25794.042908295993,
+          "upper95": 30806.090373502735,
+          "estimate": 28300.066640899357,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 14,
+      "family": "C",
+      "risks": {
+        "mean": 0.0020744338820918523,
+        "cov": 0.21455722977089625,
+        "post_d4": 406797.55596696836,
+        "post_Q": 27073.905142774038,
+        "post_R": 25841.50785077493
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0020744338820918523,
+          "lower95": 0.002020332163175096,
+          "upper95": 0.0021285356010086087,
+          "estimate": 0.0020744338820918523,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.2145572297708963,
+          "lower95": 0.1891080631828555,
+          "upper95": 0.2400063963589371,
+          "estimate": 0.21455722977089625,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 406797.5559669686,
+          "lower95": 374446.7665569764,
+          "upper95": 439148.34537696076,
+          "estimate": 406797.55596696836,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 27073.90514277404,
+          "lower95": 24915.74342308845,
+          "upper95": 29232.066862459633,
+          "estimate": 27073.905142774038,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 25841.507850774953,
+          "lower95": 23779.257266279477,
+          "upper95": 27903.75843527043,
+          "estimate": 25841.50785077493,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 14,
+      "family": "D8",
+      "risks": {
+        "mean": 0.003196640051454979,
+        "cov": 0.12235418034903506,
+        "post_d4": 396461.18849146547,
+        "post_Q": 27388.42448920894,
+        "post_R": 26898.194689778804
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0031966400514549776,
+          "lower95": 0.0028216756693441643,
+          "upper95": 0.003571604433565791,
+          "estimate": 0.003196640051454979,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.12235418034903502,
+          "lower95": 0.10846087394318182,
+          "upper95": 0.1362474867548882,
+          "estimate": 0.12235418034903506,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 396461.18849146576,
+          "lower95": 364992.86270246207,
+          "upper95": 427929.51428046945,
+          "estimate": 396461.18849146547,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 27388.424489208963,
+          "lower95": 25166.086540451026,
+          "upper95": 29610.7624379669,
+          "estimate": 27388.42448920894,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 26898.19468977881,
+          "lower95": 24665.644033826884,
+          "upper95": 29130.74534573074,
+          "estimate": 26898.194689778804,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 14,
+      "family": "E8",
+      "risks": {
+        "mean": 0.008240126288881933,
+        "cov": 0.31683475265707195,
+        "post_d4": 401394.31988018507,
+        "post_Q": 28101.16573275182,
+        "post_R": 27553.903455562962
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.00824012628888193,
+          "lower95": 0.00767740473342018,
+          "upper95": 0.008802847844343677,
+          "estimate": 0.008240126288881933,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.31683475265707206,
+          "lower95": 0.2772368870862242,
+          "upper95": 0.35643261822791994,
+          "estimate": 0.31683475265707195,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 401394.3198801852,
+          "lower95": 369438.2474172468,
+          "upper95": 433350.39234312356,
+          "estimate": 401394.31988018507,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 28101.16573275181,
+          "lower95": 25814.119703231438,
+          "upper95": 30388.211762272185,
+          "estimate": 28101.16573275182,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 27553.903455562966,
+          "lower95": 25262.780510366647,
+          "upper95": 29845.026400759285,
+          "estimate": 27553.903455562962,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 14,
+      "family": "F8",
+      "risks": {
+        "mean": 0.001999019322211862,
+        "cov": 0.10249542304072459,
+        "post_d4": 406432.7343273564,
+        "post_Q": 26925.99154953247,
+        "post_R": 25809.512931482415
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0019990193222118625,
+          "lower95": 0.001955226891174931,
+          "upper95": 0.002042811753248794,
+          "estimate": 0.001999019322211862,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.1024954230407246,
+          "lower95": 0.09152257425157084,
+          "upper95": 0.11346827182987837,
+          "estimate": 0.10249542304072459,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 406432.73432735685,
+          "lower95": 374112.0662979322,
+          "upper95": 438753.40235678153,
+          "estimate": 406432.7343273564,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 26925.991549532486,
+          "lower95": 24785.654839809642,
+          "upper95": 29066.32825925533,
+          "estimate": 26925.99154953247,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 25809.512931482463,
+          "lower95": 23748.488197584462,
+          "upper95": 27870.537665380463,
+          "estimate": 25809.512931482415,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82071,
+      "source_layer": 14,
+      "family": "G",
+      "risks": {
+        "mean": 1.594402075986788e-05,
+        "cov": 0.00415378941950076,
+        "post_d4": 406485.12584935623,
+        "post_Q": 26864.765378880686,
+        "post_R": 25608.70328119184
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.594402075986788e-05,
+          "lower95": 1.0310295663556592e-05,
+          "upper95": 2.1577745856179167e-05,
+          "estimate": 1.594402075986788e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.004153789419500761,
+          "lower95": 0.00298674989691967,
+          "upper95": 0.005320828942081852,
+          "estimate": 0.00415378941950076,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 406485.1258493566,
+          "lower95": 374150.8186416954,
+          "upper95": 438819.43305701774,
+          "estimate": 406485.12584935623,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 26864.765378880686,
+          "lower95": 24738.341057523005,
+          "upper95": 28991.189700238367,
+          "estimate": 26864.765378880686,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 25608.703281191854,
+          "lower95": 23574.391522612947,
+          "upper95": 27643.015039770762,
+          "estimate": 25608.70328119184,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 0,
+      "family": "A",
+      "risks": {
+        "mean": 3.303311645459198e-05,
+        "cov": 3.533029743120924e-05,
+        "post_d4": 1.7804344485298267,
+        "post_Q": 0.11324054718389968,
+        "post_R": 0.12000839791957998
+      },
+      "intervals": {
+        "mean": {
+          "mean": 3.303311645459196e-05,
+          "lower95": 2.9953345108575786e-05,
+          "upper95": 3.611288780060814e-05,
+          "estimate": 3.303311645459198e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 3.5330297431209235e-05,
+          "lower95": 3.296618564682079e-05,
+          "upper95": 3.769440921559768e-05,
+          "estimate": 3.533029743120924e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 1.7804344485298274,
+          "lower95": 1.627423050404078,
+          "upper95": 1.9334458466555766,
+          "estimate": 1.7804344485298267,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.11324054718389973,
+          "lower95": 0.10300222042939662,
+          "upper95": 0.12347887393840283,
+          "estimate": 0.11324054718389968,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.12000839791958008,
+          "lower95": 0.10791529725701945,
+          "upper95": 0.1321014985821407,
+          "estimate": 0.12000839791957998,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 0,
+      "family": "C",
+      "risks": {
+        "mean": 1.9219423686878306e-05,
+        "cov": 4.921539540637565e-05,
+        "post_d4": 1.774741837046085,
+        "post_Q": 0.112342788835605,
+        "post_R": 0.11227016616962797
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.92194236868783e-05,
+          "lower95": 1.6432175176291947e-05,
+          "upper95": 2.200667219746465e-05,
+          "estimate": 1.9219423686878306e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.9215395406375674e-05,
+          "lower95": 4.70841081796137e-05,
+          "upper95": 5.1346682633137645e-05,
+          "estimate": 4.921539540637565e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 1.774741837046085,
+          "lower95": 1.620731127450023,
+          "upper95": 1.9287525466421471,
+          "estimate": 1.774741837046085,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.11234278883560503,
+          "lower95": 0.10269598886674279,
+          "upper95": 0.12198958880446727,
+          "estimate": 0.112342788835605,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.112270166169628,
+          "lower95": 0.10220545255926844,
+          "upper95": 0.12233487977998755,
+          "estimate": 0.11227016616962797,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 0,
+      "family": "D8",
+      "risks": {
+        "mean": 2.7880074764412872e-05,
+        "cov": 5.482449219274773e-05,
+        "post_d4": 1.781835571953355,
+        "post_Q": 0.11292038311605851,
+        "post_R": 0.1151910429940186
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.7880074764412886e-05,
+          "lower95": 2.518313906257486e-05,
+          "upper95": 3.0577010466250915e-05,
+          "estimate": 2.7880074764412872e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.4824492192747736e-05,
+          "lower95": 5.403177164949425e-05,
+          "upper95": 5.561721273600122e-05,
+          "estimate": 5.482449219274773e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 1.7818355719533554,
+          "lower95": 1.626518357344469,
+          "upper95": 1.9371527865622418,
+          "estimate": 1.781835571953355,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.11292038311605852,
+          "lower95": 0.10290935123812607,
+          "upper95": 0.12293141499399098,
+          "estimate": 0.11292038311605851,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.11519104299401858,
+          "lower95": 0.1040839553414003,
+          "upper95": 0.12629813064663686,
+          "estimate": 0.1151910429940186,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 0,
+      "family": "E8",
+      "risks": {
+        "mean": 2.674430316834086e-05,
+        "cov": 5.6786078568279264e-05,
+        "post_d4": 1.7730213047067966,
+        "post_Q": 0.11218383279591022,
+        "post_R": 0.11368517655736712
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.674430316834086e-05,
+          "lower95": 2.5095748756430216e-05,
+          "upper95": 2.8392857580251507e-05,
+          "estimate": 2.674430316834086e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.6786078568279285e-05,
+          "lower95": 5.6168484544647984e-05,
+          "upper95": 5.7403672591910585e-05,
+          "estimate": 5.6786078568279264e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 1.7730213047067978,
+          "lower95": 1.6187864975968678,
+          "upper95": 1.9272561118167277,
+          "estimate": 1.7730213047067966,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.11218383279591024,
+          "lower95": 0.10237639660395628,
+          "upper95": 0.1219912689878642,
+          "estimate": 0.11218383279591022,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.11368517655736715,
+          "lower95": 0.102978372374567,
+          "upper95": 0.1243919807401673,
+          "estimate": 0.11368517655736712,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 0,
+      "family": "F8",
+      "risks": {
+        "mean": 1.7967131950957098e-05,
+        "cov": 5.166750467111293e-05,
+        "post_d4": 1.770731463291198,
+        "post_Q": 0.11208576788346401,
+        "post_R": 0.11184688082802635
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.7967131950957094e-05,
+          "lower95": 1.5011264436550913e-05,
+          "upper95": 2.0922999465363276e-05,
+          "estimate": 1.7967131950957098e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.166750467111295e-05,
+          "lower95": 4.9541817193834586e-05,
+          "upper95": 5.379319214839131e-05,
+          "estimate": 5.166750467111293e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 1.7707314632911983,
+          "lower95": 1.6171105483737513,
+          "upper95": 1.9243523782086454,
+          "estimate": 1.770731463291198,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.11208576788346408,
+          "lower95": 0.10248652681653331,
+          "upper95": 0.12168500895039486,
+          "estimate": 0.11208576788346401,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.11184688082802637,
+          "lower95": 0.10190415504963958,
+          "upper95": 0.12178960660641315,
+          "estimate": 0.11184688082802635,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 0,
+      "family": "G",
+      "risks": {
+        "mean": 1.60042310379072e-05,
+        "cov": 4.922810890412336e-05,
+        "post_d4": 1.769346311549633,
+        "post_Q": 0.11172396728488997,
+        "post_R": 0.1111503755173106
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.60042310379072e-05,
+          "lower95": 1.3352197884686217e-05,
+          "upper95": 1.8656264191128185e-05,
+          "estimate": 1.60042310379072e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.922810890412337e-05,
+          "lower95": 4.61924985545662e-05,
+          "upper95": 5.226371925368053e-05,
+          "estimate": 4.922810890412336e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 1.7693463115496328,
+          "lower95": 1.6159510153878582,
+          "upper95": 1.9227416077114075,
+          "estimate": 1.769346311549633,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.11172396728488998,
+          "lower95": 0.10217262171357426,
+          "upper95": 0.1212753128562057,
+          "estimate": 0.11172396728488997,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.1111503755173106,
+          "lower95": 0.10141313256267666,
+          "upper95": 0.12088761847194456,
+          "estimate": 0.1111503755173106,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 7,
+      "family": "A",
+      "risks": {
+        "mean": 7.936726747810487e-05,
+        "cov": 8.377045633672845e-06,
+        "post_d4": 0.0003266726539296863,
+        "post_Q": 2.1096954902780298e-05,
+        "post_R": 2.4807694174330097e-05
+      },
+      "intervals": {
+        "mean": {
+          "mean": 7.936726747810487e-05,
+          "lower95": 6.0161412389735596e-05,
+          "upper95": 9.857312256647413e-05,
+          "estimate": 7.936726747810487e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 8.377045633672843e-06,
+          "lower95": 6.86015804816236e-06,
+          "upper95": 9.893933219183326e-06,
+          "estimate": 8.377045633672845e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.0003266726539296864,
+          "lower95": 0.00027284920444923557,
+          "upper95": 0.00038049610341013725,
+          "estimate": 0.0003266726539296863,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.109695490278033e-05,
+          "lower95": 1.7555237495864155e-05,
+          "upper95": 2.4638672309696508e-05,
+          "estimate": 2.1096954902780298e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 2.48076941743301e-05,
+          "lower95": 2.060888381716505e-05,
+          "upper95": 2.900650453149515e-05,
+          "estimate": 2.4807694174330097e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 7,
+      "family": "C",
+      "risks": {
+        "mean": 3.926256306696432e-05,
+        "cov": 5.107130739721403e-06,
+        "post_d4": 0.000322551794585194,
+        "post_Q": 2.0896649286101017e-05,
+        "post_R": 2.1845981351604435e-05
+      },
+      "intervals": {
+        "mean": {
+          "mean": 3.926256306696433e-05,
+          "lower95": 3.371712154912887e-05,
+          "upper95": 4.4808004584799786e-05,
+          "estimate": 3.926256306696432e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.107130739721404e-06,
+          "lower95": 3.5022230365478307e-06,
+          "upper95": 6.712038442894977e-06,
+          "estimate": 5.107130739721403e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.00032255179458519416,
+          "lower95": 0.0002695633915547157,
+          "upper95": 0.00037554019761567263,
+          "estimate": 0.000322551794585194,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.089664928610103e-05,
+          "lower95": 1.7448216009008033e-05,
+          "upper95": 2.434508256319403e-05,
+          "estimate": 2.0896649286101017e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 2.184598135160444e-05,
+          "lower95": 1.8211903051552034e-05,
+          "upper95": 2.5480059651656844e-05,
+          "estimate": 2.1845981351604435e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 7,
+      "family": "D8",
+      "risks": {
+        "mean": 1.6373493961483395e-05,
+        "cov": 5.6839649966907645e-06,
+        "post_d4": 0.00030274974835804534,
+        "post_Q": 1.9739782178256804e-05,
+        "post_R": 2.3163725021908695e-05
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.637349396148339e-05,
+          "lower95": 1.5346564531334767e-05,
+          "upper95": 1.7400423391632015e-05,
+          "estimate": 1.6373493961483395e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.683964996690766e-06,
+          "lower95": 4.478958360358372e-06,
+          "upper95": 6.88897163302316e-06,
+          "estimate": 5.6839649966907645e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.0003027497483580453,
+          "lower95": 0.0002541219203536996,
+          "upper95": 0.00035137757636239097,
+          "estimate": 0.00030274974835804534,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 1.9739782178256818e-05,
+          "lower95": 1.651978192268002e-05,
+          "upper95": 2.2959782433833617e-05,
+          "estimate": 1.9739782178256804e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 2.3163725021908705e-05,
+          "lower95": 1.926577981954842e-05,
+          "upper95": 2.706167022426899e-05,
+          "estimate": 2.3163725021908695e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 7,
+      "family": "E8",
+      "risks": {
+        "mean": 3.8447383569238945e-05,
+        "cov": 3.516715870859199e-05,
+        "post_d4": 0.0003163460501380188,
+        "post_Q": 2.0388356956491772e-05,
+        "post_R": 2.2241265121640485e-05
+      },
+      "intervals": {
+        "mean": {
+          "mean": 3.8447383569238945e-05,
+          "lower95": 3.1940061000343336e-05,
+          "upper95": 4.4954706138134555e-05,
+          "estimate": 3.8447383569238945e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 3.516715870859199e-05,
+          "lower95": 2.509419796858583e-05,
+          "upper95": 4.524011944859814e-05,
+          "estimate": 3.516715870859199e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.0003163460501380188,
+          "lower95": 0.000265388861557038,
+          "upper95": 0.0003673032387189996,
+          "estimate": 0.0003163460501380188,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.0388356956491792e-05,
+          "lower95": 1.705706839390787e-05,
+          "upper95": 2.3719645519075714e-05,
+          "estimate": 2.0388356956491772e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 2.2241265121640485e-05,
+          "lower95": 1.8552768985284657e-05,
+          "upper95": 2.5929761257996312e-05,
+          "estimate": 2.2241265121640485e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 7,
+      "family": "F8",
+      "risks": {
+        "mean": 3.9223290969231436e-05,
+        "cov": 4.857138104343031e-06,
+        "post_d4": 0.00032379861337499514,
+        "post_Q": 2.084584663038139e-05,
+        "post_R": 2.1720455637010105e-05
+      },
+      "intervals": {
+        "mean": {
+          "mean": 3.922329096923144e-05,
+          "lower95": 3.3834296701722485e-05,
+          "upper95": 4.46122852367404e-05,
+          "estimate": 3.9223290969231436e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.85713810434303e-06,
+          "lower95": 3.2906675269782145e-06,
+          "upper95": 6.423608681707846e-06,
+          "estimate": 4.857138104343031e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.00032379861337499536,
+          "lower95": 0.00027152759162105676,
+          "upper95": 0.00037606963512893396,
+          "estimate": 0.00032379861337499514,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.0845846630381396e-05,
+          "lower95": 1.748318071581315e-05,
+          "upper95": 2.4208512544949644e-05,
+          "estimate": 2.084584663038139e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 2.1720455637010115e-05,
+          "lower95": 1.8143486731257508e-05,
+          "upper95": 2.5297424542762722e-05,
+          "estimate": 2.1720455637010105e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 7,
+      "family": "G",
+      "risks": {
+        "mean": 1.6740531341285015e-06,
+        "cov": 1.4534321607488196e-06,
+        "post_d4": 0.0003378704941078677,
+        "post_Q": 2.1843086427369592e-05,
+        "post_R": 2.1488556832417193e-05
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.6740531341285013e-06,
+          "lower95": 1.3001282957960353e-06,
+          "upper95": 2.047977972460967e-06,
+          "estimate": 1.6740531341285015e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 1.4534321607488194e-06,
+          "lower95": 8.904627542108984e-07,
+          "upper95": 2.0164015672867403e-06,
+          "estimate": 1.4534321607488196e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.0003378704941078678,
+          "lower95": 0.00028317565403849647,
+          "upper95": 0.0003925653341772391,
+          "estimate": 0.0003378704941078677,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.1843086427369585e-05,
+          "lower95": 1.8382753151382014e-05,
+          "upper95": 2.5303419703357156e-05,
+          "estimate": 2.1843086427369592e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 2.1488556832417166e-05,
+          "lower95": 1.800374816248474e-05,
+          "upper95": 2.497336550234959e-05,
+          "estimate": 2.1488556832417193e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 14,
+      "family": "A",
+      "risks": {
+        "mean": 1.8676889223819133e-05,
+        "cov": 2.5140330767857707e-07,
+        "post_d4": 4.092222552304922e-08,
+        "post_Q": 3.1037879183281653e-09,
+        "post_R": 5.029433287028732e-09
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.8676889223819133e-05,
+          "lower95": 1.5860421395460576e-05,
+          "upper95": 2.149335705217769e-05,
+          "estimate": 1.8676889223819133e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.5140330767857717e-07,
+          "lower95": 1.9087654609156454e-07,
+          "upper95": 3.119300692655898e-07,
+          "estimate": 2.5140330767857707e-07,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.092222552304921e-08,
+          "lower95": 2.993400675292277e-08,
+          "upper95": 5.191044429317564e-08,
+          "estimate": 4.092222552304922e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 3.1037879183281653e-09,
+          "lower95": 2.141561133725383e-09,
+          "upper95": 4.066014702930948e-09,
+          "estimate": 3.1037879183281653e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 5.029433287028731e-09,
+          "lower95": 3.372709817425152e-09,
+          "upper95": 6.68615675663231e-09,
+          "estimate": 5.029433287028732e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 14,
+      "family": "C",
+      "risks": {
+        "mean": 1.181986555730924e-05,
+        "cov": 1.0461409034833054e-06,
+        "post_d4": 4.1546048634804404e-08,
+        "post_Q": 2.9284167472058694e-09,
+        "post_R": 4.001461612103783e-09
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.1819865557309244e-05,
+          "lower95": 1.0537918919652001e-05,
+          "upper95": 1.3101812194966486e-05,
+          "estimate": 1.181986555730924e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 1.0461409034833046e-06,
+          "lower95": 6.845023833798977e-07,
+          "upper95": 1.4077794235867114e-06,
+          "estimate": 1.0461409034833054e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.154604863480442e-08,
+          "lower95": 3.0340951883102635e-08,
+          "upper95": 5.27511453865062e-08,
+          "estimate": 4.1546048634804404e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.9284167472058694e-09,
+          "lower95": 2.085653395753184e-09,
+          "upper95": 3.771180098658555e-09,
+          "estimate": 2.9284167472058694e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 4.001461612103784e-09,
+          "lower95": 2.7193157348644096e-09,
+          "upper95": 5.283607489343158e-09,
+          "estimate": 4.001461612103783e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 14,
+      "family": "D8",
+      "risks": {
+        "mean": 1.1274448256534929e-05,
+        "cov": 1.4890054391285291e-07,
+        "post_d4": 4.039447047027023e-08,
+        "post_Q": 2.8993426171046058e-09,
+        "post_R": 4.533285623012964e-09
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.1274448256534934e-05,
+          "lower95": 9.315612010049967e-06,
+          "upper95": 1.3233284503019901e-05,
+          "estimate": 1.1274448256534929e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 1.4890054391285294e-07,
+          "lower95": 1.194749055167143e-07,
+          "upper95": 1.783261823089916e-07,
+          "estimate": 1.4890054391285291e-07,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.039447047027024e-08,
+          "lower95": 2.9424229774818213e-08,
+          "upper95": 5.136471116572227e-08,
+          "estimate": 4.039447047027023e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.8993426171046054e-09,
+          "lower95": 2.00816812755427e-09,
+          "upper95": 3.790517106654941e-09,
+          "estimate": 2.8993426171046058e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 4.533285623012964e-09,
+          "lower95": 3.0303920534159968e-09,
+          "upper95": 6.036179192609931e-09,
+          "estimate": 4.533285623012964e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 14,
+      "family": "E8",
+      "risks": {
+        "mean": 2.829340551844057e-05,
+        "cov": 2.0632134699234654e-06,
+        "post_d4": 4.1060166588745594e-08,
+        "post_Q": 2.9415706273618426e-09,
+        "post_R": 4.26741672820511e-09
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.8293405518440562e-05,
+          "lower95": 2.3221594945423202e-05,
+          "upper95": 3.336521609145792e-05,
+          "estimate": 2.829340551844057e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.0632134699234654e-06,
+          "lower95": 1.4528556094136734e-06,
+          "upper95": 2.6735713304332574e-06,
+          "estimate": 2.0632134699234654e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.106016658874562e-08,
+          "lower95": 3.002364852935346e-08,
+          "upper95": 5.2096684648137784e-08,
+          "estimate": 4.1060166588745594e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.941570627361844e-09,
+          "lower95": 2.0362325845123294e-09,
+          "upper95": 3.846908670211359e-09,
+          "estimate": 2.9415706273618426e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 4.267416728205111e-09,
+          "lower95": 2.881696809313319e-09,
+          "upper95": 5.653136647096903e-09,
+          "estimate": 4.26741672820511e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 14,
+      "family": "F8",
+      "risks": {
+        "mean": 1.2052163926140004e-05,
+        "cov": 7.094065300298856e-07,
+        "post_d4": 4.138981459986505e-08,
+        "post_Q": 2.824630321833908e-09,
+        "post_R": 3.807655306455075e-09
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.2052163926140005e-05,
+          "lower95": 1.0084377221325804e-05,
+          "upper95": 1.4019950630954207e-05,
+          "estimate": 1.2052163926140004e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 7.094065300298857e-07,
+          "lower95": 4.5216810351343496e-07,
+          "upper95": 9.666449565463365e-07,
+          "estimate": 7.094065300298856e-07,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.138981459986504e-08,
+          "lower95": 3.0192364465922834e-08,
+          "upper95": 5.258726473380725e-08,
+          "estimate": 4.138981459986505e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.8246303218339067e-09,
+          "lower95": 2.0329356269958297e-09,
+          "upper95": 3.6163250166719838e-09,
+          "estimate": 2.824630321833908e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 3.807655306455075e-09,
+          "lower95": 2.586179808579129e-09,
+          "upper95": 5.029130804331022e-09,
+          "estimate": 3.807655306455075e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 16,
+      "seed": 82072,
+      "source_layer": 14,
+      "family": "G",
+      "risks": {
+        "mean": 1.6391393581021684e-07,
+        "cov": 5.238474341383042e-08,
+        "post_d4": 4.2641009762856346e-08,
+        "post_Q": 2.93091940988143e-09,
+        "post_R": 2.7959304453989034e-09
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.6391393581021687e-07,
+          "lower95": 7.859448896621655e-08,
+          "upper95": 2.492333826542172e-07,
+          "estimate": 1.6391393581021684e-07,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.238474341383041e-08,
+          "lower95": 2.909300807698153e-08,
+          "upper95": 7.567647875067929e-08,
+          "estimate": 5.238474341383042e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 4.264100976285634e-08,
+          "lower95": 3.112849932962933e-08,
+          "upper95": 5.4153520196083345e-08,
+          "estimate": 4.2641009762856346e-08,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 2.9309194098814304e-09,
+          "lower95": 2.2098027639823844e-09,
+          "upper95": 3.6520360557804764e-09,
+          "estimate": 2.93091940988143e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 2.7959304453989046e-09,
+          "lower95": 2.0168509264809445e-09,
+          "upper95": 3.575009964316865e-09,
+          "estimate": 2.7959304453989034e-09,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 0,
+      "family": "A",
+      "risks": {
+        "mean": 5.016501690228561e-06,
+        "cov": 7.799508721082339e-06,
+        "post_d4": 0.7047216436721006,
+        "post_Q": 0.022342324135969337,
+        "post_R": 0.02319158634130279
+      },
+      "intervals": {
+        "mean": {
+          "mean": 5.016501690228561e-06,
+          "lower95": 4.20367950124063e-06,
+          "upper95": 5.829323879216492e-06,
+          "estimate": 5.016501690228561e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 7.799508721082337e-06,
+          "lower95": 7.048693559429394e-06,
+          "upper95": 8.550323882735279e-06,
+          "estimate": 7.799508721082339e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.7047216436721009,
+          "lower95": 0.677854877092279,
+          "upper95": 0.7315884102519228,
+          "estimate": 0.7047216436721006,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.022342324135969368,
+          "lower95": 0.02147713380761146,
+          "upper95": 0.023207514464327277,
+          "estimate": 0.022342324135969337,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.023191586341302802,
+          "lower95": 0.022127387534863804,
+          "upper95": 0.0242557851477418,
+          "estimate": 0.02319158634130279,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 0,
+      "family": "C",
+      "risks": {
+        "mean": 1.244387206992756e-06,
+        "cov": 6.250285498602617e-06,
+        "post_d4": 0.7094392523476676,
+        "post_Q": 0.022322753332406874,
+        "post_R": 0.022406835260776376
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.2443872069927555e-06,
+          "lower95": 1.090814975649061e-06,
+          "upper95": 1.39795943833645e-06,
+          "estimate": 1.244387206992756e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 6.250285498602618e-06,
+          "lower95": 5.713399994592527e-06,
+          "upper95": 6.787171002612709e-06,
+          "estimate": 6.250285498602617e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.709439252347668,
+          "lower95": 0.6829597520832114,
+          "upper95": 0.7359187526121247,
+          "estimate": 0.7094392523476676,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.022322753332406898,
+          "lower95": 0.02152016126842682,
+          "upper95": 0.023125345396386977,
+          "estimate": 0.022322753332406874,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.022406835260776383,
+          "lower95": 0.021531255537624576,
+          "upper95": 0.02328241498392819,
+          "estimate": 0.022406835260776376,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 0,
+      "family": "D8",
+      "risks": {
+        "mean": 4.209094887103135e-06,
+        "cov": 9.869808201793108e-06,
+        "post_d4": 0.7083410312378832,
+        "post_Q": 0.022379361161365664,
+        "post_R": 0.022693756299614128
+      },
+      "intervals": {
+        "mean": {
+          "mean": 4.209094887103134e-06,
+          "lower95": 3.6404667747537485e-06,
+          "upper95": 4.777722999452519e-06,
+          "estimate": 4.209094887103135e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 9.869808201793111e-06,
+          "lower95": 9.252284481130754e-06,
+          "upper95": 1.0487331922455468e-05,
+          "estimate": 9.869808201793108e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.7083410312378836,
+          "lower95": 0.6810434265585739,
+          "upper95": 0.7356386359171934,
+          "estimate": 0.7083410312378832,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.022379361161365675,
+          "lower95": 0.02152614147511083,
+          "upper95": 0.023232580847620518,
+          "estimate": 0.022379361161365664,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.022693756299614155,
+          "lower95": 0.02171330356901206,
+          "upper95": 0.02367420903021625,
+          "estimate": 0.022693756299614128,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 0,
+      "family": "E8",
+      "risks": {
+        "mean": 3.0710067213389987e-06,
+        "cov": 8.251933101320121e-06,
+        "post_d4": 0.7118835248890916,
+        "post_Q": 0.022462635532085815,
+        "post_R": 0.022659631116322982
+      },
+      "intervals": {
+        "mean": {
+          "mean": 3.0710067213389987e-06,
+          "lower95": 2.3123466013813984e-06,
+          "upper95": 3.829666841296599e-06,
+          "estimate": 3.0710067213389987e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 8.251933101320128e-06,
+          "lower95": 7.780137426508633e-06,
+          "upper95": 8.723728776131623e-06,
+          "estimate": 8.251933101320121e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.7118835248890919,
+          "lower95": 0.6848096941638339,
+          "upper95": 0.7389573556143499,
+          "estimate": 0.7118835248890916,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.022462635532085808,
+          "lower95": 0.021663986560048126,
+          "upper95": 0.02326128450412349,
+          "estimate": 0.022462635532085815,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.022659631116323,
+          "lower95": 0.021772408427814173,
+          "upper95": 0.023546853804831826,
+          "estimate": 0.022659631116322982,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 0,
+      "family": "F8",
+      "risks": {
+        "mean": 1.2733850731619117e-06,
+        "cov": 6.340042539070521e-06,
+        "post_d4": 0.7108841236122958,
+        "post_Q": 0.022379805275796874,
+        "post_R": 0.022437655671834464
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.2733850731619113e-06,
+          "lower95": 9.960420975171843e-07,
+          "upper95": 1.5507280488066383e-06,
+          "estimate": 1.2733850731619117e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 6.340042539070521e-06,
+          "lower95": 5.790320327063179e-06,
+          "upper95": 6.889764751077863e-06,
+          "estimate": 6.340042539070521e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.7108841236122964,
+          "lower95": 0.6842229179085998,
+          "upper95": 0.7375453293159929,
+          "estimate": 0.7108841236122958,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.022379805275796888,
+          "lower95": 0.02158632439452493,
+          "upper95": 0.023173286157068845,
+          "estimate": 0.022379805275796874,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.02243765567183448,
+          "lower95": 0.021574326086724563,
+          "upper95": 0.0233009852569444,
+          "estimate": 0.022437655671834464,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 0,
+      "family": "G",
+      "risks": {
+        "mean": 9.280028761933364e-07,
+        "cov": 5.257773560921626e-06,
+        "post_d4": 0.7108407524819829,
+        "post_Q": 0.022310031856350238,
+        "post_R": 0.022284135893672098
+      },
+      "intervals": {
+        "mean": {
+          "mean": 9.280028761933364e-07,
+          "lower95": 6.744096610648962e-07,
+          "upper95": 1.1815960913217765e-06,
+          "estimate": 9.280028761933364e-07,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.257773560921627e-06,
+          "lower95": 5.1517931433135536e-06,
+          "upper95": 5.3637539785297e-06,
+          "estimate": 5.257773560921626e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.7108407524819833,
+          "lower95": 0.6836043454042808,
+          "upper95": 0.7380771595596858,
+          "estimate": 0.7108407524819829,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.02231003185635026,
+          "lower95": 0.021461880074793663,
+          "upper95": 0.023158183637906855,
+          "estimate": 0.022310031856350238,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.022284135893672112,
+          "lower95": 0.021435589710831794,
+          "upper95": 0.02313268207651243,
+          "estimate": 0.022284135893672098,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 7,
+      "family": "A",
+      "risks": {
+        "mean": 0.0006999769969108617,
+        "cov": 0.00022300363873191327,
+        "post_d4": 0.4828453073103198,
+        "post_Q": 0.016586247477483274,
+        "post_R": 0.017168302170416875
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.000699976996910862,
+          "lower95": 0.0006299795123539411,
+          "upper95": 0.0007699744814677828,
+          "estimate": 0.0006999769969108617,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00022300363873191333,
+          "lower95": 0.00018844580127870623,
+          "upper95": 0.0002575614761851204,
+          "estimate": 0.00022300363873191327,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.4828453073103193,
+          "lower95": 0.4239337690125067,
+          "upper95": 0.541756845608132,
+          "estimate": 0.4828453073103198,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.016586247477483267,
+          "lower95": 0.014542954928845483,
+          "upper95": 0.01862954002612105,
+          "estimate": 0.016586247477483274,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.017168302170416868,
+          "lower95": 0.014948637745592089,
+          "upper95": 0.019387966595241647,
+          "estimate": 0.017168302170416875,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 7,
+      "family": "C",
+      "risks": {
+        "mean": 0.00047064029563127443,
+        "cov": 0.00018565856281597205,
+        "post_d4": 0.4849113951901602,
+        "post_Q": 0.01667864130918167,
+        "post_R": 0.01693979493892412
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0004706402956312745,
+          "lower95": 0.00043167211715215497,
+          "upper95": 0.000509608474110394,
+          "estimate": 0.00047064029563127443,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.0001856585628159721,
+          "lower95": 0.00015443682407590586,
+          "upper95": 0.00021688030155603836,
+          "estimate": 0.00018565856281597205,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.48491139519015986,
+          "lower95": 0.4257085270343789,
+          "upper95": 0.5441142633459408,
+          "estimate": 0.4849113951901602,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.016678641309181664,
+          "lower95": 0.01458449382750309,
+          "upper95": 0.018772788790860237,
+          "estimate": 0.01667864130918167,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.016939794938924117,
+          "lower95": 0.014770984998823237,
+          "upper95": 0.019108604879024996,
+          "estimate": 0.01693979493892412,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 7,
+      "family": "D8",
+      "risks": {
+        "mean": 0.00014305679251962525,
+        "cov": 9.562386630264467e-05,
+        "post_d4": 0.40629425863198176,
+        "post_Q": 0.013961811266072318,
+        "post_R": 0.014863025849529973
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0001430567925196253,
+          "lower95": 0.00011801038931220421,
+          "upper95": 0.0001681031957270464,
+          "estimate": 0.00014305679251962525,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 9.562386630264468e-05,
+          "lower95": 8.209580369892546e-05,
+          "upper95": 0.0001091519289063639,
+          "estimate": 9.562386630264467e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.40629425863198165,
+          "lower95": 0.36032188388759917,
+          "upper95": 0.45226663337636414,
+          "estimate": 0.40629425863198176,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.013961811266072311,
+          "lower95": 0.01233862394254534,
+          "upper95": 0.015584998589599282,
+          "estimate": 0.013961811266072318,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.014863025849529964,
+          "lower95": 0.01301200316942838,
+          "upper95": 0.016714048529631546,
+          "estimate": 0.014863025849529973,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 7,
+      "family": "E8",
+      "risks": {
+        "mean": 0.0006959091106880861,
+        "cov": 0.00036346932486733995,
+        "post_d4": 0.4767308110401253,
+        "post_Q": 0.017065423328053518,
+        "post_R": 0.017719750418459475
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0006959091106880865,
+          "lower95": 0.0006404066868137735,
+          "upper95": 0.0007514115345623995,
+          "estimate": 0.0006959091106880861,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00036346932486734,
+          "lower95": 0.000289388705414946,
+          "upper95": 0.00043754994431973403,
+          "estimate": 0.00036346932486733995,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.47673081104012505,
+          "lower95": 0.41882619085374595,
+          "upper95": 0.5346354312265041,
+          "estimate": 0.4767308110401253,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.017065423328053497,
+          "lower95": 0.014865647226420215,
+          "upper95": 0.01926519942968678,
+          "estimate": 0.017065423328053518,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.017719750418459464,
+          "lower95": 0.015353240295469998,
+          "upper95": 0.020086260541448932,
+          "estimate": 0.017719750418459475,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 7,
+      "family": "F8",
+      "risks": {
+        "mean": 0.0005181087366485067,
+        "cov": 0.00018990277328373065,
+        "post_d4": 0.48144471341553796,
+        "post_Q": 0.01651564825866089,
+        "post_R": 0.016817186394891798
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0005181087366485065,
+          "lower95": 0.00046716258824707895,
+          "upper95": 0.000569054885049934,
+          "estimate": 0.0005181087366485067,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00018990277328373068,
+          "lower95": 0.00015698497379377434,
+          "upper95": 0.00022282057277368703,
+          "estimate": 0.00018990277328373065,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.4814447134155377,
+          "lower95": 0.42272603277024823,
+          "upper95": 0.5401633940608271,
+          "estimate": 0.48144471341553796,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.016515648258660885,
+          "lower95": 0.014448274773125236,
+          "upper95": 0.018583021744196536,
+          "estimate": 0.01651564825866089,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.016817186394891794,
+          "lower95": 0.01466760627441836,
+          "upper95": 0.01896676651536523,
+          "estimate": 0.016817186394891798,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 7,
+      "family": "G",
+      "risks": {
+        "mean": 1.1761831790588133e-05,
+        "cov": 3.209128351990433e-05,
+        "post_d4": 0.46512741269946156,
+        "post_Q": 0.014918643326487117,
+        "post_R": 0.014896213438106178
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.1761831790588137e-05,
+          "lower95": 8.143776273883181e-06,
+          "upper95": 1.5379887307293093e-05,
+          "estimate": 1.1761831790588133e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 3.2091283519904346e-05,
+          "lower95": 2.6325652774762812e-05,
+          "upper95": 3.7856914265045884e-05,
+          "estimate": 3.209128351990433e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.4651274126994611,
+          "lower95": 0.4090918018277031,
+          "upper95": 0.5211630235712191,
+          "estimate": 0.46512741269946156,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.014918643326487112,
+          "lower95": 0.013158762606563918,
+          "upper95": 0.016678524046410306,
+          "estimate": 0.014918643326487117,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.014896213438106166,
+          "lower95": 0.013115947880487498,
+          "upper95": 0.016676478995724834,
+          "estimate": 0.014896213438106178,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 14,
+      "family": "A",
+      "risks": {
+        "mean": 0.0005463434009384278,
+        "cov": 6.28911059280155e-05,
+        "post_d4": 0.1793777481240126,
+        "post_Q": 0.005949337103701303,
+        "post_R": 0.00713804254684078
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.000546343400938428,
+          "lower95": 0.0004700785026470079,
+          "upper95": 0.0006226082992298481,
+          "estimate": 0.0005463434009384278,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 6.289110592801547e-05,
+          "lower95": 4.918375001170729e-05,
+          "upper95": 7.659846184432365e-05,
+          "estimate": 6.28911059280155e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.17937774812401244,
+          "lower95": 0.14673193402585238,
+          "upper95": 0.2120235622221725,
+          "estimate": 0.1793777481240126,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.0059493371037012905,
+          "lower95": 0.0048019263867169135,
+          "upper95": 0.0070967478206856675,
+          "estimate": 0.005949337103701303,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.007138042546840764,
+          "lower95": 0.005558141727533198,
+          "upper95": 0.008717943366148331,
+          "estimate": 0.00713804254684078,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 14,
+      "family": "C",
+      "risks": {
+        "mean": 0.0002056141281059385,
+        "cov": 0.0003786634765509964,
+        "post_d4": 0.18609967012135364,
+        "post_Q": 0.006169822673733517,
+        "post_R": 0.006827535411424505
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.00020561412810593847,
+          "lower95": 0.0001634560619971711,
+          "upper95": 0.00024777219421470584,
+          "estimate": 0.0002056141281059385,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.0003786634765509962,
+          "lower95": 0.0002592323057194083,
+          "upper95": 0.0004980946473825841,
+          "estimate": 0.0003786634765509964,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.1860996701213534,
+          "lower95": 0.1522470064615619,
+          "upper95": 0.2199523337811449,
+          "estimate": 0.18609967012135364,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.0061698226737335144,
+          "lower95": 0.005000277147818739,
+          "upper95": 0.00733936819964829,
+          "estimate": 0.006169822673733517,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006827535411424504,
+          "lower95": 0.005422697869058723,
+          "upper95": 0.008232372953790285,
+          "estimate": 0.006827535411424505,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 14,
+      "family": "D8",
+      "risks": {
+        "mean": 0.0001558133656685975,
+        "cov": 0.00014423680013941052,
+        "post_d4": 0.1719675554091712,
+        "post_Q": 0.006117947965116806,
+        "post_R": 0.0070598172125405445
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.00015581336566859746,
+          "lower95": 0.0001366213057233966,
+          "upper95": 0.00017500542561379832,
+          "estimate": 0.0001558133656685975,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00014423680013941052,
+          "lower95": 9.188261814154519e-05,
+          "upper95": 0.00019659098213727584,
+          "estimate": 0.00014423680013941052,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.1719675554091712,
+          "lower95": 0.14107428656512902,
+          "upper95": 0.20286082425321336,
+          "estimate": 0.1719675554091712,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.006117947965116808,
+          "lower95": 0.004893891511354551,
+          "upper95": 0.007342004418879065,
+          "estimate": 0.006117947965116806,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.007059817212540545,
+          "lower95": 0.005509868891271577,
+          "upper95": 0.008609765533809514,
+          "estimate": 0.0070598172125405445,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 14,
+      "family": "E8",
+      "risks": {
+        "mean": 0.00038575671474089403,
+        "cov": 0.0008902871258695455,
+        "post_d4": 0.18330311867171406,
+        "post_Q": 0.00679919776033698,
+        "post_R": 0.0075902937295318175
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.000385756714740894,
+          "lower95": 0.00029657420858186724,
+          "upper95": 0.0004749392208999207,
+          "estimate": 0.00038575671474089403,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.0008902871258695459,
+          "lower95": 0.0005483681776199051,
+          "upper95": 0.0012322060741191867,
+          "estimate": 0.0008902871258695455,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.18330311867171378,
+          "lower95": 0.14968778745223668,
+          "upper95": 0.21691844989119088,
+          "estimate": 0.18330311867171406,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.0067991977603369756,
+          "lower95": 0.005323190979672649,
+          "upper95": 0.008275204541001302,
+          "estimate": 0.00679919776033698,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.007590293729531814,
+          "lower95": 0.005904949955004165,
+          "upper95": 0.009275637504059462,
+          "estimate": 0.0075902937295318175,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 14,
+      "family": "F8",
+      "risks": {
+        "mean": 0.00020169947674381745,
+        "cov": 0.00037113565307905164,
+        "post_d4": 0.18620379189795275,
+        "post_Q": 0.006194201220933188,
+        "post_R": 0.006847173769867145
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.00020169947674381747,
+          "lower95": 0.00015864055668436287,
+          "upper95": 0.0002447583968032721,
+          "estimate": 0.00020169947674381745,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00037113565307905175,
+          "lower95": 0.00024700051394576934,
+          "upper95": 0.0004952707922123342,
+          "estimate": 0.00037113565307905164,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.1862037918979527,
+          "lower95": 0.15243658171532495,
+          "upper95": 0.21997100208058043,
+          "estimate": 0.18620379189795275,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.006194201220933189,
+          "lower95": 0.005026569259831342,
+          "upper95": 0.007361833182035036,
+          "estimate": 0.006194201220933188,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006847173769867142,
+          "lower95": 0.00544705976061533,
+          "upper95": 0.008247287779118954,
+          "estimate": 0.006847173769867145,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82081,
+      "source_layer": 14,
+      "family": "G",
+      "risks": {
+        "mean": 7.701534642284203e-07,
+        "cov": 6.190528551351731e-06,
+        "post_d4": 0.20818963284472605,
+        "post_Q": 0.006595932426339235,
+        "post_R": 0.006555451924436133
+      },
+      "intervals": {
+        "mean": {
+          "mean": 7.701534642284208e-07,
+          "lower95": 5.258160845412457e-07,
+          "upper95": 1.0144908439155957e-06,
+          "estimate": 7.701534642284203e-07,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 6.19052855135173e-06,
+          "lower95": 5.583388307969308e-06,
+          "upper95": 6.797668794734152e-06,
+          "estimate": 6.190528551351731e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.2081896328447258,
+          "lower95": 0.1692742343437756,
+          "upper95": 0.24710503134567602,
+          "estimate": 0.20818963284472605,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.006595932426339227,
+          "lower95": 0.005369354331992038,
+          "upper95": 0.007822510520686415,
+          "estimate": 0.006595932426339235,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006555451924436124,
+          "lower95": 0.005338119165961589,
+          "upper95": 0.00777278468291066,
+          "estimate": 0.006555451924436133,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 0,
+      "family": "A",
+      "risks": {
+        "mean": 2.3461272513150227e-06,
+        "cov": 4.6255835954632365e-06,
+        "post_d4": 0.46981794038156954,
+        "post_Q": 0.0148587097319501,
+        "post_R": 0.015239656503331853
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.3461272513150236e-06,
+          "lower95": 1.9097300651656557e-06,
+          "upper95": 2.7825244374643914e-06,
+          "estimate": 2.3461272513150227e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.625583595463237e-06,
+          "lower95": 4.350468969590914e-06,
+          "upper95": 4.90069822133556e-06,
+          "estimate": 4.6255835954632365e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.4698179403815694,
+          "lower95": 0.4261613891956234,
+          "upper95": 0.5134744915675153,
+          "estimate": 0.46981794038156954,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.014858709731950092,
+          "lower95": 0.0134994346927261,
+          "upper95": 0.016217984771174084,
+          "estimate": 0.0148587097319501,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.015239656503331834,
+          "lower95": 0.013867608877792944,
+          "upper95": 0.01661170412887072,
+          "estimate": 0.015239656503331853,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 0,
+      "family": "C",
+      "risks": {
+        "mean": 1.3999426604530645e-06,
+        "cov": 2.9673231327814506e-06,
+        "post_d4": 0.47001006910506316,
+        "post_Q": 0.014742240916418374,
+        "post_R": 0.014805016389304539
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.3999426604530645e-06,
+          "lower95": 8.166855576674744e-07,
+          "upper95": 1.9831997632386545e-06,
+          "estimate": 1.3999426604530645e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.96732313278145e-06,
+          "lower95": 2.6532502547497133e-06,
+          "upper95": 3.281396010813187e-06,
+          "estimate": 2.9673231327814506e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.4700100691050629,
+          "lower95": 0.42578733208013403,
+          "upper95": 0.5142328061299917,
+          "estimate": 0.47001006910506316,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.01474224091641837,
+          "lower95": 0.013367290705133324,
+          "upper95": 0.016117191127703417,
+          "estimate": 0.014742240916418374,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.01480501638930454,
+          "lower95": 0.013440123077674702,
+          "upper95": 0.01616990970093438,
+          "estimate": 0.014805016389304539,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 0,
+      "family": "D8",
+      "risks": {
+        "mean": 2.6670527054796617e-06,
+        "cov": 5.0991064767723435e-06,
+        "post_d4": 0.47943820382266733,
+        "post_Q": 0.01511084640539725,
+        "post_R": 0.01529063428188473
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.6670527054796617e-06,
+          "lower95": 1.9960164534490536e-06,
+          "upper95": 3.33808895751027e-06,
+          "estimate": 2.6670527054796617e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 5.099106476772341e-06,
+          "lower95": 4.704254019990962e-06,
+          "upper95": 5.49395893355372e-06,
+          "estimate": 5.0991064767723435e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.47943820382266705,
+          "lower95": 0.4418596480845648,
+          "upper95": 0.5170167595607693,
+          "estimate": 0.47943820382266733,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.015110846405397244,
+          "lower95": 0.013945344012120473,
+          "upper95": 0.016276348798674015,
+          "estimate": 0.01511084640539725,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.015290634281884725,
+          "lower95": 0.014128902924752365,
+          "upper95": 0.016452365639017086,
+          "estimate": 0.01529063428188473,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 0,
+      "family": "E8",
+      "risks": {
+        "mean": 1.7265426811136765e-06,
+        "cov": 3.857643021425361e-06,
+        "post_d4": 0.4691768651699204,
+        "post_Q": 0.014758350203256793,
+        "post_R": 0.014870278385967061
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.7265426811136767e-06,
+          "lower95": 1.1478184335798642e-06,
+          "upper95": 2.305266928647489e-06,
+          "estimate": 1.7265426811136765e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 3.85764302142536e-06,
+          "lower95": 3.485960553642391e-06,
+          "upper95": 4.2293254892083285e-06,
+          "estimate": 3.857643021425361e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.46917686516992013,
+          "lower95": 0.42635315732647144,
+          "upper95": 0.5120005730133688,
+          "estimate": 0.4691768651699204,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.014758350203256793,
+          "lower95": 0.013426110918810439,
+          "upper95": 0.016090589487703148,
+          "estimate": 0.014758350203256793,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.014870278385967056,
+          "lower95": 0.013538319008414018,
+          "upper95": 0.016202237763520092,
+          "estimate": 0.014870278385967061,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 0,
+      "family": "F8",
+      "risks": {
+        "mean": 1.2904987347652016e-06,
+        "cov": 2.9104218952465946e-06,
+        "post_d4": 0.46852657594065555,
+        "post_Q": 0.014697120311974503,
+        "post_R": 0.014754170498680146
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.2904987347652011e-06,
+          "lower95": 7.615217501483643e-07,
+          "upper95": 1.819475719382038e-06,
+          "estimate": 1.2904987347652016e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.910421895246596e-06,
+          "lower95": 2.6127381759148024e-06,
+          "upper95": 3.2081056145783893e-06,
+          "estimate": 2.9104218952465946e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.46852657594065533,
+          "lower95": 0.42432840970262514,
+          "upper95": 0.5127247421786856,
+          "estimate": 0.46852657594065555,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.014697120311974498,
+          "lower95": 0.013323077379132287,
+          "upper95": 0.016071163244816708,
+          "estimate": 0.014697120311974503,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.014754170498680134,
+          "lower95": 0.013390946492812236,
+          "upper95": 0.016117394504548032,
+          "estimate": 0.014754170498680146,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 0,
+      "family": "G",
+      "risks": {
+        "mean": 9.312731414759472e-07,
+        "cov": 2.0905916385412637e-06,
+        "post_d4": 0.4614189204377483,
+        "post_Q": 0.014444016150661886,
+        "post_R": 0.014456084293231839
+      },
+      "intervals": {
+        "mean": {
+          "mean": 9.31273141475947e-07,
+          "lower95": 6.577639040017529e-07,
+          "upper95": 1.2047823789501411e-06,
+          "estimate": 9.312731414759472e-07,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.090591638541263e-06,
+          "lower95": 1.990274277641419e-06,
+          "upper95": 2.1909089994411066e-06,
+          "estimate": 2.0905916385412637e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.46141892043774807,
+          "lower95": 0.4135973116285397,
+          "upper95": 0.5092405292469564,
+          "estimate": 0.4614189204377483,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.014444016150661881,
+          "lower95": 0.012948132810794353,
+          "upper95": 0.01593989949052941,
+          "estimate": 0.014444016150661886,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.014456084293231839,
+          "lower95": 0.012963966951283695,
+          "upper95": 0.015948201635179984,
+          "estimate": 0.014456084293231839,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 7,
+      "family": "A",
+      "risks": {
+        "mean": 7.250227453048612e-05,
+        "cov": 2.871133161821301e-05,
+        "post_d4": 0.19724576389394044,
+        "post_Q": 0.006508348651263846,
+        "post_R": 0.006712154164414671
+      },
+      "intervals": {
+        "mean": {
+          "mean": 7.250227453048608e-05,
+          "lower95": 5.437268517493115e-05,
+          "upper95": 9.0631863886041e-05,
+          "estimate": 7.250227453048612e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.871133161821301e-05,
+          "lower95": 2.476210499168041e-05,
+          "upper95": 3.266055824474561e-05,
+          "estimate": 2.871133161821301e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.19724576389394036,
+          "lower95": 0.16913519387623663,
+          "upper95": 0.22535633391164409,
+          "estimate": 0.19724576389394044,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.006508348651263846,
+          "lower95": 0.005569206699047188,
+          "upper95": 0.0074474906034805045,
+          "estimate": 0.006508348651263846,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006712154164414672,
+          "lower95": 0.005632684186001959,
+          "upper95": 0.007791624142827384,
+          "estimate": 0.006712154164414671,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 7,
+      "family": "C",
+      "risks": {
+        "mean": 2.835274317562722e-05,
+        "cov": 3.0009820432902995e-05,
+        "post_d4": 0.19905664046275606,
+        "post_Q": 0.006561858787265771,
+        "post_R": 0.006522493595925923
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.8352743175627228e-05,
+          "lower95": 2.528766374001991e-05,
+          "upper95": 3.141782261123455e-05,
+          "estimate": 2.835274317562722e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 3.0009820432902995e-05,
+          "lower95": 2.626648306698213e-05,
+          "upper95": 3.375315779882386e-05,
+          "estimate": 3.0009820432902995e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.19905664046275606,
+          "lower95": 0.16999837495545395,
+          "upper95": 0.22811490597005818,
+          "estimate": 0.19905664046275606,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.00656185878726577,
+          "lower95": 0.005624747167594988,
+          "upper95": 0.007498970406936553,
+          "estimate": 0.006561858787265771,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006522493595925926,
+          "lower95": 0.0055500161322920415,
+          "upper95": 0.00749497105955981,
+          "estimate": 0.006522493595925923,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 7,
+      "family": "D8",
+      "risks": {
+        "mean": 2.8877313560289253e-05,
+        "cov": 2.5895839190331465e-05,
+        "post_d4": 0.18971565109923838,
+        "post_Q": 0.006284791320210205,
+        "post_R": 0.006424166411589986
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.887731356028924e-05,
+          "lower95": 2.649119798700605e-05,
+          "upper95": 3.126342913357243e-05,
+          "estimate": 2.8877313560289253e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.589583919033146e-05,
+          "lower95": 2.24137416985138e-05,
+          "upper95": 2.937793668214912e-05,
+          "estimate": 2.5895839190331465e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.18971565109923835,
+          "lower95": 0.16335294199700431,
+          "upper95": 0.2160783602014724,
+          "estimate": 0.18971565109923838,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.006284791320210204,
+          "lower95": 0.005381471622341175,
+          "upper95": 0.007188111018079234,
+          "estimate": 0.006284791320210205,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006424166411589983,
+          "lower95": 0.00542317048059616,
+          "upper95": 0.007425162342583806,
+          "estimate": 0.006424166411589986,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 7,
+      "family": "E8",
+      "risks": {
+        "mean": 7.751187983624663e-05,
+        "cov": 4.3556862583791254e-05,
+        "post_d4": 0.1962671067306264,
+        "post_Q": 0.006437828806728877,
+        "post_R": 0.006496807839538645
+      },
+      "intervals": {
+        "mean": {
+          "mean": 7.751187983624655e-05,
+          "lower95": 5.99122280737216e-05,
+          "upper95": 9.51115315987715e-05,
+          "estimate": 7.751187983624663e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.355686258379126e-05,
+          "lower95": 3.467363362852196e-05,
+          "upper95": 5.2440091539060565e-05,
+          "estimate": 4.3556862583791254e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.19626710673062636,
+          "lower95": 0.16839413719019264,
+          "upper95": 0.22414007627106008,
+          "estimate": 0.1962671067306264,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.006437828806728876,
+          "lower95": 0.00552640582450397,
+          "upper95": 0.007349251788953782,
+          "estimate": 0.006437828806728877,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006496807839538643,
+          "lower95": 0.0055114027401804945,
+          "upper95": 0.007482212938896791,
+          "estimate": 0.006496807839538645,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 7,
+      "family": "F8",
+      "risks": {
+        "mean": 2.8733449860901078e-05,
+        "cov": 2.9977825788695834e-05,
+        "post_d4": 0.19897524061284744,
+        "post_Q": 0.006551194255829442,
+        "post_R": 0.006499020323007107
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.8733449860901085e-05,
+          "lower95": 2.574310131223375e-05,
+          "upper95": 3.172379840956842e-05,
+          "estimate": 2.8733449860901078e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 2.9977825788695845e-05,
+          "lower95": 2.6133252896107886e-05,
+          "upper95": 3.38223986812838e-05,
+          "estimate": 2.9977825788695834e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.1989752406128474,
+          "lower95": 0.1699198103077254,
+          "upper95": 0.2280306709179694,
+          "estimate": 0.19897524061284744,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.00655119425582944,
+          "lower95": 0.005616792119841818,
+          "upper95": 0.007485596391817062,
+          "estimate": 0.006551194255829442,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006499020323007109,
+          "lower95": 0.005534625915256606,
+          "upper95": 0.007463414730757612,
+          "estimate": 0.006499020323007107,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 7,
+      "family": "G",
+      "risks": {
+        "mean": 1.2607030950550465e-05,
+        "cov": 9.225831637145312e-06,
+        "post_d4": 0.20080275039928155,
+        "post_Q": 0.006798723959799924,
+        "post_R": 0.006417124625086025
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.2607030950550462e-05,
+          "lower95": 1.1588599567656762e-05,
+          "upper95": 1.3625462333444162e-05,
+          "estimate": 1.2607030950550465e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 9.225831637145314e-06,
+          "lower95": 8.560166920635657e-06,
+          "upper95": 9.89149635365497e-06,
+          "estimate": 9.225831637145312e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.20080275039928155,
+          "lower95": 0.17058849912632934,
+          "upper95": 0.23101700167223377,
+          "estimate": 0.20080275039928155,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.006798723959799921,
+          "lower95": 0.005784505048841596,
+          "upper95": 0.007812942870758247,
+          "estimate": 0.006798723959799924,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.006417124625086028,
+          "lower95": 0.005466679026813619,
+          "upper95": 0.007367570223358436,
+          "estimate": 0.006417124625086025,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 14,
+      "family": "A",
+      "risks": {
+        "mean": 0.0007330782059647358,
+        "cov": 0.00011090859970046584,
+        "post_d4": 0.2718367942694942,
+        "post_Q": 0.009096202863522125,
+        "post_R": 0.010454982039678555
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0007330782059647356,
+          "lower95": 0.0006067494910605138,
+          "upper95": 0.0008594069208689573,
+          "estimate": 0.0007330782059647358,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00011090859970046587,
+          "lower95": 8.003660006050762e-05,
+          "upper95": 0.00014178059934042412,
+          "estimate": 0.00011090859970046584,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.27183679426949436,
+          "lower95": 0.2217428946578692,
+          "upper95": 0.32193069388111956,
+          "estimate": 0.2718367942694942,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.00909620286352214,
+          "lower95": 0.007309904212410113,
+          "upper95": 0.010882501514634168,
+          "estimate": 0.009096202863522125,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.010454982039678557,
+          "lower95": 0.008200642778081814,
+          "upper95": 0.0127093213012753,
+          "estimate": 0.010454982039678555,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 14,
+      "family": "C",
+      "risks": {
+        "mean": 0.0004716813393602151,
+        "cov": 0.00022755878741250883,
+        "post_d4": 0.28539178233311613,
+        "post_Q": 0.009576034163755739,
+        "post_R": 0.010517002300782277
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0004716813393602151,
+          "lower95": 0.00036368814505555733,
+          "upper95": 0.0005796745336648729,
+          "estimate": 0.0004716813393602151,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00022755878741250889,
+          "lower95": 0.0001465264375443024,
+          "upper95": 0.0003085911372807154,
+          "estimate": 0.00022755878741250883,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.28539178233311646,
+          "lower95": 0.2319079661365504,
+          "upper95": 0.3388755985296825,
+          "estimate": 0.28539178233311613,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.009576034163755742,
+          "lower95": 0.007689614450502517,
+          "upper95": 0.011462453877008968,
+          "estimate": 0.009576034163755739,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.010517002300782277,
+          "lower95": 0.008287481880773403,
+          "upper95": 0.01274652272079115,
+          "estimate": 0.010517002300782277,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 14,
+      "family": "D8",
+      "risks": {
+        "mean": 2.1902056461172243e-05,
+        "cov": 3.244869388570853e-05,
+        "post_d4": 0.25815616746943926,
+        "post_Q": 0.008387999568076242,
+        "post_R": 0.009778968852995812
+      },
+      "intervals": {
+        "mean": {
+          "mean": 2.190205646117224e-05,
+          "lower95": 1.5753285722623875e-05,
+          "upper95": 2.8050827199720604e-05,
+          "estimate": 2.1902056461172243e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 3.244869388570855e-05,
+          "lower95": 2.495556927504312e-05,
+          "upper95": 3.994181849637397e-05,
+          "estimate": 3.244869388570853e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.25815616746943937,
+          "lower95": 0.21154150992003035,
+          "upper95": 0.3047708250188484,
+          "estimate": 0.25815616746943926,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.008387999568076242,
+          "lower95": 0.0068119777694035785,
+          "upper95": 0.009964021366748906,
+          "estimate": 0.008387999568076242,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.009778968852995826,
+          "lower95": 0.0077144038609639224,
+          "upper95": 0.011843533845027728,
+          "estimate": 0.009778968852995812,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 14,
+      "family": "E8",
+      "risks": {
+        "mean": 0.00043840458552578485,
+        "cov": 0.00021068445271535085,
+        "post_d4": 0.27343022389865157,
+        "post_Q": 0.009049059072809276,
+        "post_R": 0.010320856284008854
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0004384045855257847,
+          "lower95": 0.0003422366096713628,
+          "upper95": 0.0005345725613802065,
+          "estimate": 0.00043840458552578485,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.00021068445271535085,
+          "lower95": 0.0001367531056537006,
+          "upper95": 0.00028461579977700113,
+          "estimate": 0.00021068445271535085,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.2734302238986518,
+          "lower95": 0.22291686208604597,
+          "upper95": 0.3239435857112576,
+          "estimate": 0.27343022389865157,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.009049059072809286,
+          "lower95": 0.00730241779052925,
+          "upper95": 0.010795700355089323,
+          "estimate": 0.009049059072809276,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.010320856284008856,
+          "lower95": 0.008123037331208529,
+          "upper95": 0.012518675236809183,
+          "estimate": 0.010320856284008854,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 14,
+      "family": "F8",
+      "risks": {
+        "mean": 0.0003815281949720835,
+        "cov": 0.0001689500154118553,
+        "post_d4": 0.2839655492415914,
+        "post_Q": 0.00939758623194444,
+        "post_R": 0.01020962917609578
+      },
+      "intervals": {
+        "mean": {
+          "mean": 0.0003815281949720833,
+          "lower95": 0.0002951541779250722,
+          "upper95": 0.0004679022120190944,
+          "estimate": 0.0003815281949720835,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 0.0001689500154118553,
+          "lower95": 0.00010782472080997127,
+          "upper95": 0.0002300753100137393,
+          "estimate": 0.0001689500154118553,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.28396554924159145,
+          "lower95": 0.23099976609613243,
+          "upper95": 0.3369313323870505,
+          "estimate": 0.2839655492415914,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.009397586231944439,
+          "lower95": 0.007569066767612213,
+          "upper95": 0.011226105696276665,
+          "estimate": 0.00939758623194444,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.010209629176095783,
+          "lower95": 0.00808265051511298,
+          "upper95": 0.012336607837078586,
+          "estimate": 0.01020962917609578,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    },
+    {
+      "n": 32,
+      "seed": 82082,
+      "source_layer": 14,
+      "family": "G",
+      "risks": {
+        "mean": 1.3267067554832464e-05,
+        "cov": 4.069526161015507e-06,
+        "post_d4": 0.3145034826227897,
+        "post_Q": 0.009938684563152944,
+        "post_R": 0.009884873495104545
+      },
+      "intervals": {
+        "mean": {
+          "mean": 1.3267067554832466e-05,
+          "lower95": 1.2090510432303156e-05,
+          "upper95": 1.4443624677361776e-05,
+          "estimate": 1.3267067554832464e-05,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "cov": {
+          "mean": 4.069526161015508e-06,
+          "lower95": 3.7586836855188103e-06,
+          "upper95": 4.3803686365122065e-06,
+          "estimate": 4.069526161015507e-06,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_d4": {
+          "mean": 0.31450348262278993,
+          "lower95": 0.2551254847333154,
+          "upper95": 0.37388148051226444,
+          "estimate": 0.3145034826227897,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_Q": {
+          "mean": 0.009938684563152951,
+          "lower95": 0.008059964995688593,
+          "upper95": 0.011817404130617309,
+          "estimate": 0.009938684563152944,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        },
+        "post_R": {
+          "mean": 0.00988487349510456,
+          "lower95": 0.008027913119428791,
+          "upper95": 0.01174183387078033,
+          "estimate": 0.009884873495104545,
+          "method": "delete-one-stream U-statistic jackknife, t3; approximate with only four streams"
+        }
+      }
+    }
+  ]
+}

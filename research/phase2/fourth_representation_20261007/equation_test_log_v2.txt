@@ -1,0 +1,44 @@
+..........                                                               [100%]
+============================== warnings summary ===============================
+research/phase2/fourth_representation_20261007/test_equations.py::test_gaussian_connected_tree_leading_order
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:139: SymmetryLossWarning: Symmetry lost along dims (1, 2, 3, 4): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    v=incoming*gains[0]*gains[1]*gains[2]*gains[3]
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_gaussian_connected_tree_leading_order
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:147: SymmetryLossWarning: Symmetry lost along dims (1, 3, 4): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    v=v+vector(second,root)*gains[j]*gains[k]*gains[l]*pair(root,j)*triple(root,k,l)
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_gaussian_connected_tree_leading_order
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:147: SymmetryLossWarning: Symmetry lost along dims (1, 2, 4): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    v=v+vector(second,root)*gains[j]*gains[k]*gains[l]*pair(root,j)*triple(root,k,l)
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_gaussian_connected_tree_leading_order
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:147: SymmetryLossWarning: Symmetry lost along dims (1, 2, 3): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    v=v+vector(second,root)*gains[j]*gains[k]*gains[l]*pair(root,j)*triple(root,k,l)
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_gaussian_connected_tree_leading_order
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:147: SymmetryLossWarning: Symmetry lost along dims (2, 3, 4): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    v=v+vector(second,root)*gains[j]*gains[k]*gains[l]*pair(root,j)*triple(root,k,l)
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_nonsymmetric_r_multiplicities_and_all_equal_once
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\.venv-phase2\lib\site-packages\flopscope\_config.py:145: ConfigureNoOpWarning: flops.configure() configures the in-process flopscope backend only; it is a no-op on flopscope-client and the evaluation servers, so these settings will not affect a graded submission.
+    configure(**{key: value})
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_nonsymmetric_r_multiplicities_and_all_equal_once
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:12: SymmetryLossWarning: Symmetry lost along dims (0, 1): add � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    pair=pair+2*fnp.einsum('ij,ia,ib,ja,jb->ab',off,w,w,w,w)
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_symmetrization_and_quadratic_feature_repair
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:166: SymmetryLossWarning: Symmetry lost along dims (0, 1), (2, 3): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    jtensor=eye[:,:,None,None]*eye[None,None,:,:]+eye[:,None,:,None]*eye[None,:,None,:]+eye[:,None,None,:]*eye[None,:,:,None]
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_symmetrization_and_quadratic_feature_repair
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:166: SymmetryLossWarning: Symmetry lost along dims (0, 2), (1, 3): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    jtensor=eye[:,:,None,None]*eye[None,None,:,:]+eye[:,None,:,None]*eye[None,:,None,:]+eye[:,None,None,:]*eye[None,:,:,None]
+
+research/phase2/fourth_representation_20261007/test_equations.py::test_symmetrization_and_quadratic_feature_repair
+  C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\fourth_representation_20261007\kernels.py:166: SymmetryLossWarning: Symmetry lost along dims (0, 3), (1, 2): multiply � no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+    jtensor=eye[:,:,None,None]*eye[None,None,:,:]+eye[:,None,:,None]*eye[None,:,None,:]+eye[:,None,None,:]*eye[None,:,:,None]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 10 warnings in 0.38s

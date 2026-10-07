@@ -1,0 +1,14 @@
+{
+  "archive": "C:\\Users\\nikso\\Desktop\\Books\\AI papers\\ARC_Challenge\\ARC_Whitebox_Challenge\\whest-starterkit\\submissions\\phase2_joint_centered_20261007.tar.gz",
+  "sha256": "ca0e6e5970bc5d063e5f57c42e579208d3a9512b4e0ca0180b84e68ac797fdd7",
+  "source_sha256": "d7a52fb02d45386b9012af9785368d45ef2dba08975b79dfa27225f2b3313f49",
+  "bytes": 6736,
+  "members": [
+    "estimator.py",
+    "LICENSE",
+    "PROVENANCE.md",
+    "manifest.json"
+  ],
+  "public_reproduction": false,
+  "heldout_nominal_adjusted": 8.19074758943453e-08
+}

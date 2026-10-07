@@ -1,0 +1,12 @@
+{"stage": "large_cov_reference", "stream": 0}
+{"stage": "large_cov_reference", "stream": 1}
+{"stage": "large_cov_reference", "stream": 2}
+{"stage": "large_cov_reference", "stream": 3}
+{"method": "baseline_snapshot", "status": "run", "layers": [0, 7, 14]}
+{"method": "qr", "status": "run", "layers": [0, 7, 14]}
+{"method": "block8", "status": "run", "layers": [0, 7, 14]}
+{"method": "block16", "status": "run", "layers": [0, 7, 14]}
+{"method": "qblock8", "status": "run", "layers": [0, 7, 14]}
+{"method": "qblock16", "status": "failed", "layers": [0, 7, 14]}
+{"method": "qrblock8", "status": "run", "layers": [0, 7, 14]}
+{"method": "selective_block8", "status": "run", "layers": [0, 7, 14]}

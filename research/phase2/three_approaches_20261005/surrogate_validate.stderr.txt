@@ -1,0 +1,2 @@
+C:\Users\nikso\Desktop\Books\AI papers\ARC_Challenge\ARC_Whitebox_Challenge\whest-starterkit\research\phase2\three_approaches_20261005\surrogate\estimator.py:39: SymmetryLossWarning: Symmetry lost along dims (0, 1): add — no symmetry groups shared by both operands. Use as_symmetric() to re-tag if you know the result is symmetric. Suppress with flops.configure(symmetry_warnings=False).
+  return fnp.linalg.solve(gram+ridge*fnp.eye(gram.shape[0],dtype=fnp.float32),design.T@values)
